@@ -5,6 +5,7 @@
     "test": "web-test-runner \"src/**/*.test.ts\""
   },
   "dependencies": {
+    "daisyui": "^1.14.2",
     "svelte": "^3.43.1"
   },
   "devDependencies": {

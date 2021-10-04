@@ -74,5 +74,6 @@
         Learn Svelte
       </a>
     </p>
+    <button class="btn btn-primary">daisyUI Button</button>
   </header>
 </div>
