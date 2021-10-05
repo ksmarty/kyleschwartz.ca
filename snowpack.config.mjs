@@ -8,6 +8,7 @@ export default {
 		"@snowpack/plugin-svelte",
 		"@snowpack/plugin-postcss",
 		"@snowpack/plugin-typescript",
+		"snowpack-plugin-yaml",
 	],
 	optimize: {
 		/* Example: Bundle your final build: */

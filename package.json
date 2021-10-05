@@ -4,6 +4,8 @@
     "build": "snowpack build"
   },
   "dependencies": {
+    "@icons-pack/svelte-simple-icons": "^2.3.0",
+    "@tailwindcss/typography": "^0.4.1",
     "daisyui": "^1.14.2",
     "svelte": "^3.43.1"
   },
@@ -15,6 +17,7 @@
     "@types/snowpack-env": "^2.3.3",
     "postcss": "^8.3.8",
     "snowpack": "^3.8.7",
+    "snowpack-plugin-yaml": "^1.0.4",
     "svelte-preprocess": "^4.7.2",
     "tailwindcss": "^2.2.16",
     "typescript": "^4.3.4"

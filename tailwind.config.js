@@ -1,5 +1,9 @@
 module.exports = {
-	mode: "jit",
+	// mode: "jit",
 	purge: ["./public/**/*.html", "./src/**/*.{ts,svelte}"],
-	plugins: [require("daisyui")],
+	plugins: [require("@tailwindcss/typography"), require("daisyui")],
+	daisyui: {
+		themes: ["dark"],
+		base: false,
+	},
 };
