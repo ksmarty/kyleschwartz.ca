@@ -5,19 +5,13 @@
 	const headers = ["Home", "Portfolio", "Awards", "Education", "Experience"];
 
 	const button = (e: Event) => {
-		hideDropdown();
 		page = (e.target as HTMLElement).innerHTML.replace(/\s+/g, "");
-	};
-
-	const hideDropdown = () => {
-		(document.activeElement as HTMLElement).blur();
 	};
 </script>
 
-<svelte:window on:scroll={hideDropdown} />
 <div class="navbar mb-6 shadow-lg bg-neutral text-neutral-content rounded-box">
 	<div class="flex-none lg:hidden">
-		<div class="dropdown">
+		<div class="dropdown dropdown-hover">
 			<button tabindex="0" class="btn btn-square btn-ghost">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -34,14 +28,13 @@
 				</svg>
 			</button>
 			<ul
-				on:mouseleave={hideDropdown}
 				transition:fade={{ duration: 100 }}
 				tabindex="0"
 				class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52"
 			>
 				{#each headers as name}
-					<li on:click={button} class="cursor-pointer btn btn-ghost">
-						<span>{name}</span>
+					<li on:click={button}>
+						<a href="#{name}">{name}</a>
 					</li>
 				{/each}
 			</ul>
@@ -57,7 +50,7 @@
 					on:click={button}
 					class="btn btn-ghost btn-sm rounded-btn"
 				>
-					{name}
+					<a href="#{name}">{name}</a>
 				</button>
 			{/each}
 		</div>

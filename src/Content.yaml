@@ -10,22 +10,34 @@ home: >-
 
 awards:
   - title: OCEA Student Certificate of Achievement
+    icon: UserGroup
     description: >-
       Awarded for individual success and participation in the Cooperative
       Education Program.
   - title: Fundamentals of Digital Marketing
-    description: Google Digital Garage
+    icon: DocumentReport
+    cert: digital-marketing
+    # description: >-
+    #   Google Digital Garage
   - title: Digitalocean Hacktoberfest
-    description: Fall of 2018 - 2020
-  - title: Ontario Scholar
+    icon: Digitalocean
     description: >-
-      Awarded for obtaining an average of at least eighty percent in any six
+      Fall of 2018 - 2021
+  - title: Ontario Scholar
+    icon: AcademicCap
+    description: >-
+      Awarded for obtaining an average above eighty percent in any six
       Grade 12 courses.
   - title: FIT Interactive Media Certificate
-    description: "Certificate # 5766"
+    icon: PresentationChartLine
+    description: >-
+      Certificate # 5766
   - title: FIT Software Design & Development
-    description: "Certificate # 5891"
+    icon: DesktopComputer
+    description: >-
+      Certificate # 5891
   - title: Excellence in Computer Science
+    icon: Chip
     description: >-
       I received the top award for academic excellence in the field of computer
       science. As a result of this award, I was hand-selected to be placed in an
@@ -91,10 +103,10 @@ experience:
     title: University Cooperative Education Placement
     location: "Sanofi Pasteur, Toronto"
     description: >-
-      I am currently interning at Sanofi Pastuer, a global leader in vaccine
+      I am currently interning at Sanofi Pasteur, a global leader in vaccine
       manufacturing. As a member of the Quality Control, Data Logistics and
       Support department, I am assisting my team in modernizing internal tools
-      and improving workflows for maximum efficiency.
+      and improving workflows to maximize efficiency.
 
 portfolio:
   - title: PDF Press
@@ -119,9 +131,3 @@ portfolio:
     icon: Refresh
     github: "https://github.com/ksmarty/svelte-spins"
     demo: "https://svelte-spins-demo.vercel.app/"
-  # - title: codeSnips
-  #   description: A series of tools for generating various filled arrays.
-  #   demo: "https://codesnips.kyleschwartz.ca/"
-  # - title: UniCopy
-  #   description: A copy table for computer science Unicode characters.
-  #   demo: "https://UniCopy.kyleschwartz.ca"

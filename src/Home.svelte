@@ -1,6 +1,6 @@
 <script>
-	import { home } from "./Content.yaml";
 	import Avatar from "./Avatar.svelte";
+	import { home } from "./Content.yaml";
 </script>
 
 <div class="card compact">
