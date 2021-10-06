@@ -3234,6 +3234,13 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
+svelte-hero-icons@^3.0.0, svelte-hero-icons@^3.0.0-beta.3:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/svelte-hero-icons/-/svelte-hero-icons-3.0.0.tgz#c603159afa13f47344e6f2d69808553af34a4c8c"
+  integrity sha512-QivdVBK5dhUaxGq+GwBCW2EkhCFun4I1kJ22lu9b3dz7M2YJQXWsjwsNu4FIVQ1wBuPkaHAg9mdZeM7KV8fDIA==
+  dependencies:
+    svelte-hero-icons "^3.0.0-beta.3"
+
 svelte-hmr@^0.13.2:
   version "0.13.5"
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.13.5.tgz#de9b5fdcf0b694616bab2eb708d1c5bdf4043584"
