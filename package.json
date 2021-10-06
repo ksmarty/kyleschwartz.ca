@@ -7,7 +7,8 @@
     "@icons-pack/svelte-simple-icons": "^2.3.0",
     "@tailwindcss/typography": "^0.4.1",
     "daisyui": "^1.14.2",
-    "svelte": "^3.43.1"
+    "svelte": "^3.43.1",
+    "svelte-hero-icons": "^3.0.0"
   },
   "devDependencies": {
     "@snowpack/plugin-postcss": "^1.4.3",

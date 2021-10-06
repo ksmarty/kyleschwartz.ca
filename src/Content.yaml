@@ -1,0 +1,127 @@
+home: >-
+  I am a hardworking and dedicated university student who loves computers in
+  their entirety. Computers allow me to be creative, problem solve, and express
+  myself in many facets including graphic and web design as well as coding. I am
+  self-taught in Photoshop, Premiere Pro, HTML, CSS, JavaScript, TypeScript,
+  Python, and Microsoft Office Suite. Formally, I've learnt Java, Adobe Animate,
+  Android Development, and Turing. In my spare time, I decompress by cooking,
+  woodworking, and cycling. I also love to travel around the world and
+  experience different cultures.
+
+awards:
+  - title: OCEA Student Certificate of Achievement
+    description: >-
+      Awarded for individual success and participation in the Cooperative
+      Education Program.
+  - title: Fundamentals of Digital Marketing
+    description: Google Digital Garage
+  - title: Digitalocean Hacktoberfest
+    description: Fall of 2018 - 2020
+  - title: Ontario Scholar
+    description: >-
+      Awarded for obtaining an average of at least eighty percent in any six
+      Grade 12 courses.
+  - title: FIT Interactive Media Certificate
+    description: "Certificate # 5766"
+  - title: FIT Software Design & Development
+    description: "Certificate # 5891"
+  - title: Excellence in Computer Science
+    description: >-
+      I received the top award for academic excellence in the field of computer
+      science. As a result of this award, I was hand-selected to be placed in an
+      advanced placement (AP) program for the 2017-2018 school year.
+
+education:
+  - timeperiod: Sep 2014 - June 2018
+    degree: High School Diploma
+    location: "William Lyon Mackenzie CI, North York"
+  - timeperiod: Sep 2018 - Present
+    degree: "BSc Computer Science, Minor in Economics"
+    location: "Lassonde School of Engineering, York University, Toronto"
+
+experience:
+  - timeperiod: Summers 2016-2019
+    title: Summer Camp Counsellor
+    location: "Camp Green Acres, Markham"
+    description: >-
+      I worked as a staff member with young children ranging from 5 to 8 years
+      of age in a fun, challenging, and supportive environment. In my second and
+      third summers I was given the additional responsibility of being a bus
+      captain; overseeing 3 staff members. This leadership experience afforded
+      me the opportunity to understand team management and collaboration.
+  - timeperiod: Oct 2016 - June 2017
+    title: Computer Programming Team
+    location: "William Lyon Mackenzie CI, North York"
+    description: >-
+      I led a group of my peers in our school's coding competitions. We placed
+      top 5 in multiple events. In addition, I was selected to be a coach for
+      the visiting grade 7 & 8 students when they participated in our annual
+      Science & Engineering Olympics.
+  - timeperiod: Oct 2017 - June 2018
+    title: Youth Council President
+    location: "Beth David Synagogue, North York"
+    description: >-
+      After successfully running for President, I continued to create, organize,
+      and run engaging programs for the youth in my community. My role as
+      President was to guide and oversee my board and implement the strategic
+      direction provided by our Youth Director.
+  - timeperiod: Oct 2017 - June 2018
+    title: President of Accounting & Finance Club
+    location: "William Lyon Mackenzie CI, North York"
+    description: >-
+      I presented seminars on various forms of investment including
+      cryptocurrencies and how to safely invest as markets can be very volatile.
+  - timeperiod: Oct 2017 - June 2018
+    title: Head Engineer for Engineering Club
+    location: "William Lyon Mackenzie CI, North York"
+    description: >-
+      As an integral team member, I advised on the programming of our weekly
+      activities to ensure the events were fun and informative for our members.
+  - timeperiod: Feb 2018 - May 2018
+    title: Cooperative Education Placement
+    location: "Grip Limited, Toronto"
+    description: >-
+      I worked in both the technology and video production departments, learning
+      a great deal about corporate structure and how a business functions.
+  - timeperiod: Sep 2019 - June 2020
+    title: Minecraft Instructor
+    location: "Robbins Hebrew Academy, Toronto"
+    description: I taught Minecraft to elementary-age students in an after-school program.
+  - timeperiod: Jan 2021 - Present
+    title: University Cooperative Education Placement
+    location: "Sanofi Pasteur, Toronto"
+    description: >-
+      I am currently interning at Sanofi Pastuer, a global leader in vaccine
+      manufacturing. As a member of the Quality Control, Data Logistics and
+      Support department, I am assisting my team in modernizing internal tools
+      and improving workflows for maximum efficiency.
+
+portfolio:
+  - title: PDF Press
+    description: Serverless PDF generator for Docusaurus and other SSGs
+    icon: DocumentDuplicate
+    github: "https://github.com/ksmarty/pdf-press"
+  - title: snowpack-plugin-yaml
+    description: A Snowpack plugin to convert YAML files to ESM.
+    icon: DocumentText
+    github: "https://github.com/ksmarty/snowpack-plugin-yaml"
+  - title: VSCStore
+    description: A simple package to add the VSCode marketplace to VSCodium.
+    icon: SwitchHorizontal
+    github: "https://github.com/ksmarty/vscstore"
+  - title: ZoomCube
+    description: A minimal Rubik's Cube timer written in Svelte
+    icon: Cube
+    github: "https://github.com/ksmarty/ZoomCube"
+    demo: "https://zoomcube.kyleschwartz.ca/"
+  - title: svelte-spins
+    description: A zero dependency spinner/loader library using loaders.css as Svelte components.
+    icon: Refresh
+    github: "https://github.com/ksmarty/svelte-spins"
+    demo: "https://svelte-spins-demo.vercel.app/"
+  # - title: codeSnips
+  #   description: A series of tools for generating various filled arrays.
+  #   demo: "https://codesnips.kyleschwartz.ca/"
+  # - title: UniCopy
+  #   description: A copy table for computer science Unicode characters.
+  #   demo: "https://UniCopy.kyleschwartz.ca"

@@ -1,5 +1,5 @@
 <script>
-	import { content } from "./content/Home.yaml";
+	import { home } from "./Content.yaml";
 	import Avatar from "./Avatar.svelte";
 </script>
 
@@ -12,7 +12,7 @@
 	<div class="card-body">
 		<h2 class="card-title">About Me</h2>
 		<p>
-			{content}
+			{home}
 		</p>
 	</div>
 </div>
