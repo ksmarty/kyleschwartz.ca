@@ -1,4 +1,6 @@
 {
+  "license": "MIT",
+  "author": "Kyle Schwartz",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build"
