@@ -52,6 +52,16 @@ education:
     location: "Lassonde School of Engineering, York University, Toronto"
 
 experience:
+  - timeperiod: Jan 2021 - Present
+    title: University Cooperative Education Placement
+    location: "Sanofi Pasteur, Toronto"
+    description: >-
+      I am currently interning at Sanofi Pasteur, a global leader in vaccine
+      manufacturing. As a member of the Quality Control, Data Logistics and
+      Support department, I am assisting my team in modernizing internal tools
+      and improving workflows to maximize efficiency. Additionally, I am
+      documenting internal processes to ensure consistency and compliance in
+      the future.
   - timeperiod: Summers 2016-2019
     title: Summer Camp Counsellor
     location: "Camp Green Acres, Markham"
@@ -61,14 +71,14 @@ experience:
       third summers I was given the additional responsibility of being a bus
       captain; overseeing 3 staff members. This leadership experience afforded
       me the opportunity to understand team management and collaboration.
-  - timeperiod: Oct 2016 - June 2017
-    title: Computer Programming Team
-    location: "William Lyon Mackenzie CI, North York"
+  - timeperiod: Feb 2018 - May 2018
+    title: Cooperative Education Placement
+    location: "Grip Limited, Toronto"
     description: >-
-      I led a group of my peers in our school's coding competitions. We placed
-      top 5 in multiple events. In addition, I was selected to be a coach for
-      the visiting grade 7 & 8 students when they participated in our annual
-      Science & Engineering Olympics.
+      I worked in both the technology and video production departments, learning
+      a great deal about corporate structure and how a business functions. I
+      leveraged my knowledge of python to efficiently extract vendor data from
+      excel workbooks, allowing for faster operations.
   - timeperiod: Oct 2017 - June 2018
     title: Youth Council President
     location: "Beth David Synagogue, North York"
@@ -89,36 +99,30 @@ experience:
     description: >-
       As an integral team member, I advised on the programming of our weekly
       activities to ensure the events were fun and informative for our members.
-  - timeperiod: Feb 2018 - May 2018
-    title: Cooperative Education Placement
-    location: "Grip Limited, Toronto"
+  - timeperiod: Oct 2016 - June 2017
+    title: Computer Programming Team
+    location: "William Lyon Mackenzie CI, North York"
     description: >-
-      I worked in both the technology and video production departments, learning
-      a great deal about corporate structure and how a business functions.
-  - timeperiod: Sep 2019 - June 2020
-    title: Minecraft Instructor
-    location: "Robbins Hebrew Academy, Toronto"
-    description: I taught Minecraft to elementary-age students in an after-school program.
-  - timeperiod: Jan 2021 - Present
-    title: University Cooperative Education Placement
-    location: "Sanofi Pasteur, Toronto"
-    description: >-
-      I am currently interning at Sanofi Pasteur, a global leader in vaccine
-      manufacturing. As a member of the Quality Control, Data Logistics and
-      Support department, I am assisting my team in modernizing internal tools
-      and improving workflows to maximize efficiency.
+      I led a group of my peers in our school's coding competitions. We placed
+      top 5 in multiple events. In addition, I was selected to be a coach for
+      the visiting grade 7 & 8 students when they participated in our annual
+      Science & Engineering Olympics.
 
 portfolio:
+  - title: Fossil
+    description: A self-hosted static file server for Docker built with Deno
+    icon: CloudUpload
+    github: "https://github.com/ksmarty/fossil"
   - title: PDF Press
     description: Serverless PDF generator for Docusaurus and other SSGs
     icon: DocumentDuplicate
     github: "https://github.com/ksmarty/pdf-press"
   - title: snowpack-plugin-yaml
-    description: A Snowpack plugin to convert YAML files to ESM.
+    description: A Snowpack plugin to convert YAML files to ESM
     icon: DocumentText
     github: "https://github.com/ksmarty/snowpack-plugin-yaml"
   - title: VSCStore
-    description: A simple package to add the VSCode marketplace to VSCodium.
+    description: A simple package to add the VSCode marketplace to VSCodium
     icon: SwitchHorizontal
     github: "https://github.com/ksmarty/vscstore"
   - title: ZoomCube
@@ -127,7 +131,7 @@ portfolio:
     github: "https://github.com/ksmarty/ZoomCube"
     demo: "https://zoomcube.kyleschwartz.ca/"
   - title: svelte-spins
-    description: A zero dependency spinner/loader library using loaders.css as Svelte components.
+    description: A zero dependency spinner/loader library using loaders.css as Svelte components
     icon: Refresh
     github: "https://github.com/ksmarty/svelte-spins"
     demo: "https://svelte-spins-demo.vercel.app/"

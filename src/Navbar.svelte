@@ -1,12 +1,13 @@
 <script lang="ts">
 	import { fade } from "svelte/transition";
-	export let page: string;
 
-	const headers = ["Home", "Portfolio", "Awards", "Education", "Experience"];
-
-	const button = (e: Event) => {
-		page = (e.target as HTMLElement).innerHTML.replace(/\s+/g, "");
-	};
+	const headers = [
+		"About Me",
+		"Portfolio",
+		"Awards",
+		"Education",
+		"Experience",
+	];
 </script>
 
 <div class="navbar mb-6 shadow-lg bg-neutral text-neutral-content rounded-box">
@@ -33,7 +34,7 @@
 				class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52"
 			>
 				{#each headers as name}
-					<li on:click={button}>
+					<li>
 						<a href="#{name}">{name}</a>
 					</li>
 				{/each}
@@ -46,10 +47,7 @@
 	<div class="hidden px-2 mx-2 navbar-center lg:flex">
 		<div class="flex items-stretch">
 			{#each headers as name}
-				<button
-					on:click={button}
-					class="btn btn-ghost btn-sm rounded-btn"
-				>
+				<button class="btn btn-ghost btn-sm rounded-btn">
 					<a href="#{name}">{name}</a>
 				</button>
 			{/each}

@@ -7,26 +7,17 @@
 	import Navbar from "./Navbar.svelte";
 	import Portfolio from "./Portfolio.svelte";
 	import Tailwind from "./Tailwind.svelte";
-
-	// Other
-	let page = "Home";
 </script>
 
 <Tailwind />
 <main class="min-h-screen p-3 lg:p-5 flex flex-col">
-	<Navbar bind:page />
-	<div class="flex-1 grid grid-cols-1 lg:grid-cols-3 gap-4">
-		<!-- {#if page === "Home"} -->
-		<Home />
-		<!-- {:else if page === "Portfolio"} -->
-		<Portfolio />
-		<!-- {:else if page === "Awards"} -->
-		<Awards />
-		<!-- {:else if page === "Education"} -->
-		<Education />
-		<!-- {:else if page === "Experience"} -->
+	<Navbar />
+	<Home />
+	<div class="flex flex-col gap-y-3 lg:gap-y-5 lg:px-24">
 		<Experience />
-		<!-- {/if} -->
+		<Portfolio />
+		<Education />
+		<Awards />
 	</div>
 	<Footer />
 </main>
@@ -45,5 +36,10 @@
 	/* Hide scrollbar for Chrome, Safari and Opera */
 	html::-webkit-scrollbar {
 		display: none;
+	}
+
+	.divider::after,
+	.divider::before {
+		@apply bg-base-100;
 	}
 </style>

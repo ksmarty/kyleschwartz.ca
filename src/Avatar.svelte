@@ -653,15 +653,8 @@
 </svg>
 
 <style lang="postcss">
-	@screen md {
-		svg {
-			float: right;
-		}
-	}
-
 	svg {
-		height: 400px;
-		@apply mx-auto;
+		@apply mx-auto max-h-96;
 	}
 
 	.Skin {
