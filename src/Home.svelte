@@ -4,7 +4,7 @@
 </script>
 
 <div
-	id="About"
+	id="About Me"
 	class="flex flex-col space-y-6 w-full lg:space-y-0 lg:space-x-10 lg:flex-row lg:mx-auto lg:w-auto mb-6"
 >
 	<div class="card my-auto">
@@ -30,4 +30,8 @@
 </div>
 
 <style>
+	.divider::after,
+	.divider::before {
+		@apply bg-base-100;
+	}
 </style>

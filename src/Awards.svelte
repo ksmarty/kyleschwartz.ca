@@ -130,4 +130,9 @@
 	.modal {
 		transition-property: inherit;
 	}
+
+	.divider::after,
+	.divider::before {
+		@apply bg-base-100;
+	}
 </style>

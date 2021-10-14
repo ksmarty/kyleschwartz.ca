@@ -3,10 +3,10 @@
 
 	const headers = [
 		"About Me",
-		"Portfolio",
-		"Awards",
-		"Education",
 		"Experience",
+		"Portfolio",
+		"Education",
+		"Awards",
 	];
 </script>
 

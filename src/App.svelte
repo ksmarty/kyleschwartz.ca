@@ -31,15 +31,13 @@
 		/* Hide Scrollbar */
 		-ms-overflow-style: none; /* IE and Edge */
 		scrollbar-width: none; /* Firefox */
+
+		/* Smooth scrolling */
+		scroll-behavior: smooth;
 	}
 
 	/* Hide scrollbar for Chrome, Safari and Opera */
 	html::-webkit-scrollbar {
 		display: none;
-	}
-
-	.divider::after,
-	.divider::before {
-		@apply bg-base-100;
 	}
 </style>
