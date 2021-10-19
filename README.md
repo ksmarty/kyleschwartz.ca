@@ -9,15 +9,11 @@
 -   The content is written in `Content.yaml` and is parsed as an ES Module via my [Snowpack plugin](https://github.com/ksmarty/snowpack-plugin-yaml).
 -   The certificates (both png and pdf) are stored in `/public/static`.
 
-## APIs
+## Resume & Cover Letter PDFs
 
-### `/api/resume`
-
-Go here to download a PDF of my resume.
-
-### `/api/cover-letter`
-
-Go here to download a PDF of a my cover letter
+-   [Resume](public/static/resume.pdf)
+-   [Cover Letter](public/static/cover-letter.pdf)
+-   [Bundle](public/static/bundle.pdf)
 
 ## Dev Notes
 

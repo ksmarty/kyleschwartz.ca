@@ -2,4 +2,3 @@
 build
 node_modules
 .vercel
-public/static/resume.pdf

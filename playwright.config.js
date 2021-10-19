@@ -5,6 +5,6 @@ const config = {
 		timeout: 120 * 1000,
 		reuseExistingServer: !process.env.CI,
 	},
-	testDir: "./resume",
+	testDir: "./resume-cover-letter",
 };
 module.exports = config;

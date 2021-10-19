@@ -3,7 +3,7 @@
   "author": "Kyle Schwartz",
   "scripts": {
     "start": "snowpack dev",
-    "build": "yarn pdf && snowpack build",
+    "build": "snowpack build",
     "pdf": "npx playwright test"
   },
   "dependencies": {

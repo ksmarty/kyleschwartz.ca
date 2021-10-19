@@ -24,11 +24,22 @@
 				<p class="">
 					{home}
 				</p>
-				<a
-					href="./static/resume.pdf"
-					download="Kyle Schwartz - Resume.pdf"
-					class="btn btn-outline btn-primary">Download my Resume</a
+				<div
+					class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4"
 				>
+					<a
+						href="./static/resume.pdf"
+						download="Kyle Schwartz - Resume.pdf"
+						class="btn btn-outline btn-primary flex-1"
+						>Download my Resume</a
+					>
+					<a
+						href="./static/cover-letter.pdf"
+						download="Kyle Schwartz - Cover Letter.pdf"
+						class="btn btn-outline btn-accent flex-1"
+						>Download my Cover Letter</a
+					>
+				</div>
 			</div>
 		</div>
 	</div>

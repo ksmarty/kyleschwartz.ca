@@ -1,15 +1,76 @@
 <script>
-	import { ExternalLink, Link, Mail, Phone } from "svelte-hero-icons";
+	import { ExternalLink,Link,Mail,Phone } from "svelte-hero-icons";
 	import Icon from "svelte-hero-icons/Icon.svelte";
 	import {
-		awards,
-		education,
-		experience,
-		home,
-		portfolio,
-		volunteer,
+	awards,
+	cover,
+	education,
+	experience,
+	home,
+	portfolio,
+	volunteer
 	} from "./Content.yaml";
+
+	const coverSplit = cover.split("\n");
 </script>
+
+<div id="Cover" data-theme="light" class="hidden print:block text-base-content">
+	<div class="content-node mb-4">
+		<h1 class="text-5xl mb-4 font-bold">Kyle Schwartz</h1>
+
+		<div class="flex space-x-4 mb-6 text-primary">
+			<a
+				class="flex items-center link link-hover"
+				href="mailto:kyle@kyleschwartz.ca"
+				target="_blank"
+			>
+				<figure class="flex w-6 mr-1">
+					<Icon src={Mail} />
+				</figure>
+				kyle@kyleschwartz.ca
+			</a>
+			<a
+				class="flex items-center link link-hover"
+				href="tel:647-772-7222"
+				target="_blank"
+				><figure class="flex w-6 mr-1">
+					<Icon src={Phone} />
+				</figure>
+				(647) 772-7222
+			</a>
+			<a
+				class="flex items-center link link-hover"
+				href="https://kyleschwartz.ca"
+				target="_blank"
+			>
+				<figure class="flex w-6 mr-1">
+					<Icon src={Link} />
+				</figure>
+				kyleschwartz.ca
+			</a>
+		</div>
+
+		<div class="divider" />
+
+		<div class="text-justify text-sm space-y-2 m-auto p-12">
+			{#each coverSplit as para, i}
+				{#if (i === 0) | (i === coverSplit.length - 1)}
+					<p class="font-bold">
+						{para}
+					</p>
+				{:else if (i > 0) & (i < coverSplit.length - 2)}
+					<p class="" style="text-indent: 2rem;">
+						{para}
+					</p>
+				{:else}
+					<p class="">
+						{para}
+					</p>
+				{/if}
+			{/each}
+		</div>
+	</div>
+</div>
 
 <div
 	id="Resume"

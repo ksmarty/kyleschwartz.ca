@@ -5,9 +5,8 @@ home: >-
   self-taught in Photoshop, Premiere Pro, HTML, CSS, JavaScript, TypeScript,
   Python, and Microsoft Office Suite. Formally, I've learnt Java, Adobe Animate,
   Android Development, and Turing. In my spare time, I decompress by cooking,
-  woodworking, and rowing. I also love to travel around the world and
-  experience different cultures.
-
+  woodworking, and rowing. I also love to travel around the world and experience
+  different cultures.
 awards:
   - title: Student Certificate of Achievement
     icon: UserGroup
@@ -27,22 +26,20 @@ awards:
     date: Jun 2018
     icon: AcademicCap
     description: >-
-      Awarded for obtaining an average above eighty percent in any six
-      Grade 12 courses.
+      Awarded for obtaining an average above eighty percent in any six Grade 12
+      courses.
   - title: Interactive Media Certificate
     issuer: FIT
     cred: 5766
     date: Jun 2018
     icon: PresentationChartLine
-    description: >-
-      Certificate # 5766
+    description: "Certificate # 5766"
   - title: Software Design & Development
     issuer: FIT
     cred: 5891
     date: Jun 2018
     icon: DesktopComputer
-    description: >-
-      Certificate # 5891
+    description: "Certificate # 5891"
   - title: Excellence in Computer Science
     issuer: TDSB
     date: Apr 2017
@@ -51,7 +48,6 @@ awards:
       I received the top award for academic excellence in the field of computer
       science. As a result of this award, I was hand-selected to be placed in an
       advanced placement (AP) program for the 2017-2018 school year.
-
 education:
   - timeperiod: Sep 2014 - Jun 2018
     degree: High School Diploma
@@ -59,17 +55,15 @@ education:
   - timeperiod: Sep 2018 - Jan 2023 (Expected)
     degree: "BSc Computer Science, Minor in Economics"
     location: "Lassonde School of Engineering, York University, Toronto"
-
 experience:
   - timeperiod: Jan 2021 - Present
     title: University Internship
     location: "Sanofi Pasteur, Toronto"
     description: >-
-      As a member of the Quality Control, Data Logistics and
-      Support department, I assist my team in modernizing internal tools
-      and improving workflows to maximize efficiency. Additionally, I
-      document internal processes to ensure consistency and compliance in
-      the future.
+      As a member of the Quality Control, Data Logistics and Support department,
+      I assist my team in modernizing internal tools and improving workflows to
+      maximize efficiency. Additionally, I document internal processes to ensure
+      consistency and compliance in the future.
   - timeperiod: Jun 2016 - Aug 2019
     title: Summer Camp Counsellor
     location: "Camp Green Acres, Markham"
@@ -87,7 +81,6 @@ experience:
       a great deal about corporate structure and how a business functions. I
       leveraged my knowledge of python to efficiently extract vendor data from
       excel workbooks, allowing for faster operations.
-
 volunteer:
   - timeperiod: Oct 2017 - Jun 2018
     title: Youth Council President
@@ -117,14 +110,15 @@ volunteer:
       top 5 in multiple events. In addition, I was selected to be a coach for
       the visiting grade 7 & 8 students when they participated in our annual
       Science & Engineering Olympics.
-
 portfolio:
   - title: Fossil
     description: A self-hosted static file server for Docker built with Deno
     icon: CloudUpload
     link: "https://github.com/ksmarty/fossil"
   - title: svelte-spins
-    description: A zero dependency spinner/loader library using loaders.css as Svelte components
+    description: >-
+      A zero dependency spinner/loader library using loaders.css as Svelte
+      components
     icon: Refresh
     link: "https://svelte-spins-demo.vercel.app/"
   - title: ZoomCube
@@ -143,3 +137,49 @@ portfolio:
     description: A Snowpack plugin to convert YAML files to ESM
     icon: DocumentText
     link: "https://github.com/ksmarty/snowpack-plugin-yaml"
+cover: >-
+  To whom it may concern,
+
+  I am in my third year at the Lassonde School of Engineering, studying Computer
+  Science. During my past two years at university, I have broadened my computer
+  knowledge to include JavaScript, Android, C/C++, Verilog, and Assembly. I also
+  expanded my business acumen in studying micro and macro economics. I am
+  excited to enhance my program with a coop opportunity where I can apply my
+  learning in a practical environment.
+
+  During the school year, in addition to my studies, I also have a part time job
+  teaching Minecraft to elementary-age students. I have enjoyed this opportunity
+  as it allows me to share my passion with budding coders.
+
+  My last few summers I was a camp counsellor at Green Acres Day Camp where I
+  honed my leadership ability. In my last placement I was recognized as the
+  “staff of the summer” in my unit due to how I managed challenging camper
+  behavioural issues by collaborating with the camp Social Worker to address the
+  problem.
+
+  In my community, I sat on the Youth Board at Beth David Synagogue. In my first
+  year I was the Vice President of Social Action & Charity where I organized
+  several community events that were well received by the attendees. After
+  successfully running for President, I continued to create, organize, and run
+  engaging programs for the youth in my community. My role as President was to
+  guide and oversee the Board and implement the strategic direction provided by
+  our Youth Director.
+
+  In High School, I was active in the Computer Programming Team. During my time
+  as a leader, I led a group of my peers in our school's coding competitions. We
+  placed top 5 in multiple events. In addition, I was selected to be a coach for
+  the visiting grade 7 & 8 students when they participated in our annual Science
+  & Engineering Olympics.
+
+  As for my entrepreneurial talent, I co-founded a website development company
+  that ran for several years whose clientele consisted primarily of local small
+  businesses. My next endeavor was a fidget-spinner distribution company that
+  rode on the trend of fidget spinners during late 2016 and into early 2017.
+
+  I look forward to speaking with you about your summer coop program to
+  determine if there is a fit with my skill set, strong work ethic, and
+  leadership ability.
+
+  Sincerely,
+
+  Kyle Schwartz
