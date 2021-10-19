@@ -654,7 +654,7 @@
 
 <style lang="postcss">
 	svg {
-		@apply mx-auto max-h-96;
+		@apply mx-auto h-96;
 	}
 
 	.Skin {

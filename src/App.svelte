@@ -6,11 +6,12 @@
 	import Home from "./Home.svelte";
 	import Navbar from "./Navbar.svelte";
 	import Portfolio from "./Portfolio.svelte";
+	import Resume from "./Resume.svelte";
 	import Tailwind from "./Tailwind.svelte";
 </script>
 
-<Tailwind />
-<main class="min-h-screen p-3 lg:p-5 flex flex-col">
+<main class="min-h-screen p-3 lg:p-5 flex flex-col print:hidden">
+	<Tailwind />
 	<Navbar />
 	<Home />
 	<div class="flex flex-col gap-y-3 lg:gap-y-5 lg:px-24">
@@ -21,6 +22,7 @@
 	</div>
 	<Footer />
 </main>
+<Resume />
 
 <style global>
 	html {
@@ -39,5 +41,11 @@
 	/* Hide scrollbar for Chrome, Safari and Opera */
 	html::-webkit-scrollbar {
 		display: none;
+	}
+
+	@media print {
+		html {
+			background: none;
+		}
 	}
 </style>

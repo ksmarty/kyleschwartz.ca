@@ -1,11 +1,12 @@
 <script>
-	import { experience } from "./Content.yaml";
+	import { experience, volunteer } from "./Content.yaml";
+	const all = [...experience, ...volunteer];
 </script>
 
 <div id="Experience">
 	<div class="divider text-3xl mb-8">Experience</div>
 	<div class="flex flex-wrap -mx-2 overflow-hidden md:-mx-3">
-		{#each experience as { timeperiod, title, location, description }}
+		{#each all as { timeperiod, title, location, description }}
 			<div
 				class="my-2 px-2 w-full overflow-hidden md:my-3 md:px-3 md:w-1/2"
 			>

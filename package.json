@@ -3,21 +3,24 @@
   "author": "Kyle Schwartz",
   "scripts": {
     "start": "snowpack dev",
-    "build": "snowpack build"
+    "build": "yarn pdf && snowpack build",
+    "pdf": "npx playwright test"
   },
   "dependencies": {
     "@icons-pack/svelte-simple-icons": "^2.3.0",
-    "@tailwindcss/typography": "^0.4.1",
     "daisyui": "^1.14.2",
     "svelte": "^3.43.1",
     "svelte-hero-icons": "^3.0.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.15.2",
     "@snowpack/plugin-postcss": "^1.4.3",
     "@snowpack/plugin-svelte": "^3.6.1",
     "@snowpack/plugin-typescript": "^1.2.1",
+    "@tailwindcss/typography": "^0.4.1",
     "@tsconfig/svelte": "^2.0.1",
     "@types/snowpack-env": "^2.3.3",
+    "@vercel/node": "^1.12.1",
     "postcss": "^8.3.8",
     "snowpack": "^3.8.7",
     "snowpack-plugin-yaml": "^1.0.4",

@@ -20,10 +20,15 @@
 		<div
 			class="card shadow-lg border-2 border-base-100 text-base-content text-opacity-80 md:text-lg"
 		>
-			<div class="card-body p-5 lg:p-8">
-				<p>
+			<div class="card-body p-5 lg:p-8 space-y-4">
+				<p class="">
 					{home}
 				</p>
+				<a
+					href="./static/resume.pdf"
+					download="Kyle Schwartz - Resume.pdf"
+					class="btn btn-outline btn-primary">Download my Resume</a
+				>
 			</div>
 		</div>
 	</div>
