@@ -1,6 +1,6 @@
 {
   "extends": "@tsconfig/svelte/tsconfig.json",
-  "include": ["src", "types", "_resume.mjs"],
+  "include": ["src", "types", "_resume.mjs", "api"],
   "compilerOptions": {
     "module": "esnext",
     "moduleResolution": "node",

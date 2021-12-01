@@ -7,6 +7,7 @@
 		"Portfolio",
 		"Education",
 		"Awards",
+		"Contact",
 	];
 </script>
 

@@ -8,6 +8,7 @@
 	import Portfolio from "./Portfolio.svelte";
 	import Resume from "./Resume.svelte";
 	import Tailwind from "./Tailwind.svelte";
+	import Contact from "./Contact.svelte";
 </script>
 
 <main class="min-h-screen p-3 lg:p-5 flex flex-col print:hidden">
@@ -19,6 +20,7 @@
 		<Portfolio />
 		<Education />
 		<Awards />
+		<Contact />
 	</div>
 	<Footer />
 </main>
