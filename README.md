@@ -20,4 +20,7 @@
 -   Don't try and migrate to Yarn Berry. There are still issues and the project is currently incompatible.
 -   Favicons were generated via https://realfavicongenerator.net/.
 -   All of the styles are from [daisyUI](https://daisyui.com).
--   Resume generation needs to happen client side. Run `yarn pdf` before committing any changes to `Content.yaml`.
+-   Resume generation needs to happen client side. Before committing any changes made to `Content.yaml`, run the following:
+    -   `yarn`
+    -   `npx playwright install`
+    -   `yarn run pdf`
