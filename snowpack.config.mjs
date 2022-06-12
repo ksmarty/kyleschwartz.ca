@@ -19,6 +19,7 @@ export default {
 	},
 	devOptions: {
 		tailwindConfig: "./tailwind.config.js",
+		hostname: "0.0.0.0",
 	},
 	buildOptions: {
 		/* ... */
