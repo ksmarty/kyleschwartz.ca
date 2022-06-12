@@ -1,9 +1,61 @@
 /* Use this file to declare any custom file extensions for importing */
 /* Use this folder to also add/extend a package d.ts file, if needed. */
 
-declare module "*.yaml";
+// declare module "*.yaml";
 declare module "@icons-pack/svelte-simple-icons";
 declare module "svelte-pdf";
+
+interface Portfolio {
+	title: string;
+	description: string;
+	icon: string;
+	link: string;
+	demo: string;
+}
+
+declare module "*/Content.yaml" {
+	const certs: {
+		title: string;
+		description: string;
+		icon: string;
+		cert: string;
+		badge: string;
+		url: string;
+		issuer: string;
+	}[];
+
+	const education: {
+		timeperiod: string;
+		degree: string;
+		location: string;
+	}[];
+
+	const experience: {
+		timeperiod: string;
+		title: string;
+		location: string;
+		description: string;
+	}[];
+
+	const home: string;
+
+	const portfolio: {
+		title: string;
+		description: string;
+		icon: string;
+		link: string;
+		demo: string;
+	}[];
+
+	const volunteer: {
+		timeperiod: string;
+		title: string;
+		location: string;
+		description: string;
+	}[];
+
+	export { certs, education, experience, home, portfolio, volunteer };
+}
 
 /* CSS MODULES */
 declare module "*.module.css" {

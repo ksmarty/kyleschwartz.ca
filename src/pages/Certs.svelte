@@ -11,19 +11,6 @@
 	import Icon from "svelte-hero-icons/Icon.svelte";
 	import { certs } from "../Content.yaml";
 
-	interface Award {
-		title: string;
-		description: string;
-		icon: string;
-		cert: string;
-		badge: string;
-		url: string;
-		issuer: string;
-	}
-
-	// Typescript funness
-	const newAwards = certs as Award[];
-
 	const icons = {
 		AcademicCap,
 		DocumentReport,
@@ -31,46 +18,47 @@
 		DesktopComputer,
 		PresentationChartLine,
 		UserGroup,
-	} as any;
+	};
+
+	const accessIcon = (icon: string) => icon as keyof typeof icons;
 
 	const colors = (i: number) => ["primary", "secondary", "accent"][i % 3];
 
-	let modalToggle = false;
 	let modal: HTMLElement;
+	let modalToggle = false;
 
 	// Disable scroll when modal is open
 	$: document.body.style.overflow = modalToggle ? "hidden" : "auto";
 
-	const leaveModal = (e: Event) => {
-		if (e.target === modal) modalToggle = false;
-	};
+	const leaveModal = (e: Event) => (modalToggle = e.target !== modal);
 </script>
 
 <div id="Certifications">
-	<div class="divider text-3xl mb-8">Awards & Certifications</div>
+	<!-- prettier-ignore -->
+	<div class="divider text-3xl mb-8 whitespace-pre-line sm:whitespace-normal text-center h-20 sm:h-auto">
+		Awards 
+		&
+		Certifications
+	</div>
 	<div class="flex flex-wrap -mx-2 overflow-hidden md:-mx-3">
-		{#each newAwards as { title, description, icon, cert, badge, url, issuer }, index}
+		{#each certs as { title, description, icon, cert, badge, url, issuer }, index}
 			<div
-				class="my-2 px-2 w-full overflow-hidden md:my-3 md:px-3 md:w-1/2 flex-grow"
-			>
+				class="my-2 px-2 w-full overflow-hidden md:my-3 md:px-3 md:w-1/2 flex-grow">
 				<div
-					class="card shadow-lg compact side bg-base-300 h-full border-2 border-base-100"
-				>
+					class="card compact side bg-base-300 h-full border-2 border-base-100">
 					<div class="flex-row items-center space-x-4 card-body">
 						<div>
 							<div
 								class="avatar w-12 h-12 items-center justify-center text-{colors(
 									index
-								)}"
-							>
-								{#if icons[icon]}
-									<Icon src={icons[icon]} />
+								)}">
+								{#if icons[accessIcon(icon)]}
+									<Icon src={icons[accessIcon(icon)]} />
 								{:else if badge && url}
 									<a href={url} target="_blank">
 										<img
 											src={badge}
-											alt={`${title} badge`}
-										/>
+											alt={`${title} badge`} />
 									</a>
 								{:else}
 									<Digitalocean size="40" />
@@ -90,14 +78,12 @@
 							<div class="">
 								{#if !cert}
 									<p
-										class="text-base-content text-opacity-80"
-									>
+										class="text-base-content text-opacity-80">
 										{description}
 									</p>
 								{:else}
 									<p
-										class="text-base-content text-opacity-80 pb-2"
-									>
+										class="text-base-content text-opacity-80 pb-2">
 										{issuer}
 									</p>
 									<!-- Modal Open Button -->
@@ -106,38 +92,33 @@
 										class="btn btn-outline btn-{colors(
 											index
 										)} btn-sm modal-button"
-										>View Certificate</label
-									>
+										>View Certificate</label>
 									<!-- Modal toggle -->
 									<input
 										bind:checked={modalToggle}
 										type="checkbox"
 										id="my-modal-2"
-										class="modal-toggle"
-									/>
+										class="modal-toggle" />
 									<!-- Modal -->
 									<div
-										class="modal"
+										class="modal duration-500"
 										on:click={leaveModal}
-										bind:this={modal}
-									>
-										<div class="modal-box max-w-3xl">
+										bind:this={modal}>
+										<div
+											class="modal-box max-w-3xl duration-500">
 											<img
 												src="./static/{cert}.png"
-												alt="Certificate"
-											/>
+												alt="Certificate" />
 											<div class="modal-action">
 												<a
 													href="./static/{cert}.pdf"
 													target="_blank"
 													for="my-modal-2"
 													class="btn btn-primary"
-													>View File</a
-												>
+													>View File</a>
 												<label
 													for="my-modal-2"
-													class="btn">Close</label
-												>
+													class="btn">Close</label>
 											</div>
 										</div>
 									</div>

@@ -44,7 +44,7 @@
 </script>
 
 <div class="container z-10 sticky top-0 pt-5 max-w-none">
-	<div class="navbar shadow-lg bg-neutral text-neutral-content rounded-box">
+	<div class="navbar bg-neutral text-neutral-content rounded-box">
 		<div class="flex-none lg:hidden">
 			<div class="dropdown dropdown-hover">
 				<button tabindex="0" class="btn btn-square btn-ghost">
@@ -52,21 +52,18 @@
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 24 24"
-						class="inline-block w-6 h-6 stroke-current"
-					>
+						class="inline-block w-6 h-6 stroke-current">
 						<path
 							stroke-linecap="round"
 							stroke-linejoin="round"
 							stroke-width="2"
-							d="M4 6h16M4 12h16M4 18h16"
-						/>
+							d="M4 6h16M4 12h16M4 18h16" />
 					</svg>
 				</button>
 				<ul
 					transition:fade={{ duration: 100 }}
 					tabindex="0"
-					class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52"
-				>
+					class="p-2 menu dropdown-content bg-base-100 rounded-box w-52">
 					{#each headers as name}
 						<li class:text-secondary={name === currentHeader}>
 							<a href="#{name}">
@@ -85,8 +82,7 @@
 				{#each headers as name}
 					<button
 						class:text-secondary={name === currentHeader}
-						class="btn btn-ghost btn-sm rounded-btn transition-color duration-300"
-					>
+						class="btn btn-ghost btn-sm rounded-btn transition-color duration-300">
 						<a href="#{name}">{name}</a>
 					</button>
 				{/each}

@@ -33,18 +33,14 @@
 	<div class="divider text-3xl mb-8">Contact Me</div>
 	<div class="flex flex-wrap -mx-2 overflow-hidden md:-mx-3">
 		<div class="my-2 px-2 w-full overflow-hidden md:my-3 md:px-3">
-			<div
-				class="card text-center shadow-2xl border-2 border-base-100 h-full"
-			>
+			<div class="card text-center border-2 border-base-100 h-full">
 				<div class="card-body my-auto">
 					<form
 						action="https://formspree.io/f/mdobnybv"
 						method="POST"
-						on:submit={validateForm}
-					>
+						on:submit={validateForm}>
 						<div
-							class="form-row flex flex-wrap flex-col sm:flex-row sm:space-x-4"
-						>
+							class="form-row flex flex-wrap flex-col sm:flex-row sm:space-x-4">
 							<div class="form-control flex-1">
 								<label class="label" for="name">
 									<span class="label-text">Name</span>
@@ -54,8 +50,7 @@
 									name="name"
 									placeholder="Name"
 									class="input input-bordered input-info border-base-100"
-									bind:value={name}
-								/>
+									bind:value={name} />
 							</div>
 							<div class="form-control flex-1">
 								<label class="label" for="_replyto">
@@ -67,8 +62,7 @@
 									placeholder="Email"
 									class="w-full input input-bordered input-info {emailClasses}"
 									bind:this={email}
-									on:blur={validateEmail}
-								/>
+									on:blur={validateEmail} />
 							</div>
 						</div>
 						<div class="form-control">
@@ -79,8 +73,7 @@
 								name="message"
 								class="textarea h-24 textarea-bordered textarea-info border-base-100"
 								placeholder="Message"
-								bind:value={message}
-							/>
+								bind:value={message} />
 						</div>
 						<div class="form-control mt-6">
 							<button class="btn hover:bg-info" type="submit">

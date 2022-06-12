@@ -133,9 +133,22 @@
 						"title": "Link to Project",
 						"type": "string",
 						"format": "uri"
+					},
+					"demo": {
+						"title": "Project Demo",
+						"type": "string",
+						"format": "uri"
 					}
 				},
-				"required": ["title", "description", "icon", "link"]
+				"required": ["title", "description", "icon"],
+				"anyOf": [
+					{
+						"required": ["link"]
+					},
+					{
+						"required": ["demo"]
+					}
+				]
 			}
 		},
 		"cover": {
@@ -156,8 +169,10 @@
 	"$defs": {
 		"icon": {
 			"title": "Icon",
-			"description": "Font Awesome icon to be displayed adjacent award in PascalCase",
-			"type": "string"
+			"description": "Hero icon to be displayed with award. Format in PascalCase",
+			"type": "string",
+			"format": "regex",
+			"pattern": "^(?:[A-Z][a-z]+)+$"
 		},
 		"work_items": {
 			"type": "object",

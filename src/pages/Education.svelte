@@ -1,28 +1,18 @@
 <script lang="ts">
 	import { education } from "../Content.yaml";
-
-	const newEdu = education as {
-		timeperiod: string;
-		degree: string;
-		location: string;
-	}[];
 </script>
 
 <div id="Education">
 	<div class="divider text-3xl mb-8">Education</div>
 	<div class="flex flex-wrap -mx-2 overflow-hidden md:-mx-3">
-		{#each newEdu as { timeperiod, degree, location }}
+		{#each education as { timeperiod, degree, location }}
 			<div
-				class="my-2 px-2 w-full overflow-hidden md:my-3 md:px-3 md:w-1/2"
-			>
-				<div
-					class="card text-center shadow-2xl border-2 border-base-100 h-full"
-				>
+				class="my-2 px-2 w-full overflow-hidden md:my-3 md:px-3 md:w-1/2">
+				<div class="card text-center border-2 border-base-100 h-full">
 					<div class="card-body">
 						<div class="my-auto">
 							<div
-								class="text-sm mb-2 text-base-content text-opacity-60"
-							>
+								class="text-sm mb-2 text-base-content text-opacity-60">
 								{timeperiod}
 							</div>
 							<h2 class="card-title text-2xl text-primary">
