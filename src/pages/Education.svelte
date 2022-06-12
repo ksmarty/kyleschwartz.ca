@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { education } from "./Content.yaml";
+	import { education } from "../Content.yaml";
 
 	const newEdu = education as {
 		timeperiod: string;

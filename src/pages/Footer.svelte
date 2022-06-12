@@ -32,13 +32,13 @@
 		>
 			<Github />
 		</a>
-		<a
+		<!-- <a
 			class="btn btn-square btn-ghost"
 			href="https://twitter.com/_KyleJS"
 			target="_blank"
 		>
 			<Twitter />
-		</a>
+		</a> -->
 	</div>
 </footer>
 

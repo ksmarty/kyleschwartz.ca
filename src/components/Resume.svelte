@@ -1,15 +1,15 @@
 <script>
-	import { ExternalLink,Link,Mail,Phone } from "svelte-hero-icons";
+	import { ExternalLink, Link, Mail, Phone } from "svelte-hero-icons";
 	import Icon from "svelte-hero-icons/Icon.svelte";
 	import {
-	awards,
-	cover,
-	education,
-	experience,
-	home,
-	portfolio,
-	volunteer
-	} from "./Content.yaml";
+		certs,
+		cover,
+		education,
+		experience,
+		home,
+		portfolio,
+		volunteer,
+	} from "../Content.yaml";
 
 	const coverSplit = cover.split("\n");
 </script>
@@ -208,9 +208,9 @@
 		</div>
 
 		<div class="flex flex-col flex-1 space-y-4">
-			<!-- Awards -->
+			<!-- Certs -->
 			<div class="space-y-2">
-				{#each awards as { title, description, issuer, date, cred, cert }, i}
+				{#each certs as { title, description, issuer, date, cred, cert }, i}
 					<div class="content-node">
 						{#if !i}
 							<h2 class="header">Awards & Certifications</h2>

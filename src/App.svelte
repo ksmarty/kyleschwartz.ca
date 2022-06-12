@@ -1,14 +1,15 @@
 <script lang="ts">
-	import Awards from "./Awards.svelte";
-	import Education from "./Education.svelte";
-	import Experience from "./Experience.svelte";
-	import Footer from "./Footer.svelte";
-	import Home from "./Home.svelte";
-	import Navbar from "./Navbar.svelte";
-	import Portfolio from "./Portfolio.svelte";
-	import Resume from "./Resume.svelte";
-	import Tailwind from "./Tailwind.svelte";
-	import Contact from "./Contact.svelte";
+	import Certs from "./pages/Certs.svelte";
+	import Education from "./pages/Education.svelte";
+	import Experience from "./pages/Experience.svelte";
+	import Footer from "./pages/Footer.svelte";
+	import Home from "./pages/Home.svelte";
+	import Navbar from "./pages/Navbar.svelte";
+	import Portfolio from "./pages/Portfolio.svelte";
+	import Contact from "./pages/Contact.svelte";
+
+	import Tailwind from "./components/Tailwind.svelte";
+	import Resume from "./components/Resume.svelte";
 </script>
 
 <main class="min-h-screen p-3 lg:p-5 flex flex-col print:hidden">
@@ -19,7 +20,7 @@
 		<Experience />
 		<Portfolio />
 		<Education />
-		<Awards />
+		<Certs />
 		<Contact />
 	</div>
 	<Footer />
@@ -43,6 +44,10 @@
 	/* Hide scrollbar for Chrome, Safari and Opera */
 	html::-webkit-scrollbar {
 		display: none;
+	}
+
+	main {
+		padding-top: 0% !important;
 	}
 
 	@media print {

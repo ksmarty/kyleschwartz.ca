@@ -1,5 +1,5 @@
 <script>
-	import { experience, volunteer } from "./Content.yaml";
+	import { experience, volunteer } from "../Content.yaml";
 	const all = [...experience, ...volunteer];
 </script>
 

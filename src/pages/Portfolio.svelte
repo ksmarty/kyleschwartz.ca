@@ -8,7 +8,7 @@
 		SwitchHorizontal,
 	} from "svelte-hero-icons";
 	import Icon from "svelte-hero-icons/Icon.svelte";
-	import { portfolio } from "./Content.yaml";
+	import { portfolio } from "../Content.yaml";
 
 	const icons = {
 		DocumentDuplicate,

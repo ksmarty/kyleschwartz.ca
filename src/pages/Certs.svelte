@@ -1,23 +1,28 @@
 <script lang="ts">
 	import { Digitalocean } from "@icons-pack/svelte-simple-icons";
 	import {
-	AcademicCap,
-	Chip,
-	DesktopComputer,
-	DocumentReport,
-	PresentationChartLine,
-	UserGroup
+		AcademicCap,
+		Chip,
+		DesktopComputer,
+		DocumentReport,
+		PresentationChartLine,
+		UserGroup,
 	} from "svelte-hero-icons";
 	import Icon from "svelte-hero-icons/Icon.svelte";
-	import { awards } from "./Content.yaml";
+	import { certs } from "../Content.yaml";
 
-	// Typescript funness
-	const newAwards = awards as {
+	interface Award {
 		title: string;
 		description: string;
 		icon: string;
 		cert: string;
-	}[];
+		badge: string;
+		url: string;
+		issuer: string;
+	}
+
+	// Typescript funness
+	const newAwards = certs as Award[];
 
 	const icons = {
 		AcademicCap,
@@ -41,10 +46,10 @@
 	};
 </script>
 
-<div id="Awards">
-	<div class="divider text-3xl mb-8">Awards</div>
+<div id="Certifications">
+	<div class="divider text-3xl mb-8">Awards & Certifications</div>
 	<div class="flex flex-wrap -mx-2 overflow-hidden md:-mx-3">
-		{#each newAwards as { title, description, icon, cert }, index}
+		{#each newAwards as { title, description, icon, cert, badge, url, issuer }, index}
 			<div
 				class="my-2 px-2 w-full overflow-hidden md:my-3 md:px-3 md:w-1/2 flex-grow"
 			>
@@ -60,6 +65,13 @@
 							>
 								{#if icons[icon]}
 									<Icon src={icons[icon]} />
+								{:else if badge && url}
+									<a href={url} target="_blank">
+										<img
+											src={badge}
+											alt={`${title} badge`}
+										/>
+									</a>
 								{:else}
 									<Digitalocean size="40" />
 								{/if}
@@ -67,14 +79,27 @@
 						</div>
 						<div>
 							<h2 class="card-title text-{colors(index)}">
-								{title}
+								{#if url}
+									<a href={url} target="_blank">
+										{title}
+									</a>
+								{:else}
+									{title}
+								{/if}
 							</h2>
 							<div class="">
 								{#if !cert}
-									<p class="text-base-content text-opacity-80">
+									<p
+										class="text-base-content text-opacity-80"
+									>
 										{description}
 									</p>
 								{:else}
+									<p
+										class="text-base-content text-opacity-80 pb-2"
+									>
+										{issuer}
+									</p>
 									<!-- Modal Open Button -->
 									<label
 										for="my-modal-2"
