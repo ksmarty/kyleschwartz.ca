@@ -18,10 +18,10 @@
 			href="https://github.com/ksmarty/kyleschwartz.ca"
 			target="_blank">
 			This website is open source!
-			<span class="ml-2 hidden md:flex"><Git /></span>
+			<span class="ml-2 flex"><Git /></span>
 		</a>
 	</div>
-	<div class="grid-flow-col md:justify-self-end">
+	<div class="grid-flow-col md:justify-self-end hidden md:block">
 		<a
 			class="btn btn-square btn-ghost"
 			href="https://github.com/ksmarty"
