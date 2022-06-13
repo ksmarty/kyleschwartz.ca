@@ -15,8 +15,9 @@
 <main class="min-h-screen p-3 lg:p-5 flex flex-col print:hidden">
 	<Tailwind />
 	<Navbar />
-	<Home />
-	<div class="flex flex-col gap-y-3 lg:gap-y-5 lg:px-24">
+	<div
+		class="flex flex-col gap-y-3 lg:gap-y-5 md:px-12 lg:px-24 xl:px-48 2xl:px-64">
+		<Home />
 		<Experience />
 		<Portfolio />
 		<Education />

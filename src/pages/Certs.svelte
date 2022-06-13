@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { Digitalocean } from "@icons-pack/svelte-simple-icons";
 	import {
 		AcademicCap,
 		Chip,
@@ -7,8 +6,8 @@
 		DocumentReport,
 		PresentationChartLine,
 		UserGroup,
+		Icon,
 	} from "svelte-hero-icons";
-	import Icon from "svelte-hero-icons/Icon.svelte";
 	import { certs } from "../Content.yaml";
 
 	const icons = {
@@ -60,8 +59,6 @@
 											src={badge}
 											alt={`${title} badge`} />
 									</a>
-								{:else}
-									<Digitalocean size="40" />
 								{/if}
 							</div>
 						</div>

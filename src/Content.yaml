@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=schemas/content.json
 
 home: >-
-    I am a hardworking and dedicated university student who loves computers in
+    I am a hard working and dedicated university student who loves computers in
     their entirety. Computers allow me to be creative, solve problems, and
     express myself in many facets including graphic and web design as well as
     coding. I am self-taught in JavaScript, TypeScript, Python, HTML, CSS,
@@ -164,21 +164,27 @@ cover: >-
     To whom it may concern,
 
     I am in my fourth year at the Lassonde School of Engineering, studying
-    Computer Science. During my three years at university, I have broadened my
-    computer knowledge to include JavaScript, Android, C/C++, Verilog, and
-    Assembly. I also expanded my business acumen in studying micro and macro
-    economics. I am excited to enhance my program with a coop opportunity where
-    I can apply my learning in a practical environment.
+    Computer Science with a minor in Economics. During my three years at
+    university, I have broadened my computer knowledge to include JavaScript,
+    TypeScript, Android, C/C++, Verilog, and RISC-V Assembly. I also expanded my
+    business acumen in studying micro and macro economics. I am excited to
+    enhance my program with a coop opportunity where I can apply my learning in
+    a practical environment.
 
-    During the school year, in addition to my studies, I also have a part time
-    job teaching Minecraft to elementary-age students. I have enjoyed this
-    opportunity as it allows me to share my passion with budding coders.
+    During the previous year, I was fortunate enough to have a twelve-month
+    internship at Sanofi Pasteur, a leader in the pharmaceutical industry.
+    Throughout my placement, I learned a great deal about corporate structure
+    and working as part of a large team. It was an invaluable experience for me,
+    and helped me understand how to become an effective worker and leader. Being
+    part of a large company helped me to build a foundation for my future
+    endeavours.
 
-    My last few summers I was a camp counsellor at Green Acres Day Camp where I
-    honed my leadership ability. In my last placement I was recognized as the
-    "staff of the summer" in my unit due to how I managed challenging camper
-    behavioural issues by collaborating with the camp Social Worker to address
-    the problem.
+    For several summers, I was a camp counsellor at Green Acres Day Camp where I
+    honed my leadership ability. In my last placement, I was recognized as the
+    "Staff of The Summer" in my unit. I worked with campers with behavioural
+    issues and helped them develop strategies to manage the chaotic environment
+    of camp. It was an incredible opportunity and I am happy to have had made
+    their summers memorable.
 
     In my community, I sat on the Youth Board at Beth David Synagogue. In my
     first year I was the Vice President of Social Action & Charity where I
@@ -194,7 +200,7 @@ cover: >-
     selected to be a coach for the visiting grade 7 & 8 students when they
     participated in our annual Science & Engineering Olympics.
 
-    I look forward to speaking with you about your coop program to determine if
+    I look forward to speaking with you about your co-op program to determine if
     there is a fit with my skill set, strong work ethic, and leadership ability.
 
     Sincerely,

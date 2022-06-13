@@ -6,8 +6,8 @@
 		DocumentDuplicate,
 		DocumentText,
 		Refresh,
+		Icon,
 	} from "svelte-hero-icons";
-	import Icon from "svelte-hero-icons/Icon.svelte";
 	import { portfolio } from "../Content.yaml";
 
 	const icons = {
@@ -31,10 +31,10 @@
 		{#each portfolio as { title, description, icon, link, demo }, index}
 			<div class="my-2 px-2 w-full md:w-1/2 lg:my-3 lg:px-3 lg:w-1/3">
 				<div class="card text-center h-full border-2 border-base-100">
-					<div class="card-body place-content-between">
-						<div class="flex lg:block">
+					<div class="card-body place-content-between p-4 lg:p-6">
+						<div class="flex items-center lg:block">
 							<figure
-								class="my-auto lg:px-10 lg:pb-4 w-20 h-20 text-{colors(
+								class="lg:px-10 lg:pb-4 w-20 h-20 text-{colors(
 									index
 								)}">
 								<Icon src={icons[accessIcon(icon)]} />

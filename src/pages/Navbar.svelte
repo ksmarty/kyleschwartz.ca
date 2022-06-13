@@ -108,11 +108,13 @@
 		<div class="hidden px-2 mx-2 navbar-center lg:flex">
 			<div class="flex items-stretch">
 				{#each headers as name}
-					<button
-						class:text-secondary={name === currentHeader}
-						class="btn btn-ghost btn-sm rounded-btn transition-color duration-300">
-						<a href="#{name}">{name}</a>
-					</button>
+					<a href="#{name}">
+						<button
+							class:text-secondary={name === currentHeader}
+							class="btn btn-ghost btn-sm rounded-btn transition-color duration-300">
+							{name}
+						</button>
+					</a>
 				{/each}
 			</div>
 		</div>
@@ -134,8 +136,4 @@
 	.container {
 		background: linear-gradient(to bottom, #16181d 50%, transparent 50%);
 	}
-
-	/* .btn-ghost:hover {
-		background: rgba(255, 255, 255, 0.2) !important;
-	} */
 </style>
