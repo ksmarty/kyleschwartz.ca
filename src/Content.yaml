@@ -12,7 +12,7 @@ home: >-
 
 certs:
     - title: Azure AI Fundamentals
-      badge: https://docs.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg
+      badge: microsoft-certified-fundamentals-badge.svg
       url: https://www.credly.com/badges/0788c9ba-b906-45cc-bcb8-6887d1cd7a81/public_url
       issuer: Microsoft
       date: Jun 2022

@@ -57,7 +57,9 @@
 								{#if icons[accessIcon(icon)]}
 									<Icon src={icons[accessIcon(icon)]} />
 								{:else if badge && url}
-									<img src={badge} alt={`${title} badge`} />
+									<img
+										src="static/badges/{badge}"
+										alt="{title} badge" />
 								{/if}
 							</div>
 						</div>
