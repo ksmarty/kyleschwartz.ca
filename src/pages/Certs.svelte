@@ -44,17 +44,23 @@
 			<div
 				class="my-2 px-2 w-full overflow-hidden md:my-3 md:px-3 md:w-1/2 flex-grow">
 				<div
-					class="card compact side bg-base-300 h-full border-2 border-base-100">
+					class="card compact side overflow-visible bg-base-300 h-full border-2 border-base-100">
 					<div class="flex-row items-center space-x-4 card-body">
-						<div>
+						<div class="">
 							<div
-								class="avatar w-12 h-12 items-center justify-center text-{colors(
+								class:cert-badge={badge && url}
+								class="w-12 h-12 justify-center transition-all text-{colors(
 									index
 								)}">
 								{#if icons[accessIcon(icon)]}
 									<Icon src={icons[accessIcon(icon)]} />
 								{:else if badge && url}
-									<a href={url} target="_blank">
+									<!-- <a href={url} target="_blank">
+										<img
+											src={badge}
+											alt={`${title} badge`} />
+									</a> -->
+									<a class="" href={url} target="_blank">
 										<img
 											src={badge}
 											alt={`${title} badge`} />
@@ -138,4 +144,13 @@
 	.divider::before {
 		@apply bg-base-100;
 	}
+
+	.cert-badge:hover {
+		z-index: 10;
+		transform: scale(2.5) translate(0.5rem);
+	}
+
+	/* .cert-badge {
+		transition: all 150ms;
+	} */
 </style>

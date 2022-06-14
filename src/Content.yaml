@@ -20,6 +20,15 @@ certs:
           Earners of the Azure AI Fundamentals certification have demonstrated
           foundational knowledge of machine learning (ML) and artificial
           intelligence (AI) concepts and related Microsoft Azure services.
+    - title: Excellence in Computer Science
+      issuer: TDSB
+      date: Apr 2017
+      icon: Chip
+      description: >-
+          I received the top award for academic excellence in the field of
+          computer science. As a result of this award, I was hand-selected to be
+          placed in an advanced placement (AP) program for the 2017-2018 school
+          year.
     - title: Fundamentals of Digital Marketing
       cred: MKC VS3 H3C
       issuer: Google Digital Garage
@@ -33,15 +42,6 @@ certs:
       description: >-
           Awarded for individual success and participation in the Cooperative
           Education Program.
-    - title: Excellence in Computer Science
-      issuer: TDSB
-      date: Apr 2017
-      icon: Chip
-      description: >-
-          I received the top award for academic excellence in the field of
-          computer science. As a result of this award, I was hand-selected to be
-          placed in an advanced placement (AP) program for the 2017-2018 school
-          year.
     - title: Interactive Media Certificate
       issuer: FIT
       cred: 5766

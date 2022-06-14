@@ -21,6 +21,7 @@
 		"@tsconfig/svelte": "^2.0.1",
 		"@types/snowpack-env": "^2.3.3",
 		"@vercel/node": "^1.12.1",
+		"autoprefixer": "^10.4.7",
 		"postcss": "^8.3.8",
 		"snowpack": "^3.8.7",
 		"snowpack-plugin-yaml": "^1.0.4",

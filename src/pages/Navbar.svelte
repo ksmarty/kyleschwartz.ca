@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-	import { fade } from "svelte/transition";
 
 	const headers = [
 		"About Me",
@@ -11,8 +10,10 @@
 		"Contact",
 	];
 
-	let currentHeader: string;
-	let isDropdownOpen = false;
+	let currentHeader: string,
+		isDropdownOpen = false,
+		dropdownVisibility = "none",
+		dropdownOpacity = 0;
 
 	const getCurrentHeader = () => {
 		headers.forEach((header) => {
@@ -55,24 +56,30 @@
 		dropdownHide();
 	};
 
-	const dropdownClick = () => (isDropdownOpen = !isDropdownOpen);
+	const dropdownToggle = () => (isDropdownOpen = !isDropdownOpen);
 	const dropdownHide = () => (isDropdownOpen = false);
+
+	$: {
+		if (isDropdownOpen) {
+			dropdownVisibility = "flex";
+			setTimeout(() => (dropdownOpacity = 1), 5);
+		} else {
+			setTimeout(() => (dropdownVisibility = "none"), 150);
+			dropdownOpacity = 0;
+		}
+	}
 </script>
 
-<div class="container z-10 sticky top-0 pt-5 max-w-none">
+<div class="container z-50 sticky top-0 pt-5 max-w-none">
 	<div class="navbar bg-neutral text-neutral-content rounded-box">
 		<div class="flex-none lg:hidden">
 			<div
 				class="dropdown"
 				on:focusout={dropdownLostFocus}
 				on:mouseleave={dropdownLostFocus}>
-				<!-- svelte-ignore a11y-mouse-events-have-key-events -->
 				<button
 					class="btn btn-square btn-ghost"
-					style="background: {isDropdownOpen
-						? 'rgba(255, 255, 255, 0.2)'
-						: 'transparent'}"
-					on:click={dropdownClick}>
+					on:click={dropdownToggle}>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
@@ -85,19 +92,23 @@
 							d="M4 6h16M4 12h16M4 18h16" />
 					</svg>
 				</button>
-				{#if isDropdownOpen}
-					<ul
-						transition:fade={{ duration: 100 }}
-						class="p-2 menu dropdown-content bg-base-100 rounded-box w-52">
-						{#each headers as name}
-							<li class:text-secondary={name === currentHeader}>
-								<a href="#{name}">
-									{name}
-								</a>
-							</li>
-						{/each}
-					</ul>
-				{/if}
+				<ul
+					style:display={dropdownVisibility}
+					style:opacity={dropdownOpacity}
+					class="p-2 menu dropdown-content bg-base-100 rounded-box w-52 transition-all">
+					{#each headers as name}
+						<li class:text-secondary={name === currentHeader}>
+							<button
+								class="rounded-xl"
+								on:click={() =>
+									document
+										.getElementById(name)
+										?.scrollIntoView()}>
+								{name}
+							</button>
+						</li>
+					{/each}
+				</ul>
 			</div>
 		</div>
 		<div class="px-2 mx-2 justify-start w-full lg:w-1/2">
@@ -135,5 +146,17 @@
 
 	.container {
 		background: linear-gradient(to bottom, #16181d 50%, transparent 50%);
+	}
+
+	.btn-ghost:focus and :not(.btn-ghost:hover) {
+		box-shadow: none !important;
+		background: transparent !important;
+	}
+
+	@media (pointer: coarse) {
+		.btn-ghost:focus {
+			box-shadow: none !important;
+			background: transparent !important;
+		}
 	}
 </style>
