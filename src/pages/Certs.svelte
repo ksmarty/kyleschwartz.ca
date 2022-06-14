@@ -30,6 +30,8 @@
 	$: document.body.style.overflow = modalToggle ? "hidden" : "auto";
 
 	const leaveModal = (e: Event) => (modalToggle = e.target !== modal);
+
+	$: console.log(document.getElementsByClassName("cert-badge")[0]);
 </script>
 
 <div id="Certifications">
@@ -55,28 +57,13 @@
 								{#if icons[accessIcon(icon)]}
 									<Icon src={icons[accessIcon(icon)]} />
 								{:else if badge && url}
-									<!-- <a href={url} target="_blank">
-										<img
-											src={badge}
-											alt={`${title} badge`} />
-									</a> -->
-									<a class="" href={url} target="_blank">
-										<img
-											src={badge}
-											alt={`${title} badge`} />
-									</a>
+									<img src={badge} alt={`${title} badge`} />
 								{/if}
 							</div>
 						</div>
 						<div>
 							<h2 class="card-title text-{colors(index)}">
-								{#if url}
-									<a href={url} target="_blank">
-										{title}
-									</a>
-								{:else}
-									{title}
-								{/if}
+								{title}
 							</h2>
 							<div class="">
 								{#if !cert}
@@ -84,6 +71,16 @@
 										class="text-base-content text-opacity-80">
 										{description}
 									</p>
+									{#if url}
+										<a
+											href={url}
+											target="_blank"
+											class="btn btn-outline btn-{colors(
+												index
+											)} btn-sm mt-3">
+											View Certificate
+										</a>
+									{/if}
 								{:else}
 									<p
 										class="text-base-content text-opacity-80 pb-2">
