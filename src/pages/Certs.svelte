@@ -4,17 +4,20 @@
 		Chip,
 		DesktopComputer,
 		DocumentReport,
+		Fire,
+		Icon,
 		PresentationChartLine,
 		UserGroup,
-		Icon,
 	} from "svelte-hero-icons";
+	import Modal from "../components/Modal.svelte";
 	import { certs } from "../Content.yaml";
 
 	const icons = {
 		AcademicCap,
-		DocumentReport,
 		Chip,
 		DesktopComputer,
+		DocumentReport,
+		Fire,
 		PresentationChartLine,
 		UserGroup,
 	};
@@ -22,16 +25,6 @@
 	const accessIcon = (icon: string) => icon as keyof typeof icons;
 
 	const colors = (i: number) => ["primary", "secondary", "accent"][i % 3];
-
-	let modal: HTMLElement;
-	let modalToggle = false;
-
-	// Disable scroll when modal is open
-	$: document.body.style.overflow = modalToggle ? "hidden" : "auto";
-
-	const leaveModal = (e: Event) => (modalToggle = e.target !== modal);
-
-	$: console.log(document.getElementsByClassName("cert-badge")[0]);
 </script>
 
 <div id="Certifications">
@@ -84,46 +77,7 @@
 										</a>
 									{/if}
 								{:else}
-									<p
-										class="text-base-content text-opacity-80 pb-2">
-										{issuer}
-									</p>
-									<!-- Modal Open Button -->
-									<label
-										for="my-modal-2"
-										class="btn btn-outline btn-{colors(
-											index
-										)} btn-sm modal-button"
-										>View Certificate</label>
-									<!-- Modal toggle -->
-									<input
-										bind:checked={modalToggle}
-										type="checkbox"
-										id="my-modal-2"
-										class="modal-toggle" />
-									<!-- Modal -->
-									<div
-										class="modal duration-500"
-										on:click={leaveModal}
-										bind:this={modal}>
-										<div
-											class="modal-box max-w-3xl duration-500">
-											<img
-												src="./static/{cert}.png"
-												alt="Certificate" />
-											<div class="modal-action">
-												<a
-													href="./static/{cert}.pdf"
-													target="_blank"
-													for="my-modal-2"
-													class="btn btn-primary"
-													>View File</a>
-												<label
-													for="my-modal-2"
-													class="btn">Close</label>
-											</div>
-										</div>
-									</div>
+									<Modal {issuer} {index} {cert} />
 								{/if}
 							</div>
 						</div>
@@ -135,10 +89,6 @@
 </div>
 
 <style>
-	.modal {
-		transition-property: inherit;
-	}
-
 	.divider::after,
 	.divider::before {
 		@apply bg-base-100;
@@ -148,8 +98,4 @@
 		z-index: 10;
 		transform: scale(2.5) translate(0.5rem);
 	}
-
-	/* .cert-badge {
-		transition: all 150ms;
-	} */
 </style>

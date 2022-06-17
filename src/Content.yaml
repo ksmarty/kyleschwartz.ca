@@ -35,6 +35,12 @@ certs:
       date: Oct 2018
       icon: DocumentReport
       cert: digital-marketing
+    - title: Introduction to Incident Management System
+      cred: 277732-IMS 100-52022
+      issuer: Emergency Management Ontario
+      date: May 2022
+      icon: Fire
+      cert: ims-100
     - title: Student Certificate of Achievement
       icon: UserGroup
       issuer: OCEA
