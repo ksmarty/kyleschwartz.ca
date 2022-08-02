@@ -1,0 +1,213 @@
+# yaml-language-server: $schema=schemas/content.json
+home: >-
+  I am a hard working and dedicated university student who loves computers in
+  their entirety. Computers allow me to be creative, solve problems, and
+  express myself in many facets including graphic and web design as well as
+  coding. I am self-taught in JavaScript, TypeScript, Python, HTML, CSS,
+  Photoshop, Premiere Pro, and Microsoft Office Suite. Formally, I've learned
+  Java, Adobe Animate, Android Development, and Turing. In my spare time, I
+  decompress by cooking, woodworking, and rowing. I also love to travel around
+  the world and experience different cultures.
+
+certs:
+  - title: Azure AI Fundamentals
+    badge: microsoft-certified-fundamentals-badge.svg
+    url: https://www.credly.com/badges/0788c9ba-b906-45cc-bcb8-6887d1cd7a81/public_url
+    issuer: Microsoft
+    date: Jun 2022
+    description:
+      Earners of the Azure AI Fundamentals certification have demonstrated
+      foundational knowledge of machine learning (ML) and artificial
+      intelligence (AI) concepts and related Microsoft Azure services.
+  - title: Excellence in Computer Science
+    issuer: TDSB
+    date: Apr 2017
+    icon: Chip
+    description: >-
+      I received the top award for academic excellence in the field of
+      computer science. As a result of this award, I was hand-selected to be
+      placed in an advanced placement (AP) program for the 2017-2018 school
+      year.
+  - title: Fundamentals of Digital Marketing
+    cred: MKC VS3 H3C
+    issuer: Google Digital Garage
+    date: Oct 2018
+    icon: DocumentReport
+    cert: digital-marketing
+  - title: Introduction to Incident Management System
+    cred: 277732-IMS 100-52022
+    issuer: Emergency Management Ontario
+    date: May 2022
+    icon: Fire
+    cert: ims-100
+  - title: Student Certificate of Achievement
+    icon: UserGroup
+    issuer: OCEA
+    date: May 2018
+    description: >-
+      Awarded for individual success and participation in the Cooperative
+      Education Program.
+  - title: Interactive Media Certificate
+    issuer: FIT
+    cred: 5766
+    date: Jun 2018
+    icon: PresentationChartLine
+    description: "Certificate # 5766"
+  - title: Software Design & Development
+    issuer: FIT
+    cred: 5891
+    date: Jun 2018
+    icon: DesktopComputer
+    description: "Certificate # 5891"
+  - title: Ontario Scholar
+    issuer: TDSB
+    date: Jun 2018
+    icon: AcademicCap
+    description: >-
+      Awarded for obtaining an average above eighty percent in any six Grade
+      12 courses.
+
+education:
+  - timeperiod: Sep 2018 - Apr 2023 (Expected)
+    degree: "BSc Computer Science, Minor in Economics"
+    location: Lassonde School of Engineering, York University, Toronto
+  - timeperiod: Sep 2014 - Jun 2018
+    degree: High School Diploma
+    location: William Lyon Mackenzie C.I., North York
+
+experience:
+  - timeperiod: Jan 2021 - Dec 2021
+    title: University Internship
+    location: Sanofi Pasteur, Toronto
+    description: >-
+      As a member of the Quality Control, Data Logistics and Support
+      department, I assist my team in modernizing internal tools and
+      improving workflows to maximize efficiency. Additionally, I document
+      internal processes to ensure consistency and compliance in the future.
+  - timeperiod: Jun 2016 - Aug 2019
+    title: Summer Camp Counsellor
+    location: Camp Green Acres, Markham
+    description: >-
+      I worked as a staff member with young children ranging from 5 to 8
+      years of age in a fun, challenging, and supportive environment. In my
+      second and third summers I was given the additional responsibility of
+      being a bus captain; overseeing 3 staff members. This leadership
+      experience afforded me the opportunity to understand team management
+      and collaboration.
+  - timeperiod: Feb 2018 - May 2018
+    title: Cooperative Education Placement
+    location: Grip Limited (now dentsu One), Toronto
+    description: >-
+      I worked in both the technology and video production departments,
+      learning a great deal about corporate structure and how a business
+      functions. I leveraged my knowledge of python to efficiently extract
+      vendor data from excel workbooks, allowing for faster operations.
+
+volunteer:
+  - timeperiod: Oct 2017 - Jun 2018
+    title: Youth Council President
+    location: "Beth David Synagogue, North York"
+    description: >-
+      After successfully running for President, I continued to create,
+      organize, and run engaging programs for the youth in my community. My
+      role as President was to guide and oversee my board and implement the
+      strategic direction provided by our Youth Director.
+  - timeperiod: Oct 2017 - Jun 2018
+    title: President of Accounting & Finance Club
+    location: "William Lyon Mackenzie C.I., North York"
+    description: >-
+      I presented seminars on various forms of investment including
+      cryptocurrencies and how to safely invest as markets can be very
+      volatile.
+  - timeperiod: Oct 2017 - Jun 2018
+    title: Head Engineer for Engineering Club
+    location: "William Lyon Mackenzie C.I., North York"
+    description: >-
+      As an integral team member, I advised on the programming of our weekly
+      activities to ensure the events were fun and informative for our
+      members.
+  - timeperiod: Oct 2016 - Jun 2017
+    title: Computer Programming Team
+    location: "William Lyon Mackenzie C.I., North York"
+    description: >-
+      I led a group of my peers in our school's coding competitions. We
+      placed top 5 in multiple events. In addition, I was selected to be a
+      coach for the visiting grade 7 & 8 students when they participated in
+      our annual Science & Engineering Olympics.
+
+portfolio:
+  - title: TickTick Events
+    description: A practical TickTick API for developers
+    icon: Calendar
+    link: "https://github.com/ksmarty/ticktick-events"
+    demo: "https://ticktick-events.vercel.app/"
+  - title: svelte-spins
+    description: >-
+      A zero-dependency loader library for Svelte
+    icon: Refresh
+    link: "https://github.com/ksmarty/svelte-spins"
+    demo: "https://svelte-spins-demo.vercel.app/"
+  - title: ZoomCube
+    description: A minimal Rubik's Cube timer written in Svelte
+    icon: Cube
+    link: "https://github.com/ksmarty/ZoomCube"
+    demo: "https://zoomcube.kyleschwartz.ca/"
+  - title: PDF Press
+    description: Serverless PDF generator for Docusaurus and other SSGs
+    icon: DocumentDuplicate
+    link: "https://github.com/ksmarty/pdf-press"
+  - title: Fossil
+    description: A self-hosted static file server for Docker built with Deno
+    icon: CloudUpload
+    link: "https://github.com/ksmarty/fossil"
+  - title: snowpack-plugin-yaml
+    description: A Snowpack plugin to convert YAML files to ESM
+    icon: DocumentText
+    link: "https://github.com/ksmarty/snowpack-plugin-yaml"
+
+cover: >-
+  To whom it may concern,
+
+  I am in my fourth year at the Lassonde School of Engineering, studying
+  Computer Science with a minor in Economics. During my three years at
+  university, I have broadened my computer knowledge to include JavaScript,
+  TypeScript, Android, C/C++, Verilog, and RISC-V Assembly. I also expanded my
+  business acumen in studying micro and macro economics. I am excited to
+  enhance my program with a coop opportunity where I can apply my learning in
+  a practical environment.
+
+  During the previous year, I was fortunate enough to have a twelve-month
+  internship at Sanofi Pasteur, a leader in the pharmaceutical industry.
+  Throughout my placement, I learned a great deal about corporate structure
+  and working as part of a large team. It was an invaluable experience for me,
+  and helped me understand how to become an effective worker and leader. Being
+  part of a large company helped me to build a foundation for my future
+  endeavours.
+
+  For several summers, I was a camp counsellor at Green Acres Day Camp where I
+  honed my leadership ability. In my last placement, I was recognized as the
+  "Staff of The Summer" in my unit. I worked with campers with behavioural
+  issues and helped them develop strategies to manage the chaotic environment
+  of camp. It was an incredible opportunity and I am happy to have had made
+  their summers memorable.
+
+  In my community, I sat on the Youth Board at Beth David Synagogue. In my
+  first year I was the Vice President of Social Action & Charity where I
+  organized several community events that were well received by the attendees.
+  After successfully running for President, I continued to create, organize,
+  and run engaging programs for the youth in my community. My role as
+  President was to guide and oversee the Board and implement the strategic
+  direction provided by our Youth Director.
+
+  In High School, I was active in the Computer Programming Team. During my
+  time as a leader, I led a group of my peers in our school's coding
+  competitions. We placed top 5 in multiple events. In addition, I was
+  selected to be a coach for the visiting grade 7 & 8 students when they
+  participated in our annual Science & Engineering Olympics.
+
+  I look forward to speaking with you about your co-op program to determine if
+  there is a fit with my skill set, strong work ethic, and leadership ability.
+
+  Sincerely,
+
+  Kyle Schwartz

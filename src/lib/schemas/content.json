@@ -1,0 +1,248 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"title": "Content Schema",
+	"description": "JSON Schema for Kyle Schwartz's personal website content",
+	"type": "object",
+	"properties": {
+		"home": {
+			"title": "Introduction",
+			"description": "Introductory paragraph displayed at the top of the page",
+			"type": "string"
+		},
+		"certs": {
+			"description": "List of certifications & awards",
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"title": {
+						"title": "Title",
+						"description": "Title of the earned cert",
+						"type": "string"
+					},
+					"icon": {
+						"$ref": "#/$defs/icon"
+					},
+					"issuer": {
+						"title": "Issuer",
+						"description": "Issuing authority",
+						"type": "string"
+					},
+					"date": {
+						"title": "Date",
+						"description": "Date certification was earned in the format `MMM YYYY`",
+						"format": "regex",
+						"pattern": "^[A-Z][a-z]{2} \\d{4}$",
+						"type": "string"
+					},
+					"description": {
+						"type": "string"
+					},
+					"cred": {
+						"type": [
+							"string",
+							"integer"
+						]
+					},
+					"cert": {
+						"type": "string"
+					},
+					"badge": {
+						"title": "Badge",
+						"description": "Link or local file of a image",
+						"type": "string",
+						"anyOf": [
+							{
+								"format": "uri"
+							},
+							{
+								"format": "json-pointer"
+							},
+							{
+								"format": "relative-json-pointer"
+							}
+						]
+					}
+				},
+				"required": [
+					"title",
+					"issuer",
+					"date"
+				],
+				"oneOf": [
+					{
+						"required": [
+							"icon",
+							"description"
+						]
+					},
+					{
+						"required": [
+							"icon",
+							"cert"
+						]
+					},
+					{
+						"required": [
+							"badge",
+							"url",
+							"description"
+						]
+					},
+					{
+						"required": [
+							"badge",
+							"url",
+							"cert"
+						]
+					}
+				]
+			}
+		},
+		"education": {
+			"title": "Education",
+			"description": "List of education",
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"timeperiod": {
+						"title": "Time Period",
+						"type": "string",
+						"format": "regex",
+						"pattern": "^[A-Z][a-z]{2} \\d{4} - [A-Z][a-z]{2} \\d{4}(?: \\(Expected\\))?$"
+					},
+					"degree": {
+						"title": "Degree Name",
+						"type": "string"
+					},
+					"location": {
+						"title": "Location",
+						"type": "string"
+					}
+				},
+				"required": [
+					"timeperiod",
+					"degree",
+					"location"
+				]
+			}
+		},
+		"experience": {
+			"title": "Experience",
+			"description": "List of work experience",
+			"type": "array",
+			"items": {
+				"$ref": "#/$defs/work_items"
+			}
+		},
+		"volunteer": {
+			"title": "Volunteer",
+			"description": "List of volunteer experience",
+			"type": "array",
+			"items": {
+				"$ref": "#/$defs/work_items"
+			}
+		},
+		"portfolio": {
+			"title": "Portfolio",
+			"description": "List of portfolio projects",
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"title": {
+						"title": "Project Name",
+						"type": "string"
+					},
+					"description": {
+						"title": "Project Description",
+						"type": "string"
+					},
+					"icon": {
+						"$ref": "#/$defs/icon"
+					},
+					"link": {
+						"title": "Link to Project",
+						"type": "string",
+						"format": "uri"
+					},
+					"demo": {
+						"title": "Project Demo",
+						"type": "string",
+						"format": "uri"
+					}
+				},
+				"required": [
+					"title",
+					"description",
+					"icon"
+				],
+				"anyOf": [
+					{
+						"required": [
+							"link"
+						]
+					},
+					{
+						"required": [
+							"demo"
+						]
+					}
+				]
+			}
+		},
+		"cover": {
+			"title": "Cover",
+			"description": "Cover letter content",
+			"type": "string"
+		}
+	},
+	"required": [
+		"home",
+		"certs",
+		"education",
+		"experience",
+		"volunteer",
+		"portfolio",
+		"cover"
+	],
+	"$defs": {
+		"icon": {
+			"title": "Icon",
+			"description": "Hero icon to be displayed with award. Format in PascalCase",
+			"type": "string",
+			"format": "regex",
+			"pattern": "^(?:[A-Z][a-z]+)+$"
+		},
+		"work_items": {
+			"type": "object",
+			"properties": {
+				"timeperiod": {
+					"title": "Time Period",
+					"type": "string",
+					"format": "regex",
+					"pattern": "^[A-Z][a-z]{2} \\d{4} - [A-Z][a-z]{2} \\d{4}(?: \\(Expected\\))?$"
+				},
+				"title": {
+					"title": "Title",
+					"type": "string"
+				},
+				"location": {
+					"title": "Location",
+					"type": "string"
+				},
+				"description": {
+					"title": "Description",
+					"type": "string"
+				}
+			},
+			"required": [
+				"timeperiod",
+				"title",
+				"location",
+				"description"
+			]
+		}
+	}
+}
