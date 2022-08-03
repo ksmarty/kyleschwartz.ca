@@ -18,6 +18,11 @@
 		scroll-behavior: smooth;
 	}
 
+	/* Hide scrollbar for Chrome, Safari and Opera */
+	html::-webkit-scrollbar {
+		display: none;
+	}
+
 	.card.compact .card-title {
 		margin-bottom: 0.25rem;
 	}
@@ -25,11 +30,6 @@
 	.card-title {
 		margin-bottom: 0.75rem;
 		display: block;
-	}
-
-	/* Hide scrollbar for Chrome, Safari and Opera */
-	html::-webkit-scrollbar {
-		display: none;
 	}
 
 	@media print {
