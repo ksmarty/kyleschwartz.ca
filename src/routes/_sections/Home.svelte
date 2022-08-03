@@ -16,7 +16,7 @@
 	</div>
 	<div class="flex flex-col lg:max-w-lg 2xl:max-w-xl">
 		<div class="divider text-3xl mb-8">About Me</div>
-		<div class="card border-2 border-base-100 text-base-content text-opacity-80 md:text-lg">
+		<div class="card border-2 border-base-100 text-neutral-content text-opacity-80 md:text-lg">
 			<div class="card-body p-5 lg:p-8 space-y-4">
 				<p class="text-justify">
 					{home}

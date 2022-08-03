@@ -2,6 +2,7 @@
 
 declare module "@icons-pack/svelte-simple-icons";
 declare module "svelte-pdf";
+declare module "daisyui";
 
 interface Portfolio {
     title: string;

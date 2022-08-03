@@ -38,13 +38,13 @@
 								<Icon src={icons[accessIcon(icon)]} />
 							</figure>
 							<div class="text pl-4 lg:pl-0">
-								<h2 class="card-title">{title}</h2>
+								<h2 class="card-title lg:block mb-3">{title}</h2>
 								<p class="mb-auto text-base-content text-opacity-80">
 									{description}
 								</p>
 							</div>
 						</div>
-						<div class="justify-center card-actions">
+						<div class="justify-center card-actions mt-6">
 							<a href={link} target="_blank" class="btn btn-outline btn-secondary flex-1">
 								GitHub
 							</a>

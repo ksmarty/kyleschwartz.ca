@@ -57,7 +57,7 @@
 </script>
 
 <div class="container z-50 sticky top-0 pt-5 max-w-none">
-	<div class="navbar bg-neutral text-neutral-content rounded-box">
+	<div class="navbar bg-base-100 rounded-box">
 		<div class="flex-none lg:hidden">
 			<div class="dropdown" on:focusout={dropdownLostFocus} on:mouseleave={dropdownLostFocus}>
 				<button class="btn btn-square btn-ghost" on:click={dropdownToggle}>
@@ -126,7 +126,7 @@
 	}
 
 	.container {
-		background: linear-gradient(to bottom, #16181d 50%, transparent 50%);
+		background: linear-gradient(to bottom, rgb(25, 29, 36) 50%, transparent 50%);
 	}
 
 	.btn-ghost:focus and :not(.btn-ghost:hover) {

@@ -15,7 +15,7 @@
 							<div class="text-sm mb-2 text-base-content text-opacity-60">
 								{timeperiod}
 							</div>
-							<h2 class="card-title text-2xl text-primary">
+							<h2 class="card-title text-2xl text-primary mb-3">
 								{degree}
 							</h2>
 							<div class="text-base-content text-opacity-90">

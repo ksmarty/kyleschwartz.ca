@@ -34,11 +34,10 @@
 		<div class="modal-box max-w-3xl duration-500">
 			<img src="./{cert}.png" alt="Certificate" />
 			<div class="modal-action">
-				<a href="./{cert}.pdf" target="_blank" for="my-modal-2" class="btn btn-primary">View File</a
-				>
-				<label for="my-modal-2" class="btn absolute" on:click={() => (modalToggle = false)}
-					>Close</label
-				>
+				<a href="./{cert}.pdf" target="_blank" for="my-modal-2" class="btn btn-primary">
+					View File
+				</a>
+				<label for="my-modal-2" class="btn" on:click={() => (modalToggle = false)}> Close </label>
 			</div>
 		</div>
 	</div>

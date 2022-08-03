@@ -14,7 +14,7 @@
 							<div class="text-sm text-base-content text-opacity-60">
 								{timeperiod}
 							</div>
-							<h2 class="card-title text-2xl text-secondary mb-1">
+							<h2 class="card-title block text-2xl text-secondary mb-1">
 								{title}
 							</h2>
 							<div class="mb-3 text-primary">

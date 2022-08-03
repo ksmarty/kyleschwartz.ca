@@ -37,45 +37,54 @@
 				<div class="card-body my-auto">
 					<form action="https://formspree.io/f/mdobnybv" method="POST" on:submit={validateForm}>
 						<div class="form-row flex flex-wrap flex-col sm:flex-row sm:space-x-4">
-							<div class="form-control flex-1">
-								<label class="label" for="name">
-									<span class="label-text">Name</span>
-								</label>
+							<div class="form-control flex-1 relative">
 								<input
 									type="text"
 									name="name"
 									placeholder="Name"
-									class="input input-bordered input-info border-base-100"
+									class="input input-bordered input-info border-base-100 peer placeholder-transparent"
 									bind:value={name}
 								/>
-							</div>
-							<div class="form-control flex-1">
-								<label class="label" for="_replyto">
-									<span class="label-text">{emailLabel}</span>
+								<label
+									class="label pointer-events-none absolute -mt-8 peer-placeholder-shown:p-0 peer-placeholder-shown:mt-[0.875rem] peer-placeholder-shown:ml-4 peer-placeholder-shown:text-base duration-[250ms]"
+									for="name"
+								>
+									<span class="label-text">Name</span>
 								</label>
+							</div>
+							<div class="form-control flex-1 relative">
 								<input
 									type="text"
 									name="_replyto"
 									placeholder="Email"
-									class="w-full input input-bordered input-info {emailClasses}"
+									class="w-full input input-bordered input-info {emailClasses} peer placeholder-transparent"
 									bind:this={email}
 									on:blur={validateEmail}
 								/>
+								<label
+									class="label pointer-events-none absolute -mt-8 peer-placeholder-shown:p-0 peer-placeholder-shown:mt-[0.875rem] peer-placeholder-shown:ml-4 peer-placeholder-shown:text-base duration-[250ms]"
+									for="_replyto"
+								>
+									<span class="label-text">{emailLabel}</span>
+								</label>
 							</div>
 						</div>
-						<div class="form-control">
-							<label class="label" for="message">
-								<span class="label-text">Your Message</span>
-							</label>
+						<div class="form-control relative mt-8">
 							<textarea
 								name="message"
-								class="textarea h-24 textarea-bordered textarea-info border-base-100"
+								class="textarea h-24 textarea-bordered textarea-info border-base-100 peer placeholder-transparent"
 								placeholder="Message"
 								bind:value={message}
 							/>
+							<label
+								class="label pointer-events-none absolute -mt-8 peer-placeholder-shown:p-0 peer-placeholder-shown:mt-[0.875rem] peer-placeholder-shown:ml-4 peer-placeholder-shown:text-base duration-[250ms]"
+								for="message"
+							>
+								<span class="label-text">Your Message</span>
+							</label>
 						</div>
 						<div class="form-control mt-6">
-							<button class="btn hover:bg-info" type="submit">
+							<button class="btn bg-base-200 hover:bg-info hover:text-info-content" type="submit">
 								<span> Send </span>
 								<div class="w-8 h-8">
 									<Icon src={ChevronRight} />

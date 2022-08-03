@@ -1,10 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 
+const cssnano = require("cssnano");
+
+const mode = process.env.NODE_ENV;
+const dev = mode === "development";
+
 module.exports = {
-    purge: ["./public/**/*.html", "./src/**/*.{ts,svelte}"],
-    plugins: [require("@tailwindcss/typography"), require("daisyui")],
+    content: ["./src/**/*.{html,js,svelte,ts}"],
+    plugins: [
+        require("daisyui"),
+        require("@tailwindcss/typography"),
+        !dev &&
+            cssnano({
+                preset: "default",
+            }),
+    ],
     daisyui: {
-        themes: ["dark", "light"],
+        themes: ["dark"],
         base: false,
     },
     theme: {
@@ -14,4 +26,9 @@ module.exports = {
             },
         },
     },
+    safelist: [
+        {
+            pattern: /text-(info|success|error|warning|accent)/,
+        },
+    ],
 };

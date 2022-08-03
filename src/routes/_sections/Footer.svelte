@@ -41,12 +41,12 @@
 </script>
 
 <footer
-	class="footer grid-cols-1 md:grid-cols-3 items-center gap-y-2 p-4 mt-6 bg-neutral text-neutral-content rounded-box justify-items-center md:justify-items-start"
+	class="footer bg-base-200 grid-cols-1 md:grid-cols-3 items-center gap-y-2 p-4 mt-6 bg-neutral text-neutral-content rounded-box justify-items-center md:justify-items-start"
 >
 	<div class="items-center justify-items-center md:grid-flow-col font-bold md:font-normal">
 		<img class="w-10" src="favicon.svg" alt="Kyle Schwartz Logo" />
-		<div class="hidden md:flex divider divider-vertical mx-0" />
-		<p class="">
+		<div class="hidden md:flex mx-2 w-[0.125rem] h-full bg-neutral-content" />
+		<p>
 			© {new Date().getFullYear()} Kyle Schwartz
 		</p>
 	</div>
