@@ -42,8 +42,8 @@
 		{#each certs as { title, description, icon, cert, badge, url, issuer }, index}
 			<div class="my-2 px-2 w-full overflow-hidden md:my-3 md:px-3 md:w-1/2 flex-grow">
 				<div class="card compact side overflow-visible bg-base-300 h-full border-2 border-base-100">
-					<div class="flex-row items-center space-x-2 card-body">
-						<div>
+					<div class="flex-row space-x-2 card-body">
+						<div class="self-center">
 							<div
 								class:cert-badge={badge && url}
 								class="w-12 h-12 justify-center transition-all text-{colors(index)}"
@@ -55,12 +55,13 @@
 								{/if}
 							</div>
 						</div>
-						<div>
+						<div class="flex flex-col flex-1">
 							<h2 class="card-title text-{colors(index)}">
 								{title}
 							</h2>
-							<div>
-								{#if !cert}
+							<!-- <div > -->
+							{#if !cert}
+								<div class="flex flex-col justify-between flex-1">
 									<p class="text-base-content text-opacity-80">
 										{description}
 									</p>
@@ -73,10 +74,11 @@
 											View Certificate
 										</a>
 									{/if}
-								{:else}
-									<Modal {issuer} {index} {cert} />
-								{/if}
-							</div>
+								</div>
+							{:else}
+								<Modal {issuer} {index} {cert} />
+							{/if}
+							<!-- </div> -->
 						</div>
 					</div>
 				</div>

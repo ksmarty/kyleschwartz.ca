@@ -19,7 +19,7 @@
 	const leaveModal = (e: Event) => (modalToggle = e.target !== modal && modalToggle);
 </script>
 
-<div>
+<div class="flex flex-col justify-between flex-1">
 	<p class="text-base-content text-opacity-80 pb-2">
 		{issuer}
 	</p>

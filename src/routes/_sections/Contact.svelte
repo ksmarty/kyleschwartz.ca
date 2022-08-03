@@ -36,7 +36,9 @@
 			<div class="card text-center border-2 border-base-100 h-full">
 				<div class="card-body my-auto">
 					<form action="https://formspree.io/f/mdobnybv" method="POST" on:submit={validateForm}>
-						<div class="form-row flex flex-wrap flex-col sm:flex-row sm:space-x-4">
+						<div
+							class="form-row flex flex-wrap flex-col sm:flex-row sm:space-x-4 space-y-8 sm:space-y-0"
+						>
 							<div class="form-control flex-1 relative">
 								<input
 									type="text"
@@ -69,7 +71,7 @@
 								</label>
 							</div>
 						</div>
-						<div class="form-control relative mt-8">
+						<div class="form-control relative mt-8 sm:mt-8">
 							<textarea
 								name="message"
 								class="textarea h-24 textarea-bordered textarea-info border-base-100 peer placeholder-transparent"

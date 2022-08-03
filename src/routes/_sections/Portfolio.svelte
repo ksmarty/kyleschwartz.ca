@@ -44,7 +44,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="justify-center card-actions mt-6">
+						<div class="justify-center card-actions mt-2">
 							<a href={link} target="_blank" class="btn btn-outline btn-secondary flex-1">
 								GitHub
 							</a>
