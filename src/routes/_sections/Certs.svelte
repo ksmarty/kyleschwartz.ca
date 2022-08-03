@@ -59,7 +59,6 @@
 							<h2 class="card-title text-{colors(index)}">
 								{title}
 							</h2>
-							<!-- <div > -->
 							{#if !cert}
 								<div class="flex flex-col justify-between flex-1">
 									<p class="text-base-content text-opacity-80">
@@ -78,7 +77,6 @@
 							{:else}
 								<Modal {issuer} {index} {cert} />
 							{/if}
-							<!-- </div> -->
 						</div>
 					</div>
 				</div>

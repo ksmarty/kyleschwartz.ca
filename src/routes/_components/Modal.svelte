@@ -29,10 +29,15 @@
 	</label>
 	<!-- Modal toggle -->
 	<input bind:checked={modalToggle} type="checkbox" id="my-modal-{cert}" class="modal-toggle" />
+
 	<!-- Modal -->
-	<div class="modal duration-500" on:click={leaveModal} bind:this={modal}>
-		<div class="modal-box max-w-3xl duration-500">
-			<img src="./{cert}.png" alt="Certificate" />
+	<div
+		class="modal duration-[150ms] modal-bottom sm:modal-middle"
+		on:click={leaveModal}
+		bind:this={modal}
+	>
+		<div class="modal-box !max-w-3xl duration-[150ms]">
+			<img src="./{cert}.webp" alt="Certificate" />
 			<div class="modal-action">
 				<a href="./{cert}.pdf" target="_blank" for="my-modal-2" class="btn btn-primary">
 					View File

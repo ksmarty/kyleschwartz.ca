@@ -3,26 +3,28 @@
 	import { Icon } from '@steeze-ui/svelte-icon';
 
 	let email: HTMLInputElement;
-	let emailClasses = 'border-base-100';
-	let emailLabel = 'Email';
 	let name: HTMLInputElement['value'];
 	let message: HTMLInputElement['value'];
+	let isValid = true;
 
-	const validateEmail = () => {
-		const isValid =
+	const validateEmail = (e: Event | undefined) => {
+		const localValid =
 			/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
 				email.value
 			);
 
-		emailClasses = isValid ? 'border-base-100' : 'input-error';
-		emailLabel = isValid ? 'Email' : 'Email - Invalid!';
+		if (e?.type === 'input' && !localValid) return;
 
-		return isValid;
+		email.setCustomValidity(localValid ? '' : 'Invalid email!');
+		isValid = localValid;
+		return localValid;
 	};
 
 	const validateForm = (e: Event) => {
-		const isValid = validateEmail() && name.length && message.length;
-		if (!isValid) {
+		const valid = validateEmail(undefined) && name?.length > 0 && message?.length > 0;
+		console.log(valid);
+
+		if (!valid) {
 			e.preventDefault();
 			window.history.back();
 		}
@@ -59,15 +61,18 @@
 									type="text"
 									name="_replyto"
 									placeholder="Email"
-									class="w-full input input-bordered input-info {emailClasses} peer placeholder-transparent"
+									class="w-full input input-bordered input-info valid:border-base-100 invalid:input-error peer placeholder-transparent"
 									bind:this={email}
 									on:blur={validateEmail}
+									on:input={validateEmail}
 								/>
 								<label
 									class="label pointer-events-none absolute -mt-8 peer-placeholder-shown:p-0 peer-placeholder-shown:mt-[0.875rem] peer-placeholder-shown:ml-4 peer-placeholder-shown:text-base duration-[250ms]"
 									for="_replyto"
 								>
-									<span class="label-text">{emailLabel}</span>
+									<span class="label-text">
+										{isValid ? 'Email' : 'Email - Invalid!'}
+									</span>
 								</label>
 							</div>
 						</div>

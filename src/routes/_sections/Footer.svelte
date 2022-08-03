@@ -41,7 +41,7 @@
 </script>
 
 <footer
-	class="footer bg-base-200 grid-cols-1 md:grid-cols-3 items-center gap-y-2 p-4 mt-6 bg-neutral text-neutral-content rounded-box justify-items-center md:justify-items-start"
+	class="footer bg-base-200 grid-cols-1 md:grid-cols-3 items-center gap-y-2 p-4 mt-6 bg-base-100 text-neutral-content rounded-box justify-items-center md:justify-items-start"
 >
 	<div class="items-center justify-items-center md:grid-flow-col font-bold md:font-normal">
 		<img class="w-10" src="favicon.svg" alt="Kyle Schwartz Logo" />
@@ -52,7 +52,7 @@
 	</div>
 	<div class="md:place-self-center">
 		<a
-			class="flex items-center link link-hover text-info"
+			class="btn btn-ghost flex items-center normal-case font-normal text-info"
 			href="https://github.com/ksmarty/kyleschwartz.ca"
 			target="_blank"
 		>
