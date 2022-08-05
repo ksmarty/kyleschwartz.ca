@@ -60,11 +60,6 @@
 </div>
 
 <style>
-	.divider::after,
-	.divider::before {
-		@apply bg-base-100;
-	}
-
 	figure {
 		width: 25% !important;
 	}

@@ -30,10 +30,3 @@
 		{/each}
 	</div>
 </div>
-
-<style>
-	.divider::after,
-	.divider::before {
-		@apply bg-base-100;
-	}
-</style>

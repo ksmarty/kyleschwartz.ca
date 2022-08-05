@@ -86,11 +86,6 @@
 </div>
 
 <style>
-	.divider::after,
-	.divider::before {
-		@apply bg-base-100;
-	}
-
 	.cert-badge:hover {
 		z-index: 10;
 		transform: scale(2.5) translate(0.5rem);

@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { ChevronRight } from '@steeze-ui/heroicons';
 	import { Icon } from '@steeze-ui/svelte-icon';
+	import ContactElement from '../_components/ContactElement.svelte';
 
 	let email: HTMLInputElement;
-	let name: HTMLInputElement['value'];
-	let message: HTMLInputElement['value'];
+	let name: HTMLInputElement;
+	let message: HTMLTextAreaElement;
 	let isValid = true;
 
 	const validateEmail = (e: Event | undefined) => {
@@ -21,12 +22,12 @@
 	};
 
 	const validateForm = (e: Event) => {
-		const valid = validateEmail(undefined) && name?.length > 0 && message?.length > 0;
+		const valid = validateEmail(undefined) && name?.value.length > 0 && message?.value.length > 0;
 		console.log(valid);
 
 		if (!valid) {
 			e.preventDefault();
-			window.history.back();
+			// window.history.back();
 		}
 	};
 </script>
@@ -41,55 +42,17 @@
 						<div
 							class="form-row flex flex-wrap flex-col sm:flex-row sm:space-x-4 space-y-8 sm:space-y-0"
 						>
-							<div class="form-control flex-1 relative">
-								<input
-									type="text"
-									name="name"
-									placeholder="Name"
-									class="input input-bordered input-info border-base-100 peer placeholder-transparent"
-									bind:value={name}
-								/>
-								<label
-									class="label pointer-events-none absolute -mt-8 peer-placeholder-shown:p-0 peer-placeholder-shown:mt-[0.875rem] peer-placeholder-shown:ml-4 peer-placeholder-shown:text-base duration-[250ms]"
-									for="name"
-								>
-									<span class="label-text">Name</span>
-								</label>
-							</div>
-							<div class="form-control flex-1 relative">
-								<input
-									type="text"
-									name="_replyto"
-									placeholder="Email"
-									class="w-full input input-bordered input-info valid:border-base-100 invalid:input-error peer placeholder-transparent"
-									bind:this={email}
-									on:blur={validateEmail}
-									on:input={validateEmail}
-								/>
-								<label
-									class="label pointer-events-none absolute -mt-8 peer-placeholder-shown:p-0 peer-placeholder-shown:mt-[0.875rem] peer-placeholder-shown:ml-4 peer-placeholder-shown:text-base duration-[250ms]"
-									for="_replyto"
-								>
-									<span class="label-text">
-										{isValid ? 'Email' : 'Email - Invalid!'}
-									</span>
-								</label>
-							</div>
-						</div>
-						<div class="form-control relative mt-8 sm:mt-8">
-							<textarea
-								name="message"
-								class="textarea h-24 textarea-bordered textarea-info border-base-100 peer placeholder-transparent"
-								placeholder="Message"
-								bind:value={message}
+							<ContactElement title="Name" class="flex-1 relative" bind:el={name} />
+							<ContactElement
+								id="_replyto"
+								class="flex-1 relative"
+								bind:el={email}
+								on:blur={validateEmail}
+								on:input={validateEmail}
+								title={isValid ? 'Email' : 'Email - Invalid!'}
 							/>
-							<label
-								class="label pointer-events-none absolute -mt-8 peer-placeholder-shown:p-0 peer-placeholder-shown:mt-[0.875rem] peer-placeholder-shown:ml-4 peer-placeholder-shown:text-base duration-[250ms]"
-								for="message"
-							>
-								<span class="label-text">Your Message</span>
-							</label>
 						</div>
+						<ContactElement ta class="relative mt-8 sm:mt-8" title="Message" bind:el={message} />
 						<div class="form-control mt-6">
 							<button class="btn bg-base-200 hover:bg-info hover:text-info-content" type="submit">
 								<span> Send </span>
@@ -104,15 +67,3 @@
 		</div>
 	</div>
 </div>
-
-<style>
-	.divider::after,
-	.divider::before {
-		@apply bg-base-100;
-	}
-
-	input,
-	textarea {
-		@apply bg-base-200;
-	}
-</style>
