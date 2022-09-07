@@ -11,14 +11,23 @@ home: >-
 
 certs:
   - title: Azure AI Fundamentals
-    badge: microsoft-certified-fundamentals-badge.svg
+    badge: azure-ai-fundamentals.svg
     url: https://www.credly.com/badges/0788c9ba-b906-45cc-bcb8-6887d1cd7a81/public_url
     issuer: Microsoft
     date: Jun 2022
-    description:
+    description: >-
       Earners of the Azure AI Fundamentals certification have demonstrated
       foundational knowledge of machine learning (ML) and artificial
       intelligence (AI) concepts and related Microsoft Azure services.
+  - title: Azure Data Fundamentals
+    badge: azure-data-fundamentals.svg
+    url: https://www.credly.com/badges/1e7e8b1b-e788-4eac-819f-17a98f92ac14/public_url
+    issuer: Microsoft
+    date: Aug 2022
+    description: >-
+      Earners of the Azure Data Fundamentals certification have demonstrated 
+      foundational knowledge of core data concepts and how they are 
+      implemented using Microsoft Azure data services.
   - title: Excellence in Computer Science
     issuer: TDSB
     date: Apr 2017
@@ -52,13 +61,13 @@ certs:
     cred: 5766
     date: Jun 2018
     icon: PresentationChartLine
-    description: "Certificate # 5766"
+    description: 'Certificate # 5766'
   - title: Software Design & Development
     issuer: FIT
     cred: 5891
     date: Jun 2018
     icon: DesktopComputer
-    description: "Certificate # 5891"
+    description: 'Certificate # 5891'
   - title: Ontario Scholar
     issuer: TDSB
     date: Jun 2018
@@ -68,15 +77,24 @@ certs:
       12 courses.
 
 education:
-  - timeperiod: Sep 2018 - Apr 2023 (Expected)
-    degree: "BSc Computer Science, Minor in Economics"
+  - start: Sep 2018
+    end: Apr 2024
+    degree: 'BSc Computer Science, Minor in Economics'
     location: Lassonde School of Engineering, York University, Toronto
-  - timeperiod: Sep 2014 - Jun 2018
+  - start: Sep 2014
+    end: Jun 2018
     degree: High School Diploma
     location: William Lyon Mackenzie C.I., North York
 
 experience:
-  - timeperiod: Jan 2021 - Dec 2021
+  # - start: Sep 2022
+  #   end: Apr 2023
+  #   title: Co-op, Software Engineer, Filogix Export Pro
+  #   location: Finastra, Toronto
+  #   description: >-
+  #     TBD
+  - start: Jan 2021
+    end: Dec 2021
     title: University Internship
     location: Sanofi Pasteur, Toronto
     description: >-
@@ -84,7 +102,8 @@ experience:
       department, I assist my team in modernizing internal tools and
       improving workflows to maximize efficiency. Additionally, I document
       internal processes to ensure consistency and compliance in the future.
-  - timeperiod: Jun 2016 - Aug 2019
+  - start: Jun 2016
+    end: Aug 2019
     title: Summer Camp Counsellor
     location: Camp Green Acres, Markham
     description: >-
@@ -94,7 +113,8 @@ experience:
       being a bus captain; overseeing 3 staff members. This leadership
       experience afforded me the opportunity to understand team management
       and collaboration.
-  - timeperiod: Feb 2018 - May 2018
+  - start: Feb 2018
+    end: May 2018
     title: Cooperative Education Placement
     location: Grip Limited (now dentsu One), Toronto
     description: >-
@@ -104,31 +124,35 @@ experience:
       vendor data from excel workbooks, allowing for faster operations.
 
 volunteer:
-  - timeperiod: Oct 2017 - Jun 2018
+  - start: Oct 2017
+    end: Jun 2018
     title: Youth Council President
-    location: "Beth David Synagogue, North York"
+    location: 'Beth David Synagogue, North York'
     description: >-
       After successfully running for President, I continued to create,
       organize, and run engaging programs for the youth in my community. My
       role as President was to guide and oversee my board and implement the
       strategic direction provided by our Youth Director.
-  - timeperiod: Oct 2017 - Jun 2018
+  - start: Oct 2017
+    end: Jun 2018
     title: President of Accounting & Finance Club
-    location: "William Lyon Mackenzie C.I., North York"
+    location: 'William Lyon Mackenzie C.I., North York'
     description: >-
       I presented seminars on various forms of investment including
       cryptocurrencies and how to safely invest as markets can be very
       volatile.
-  - timeperiod: Oct 2017 - Jun 2018
+  - start: Oct 2017
+    end: Jun 2018
     title: Head Engineer for Engineering Club
-    location: "William Lyon Mackenzie C.I., North York"
+    location: 'William Lyon Mackenzie C.I., North York'
     description: >-
       As an integral team member, I advised on the programming of our weekly
       activities to ensure the events were fun and informative for our
       members.
-  - timeperiod: Oct 2016 - Jun 2017
+  - start: Oct 2016
+    end: Jun 2017
     title: Computer Programming Team
-    location: "William Lyon Mackenzie C.I., North York"
+    location: 'William Lyon Mackenzie C.I., North York'
     description: >-
       I led a group of my peers in our school's coding competitions. We
       placed top 5 in multiple events. In addition, I was selected to be a
@@ -139,31 +163,31 @@ portfolio:
   - title: TickTick Events
     description: A practical TickTick API for developers
     icon: Calendar
-    link: "https://github.com/ksmarty/ticktick-events"
-    demo: "https://ticktick-events.vercel.app/"
+    link: 'https://github.com/ksmarty/ticktick-events'
+    demo: 'https://ticktick-events.vercel.app/'
   - title: svelte-spins
     description: >-
       A zero-dependency loader library for Svelte
     icon: Refresh
-    link: "https://github.com/ksmarty/svelte-spins"
-    demo: "https://svelte-spins-demo.vercel.app/"
+    link: 'https://github.com/ksmarty/svelte-spins'
+    demo: 'https://svelte-spins-demo.vercel.app/'
   - title: ZoomCube
     description: A minimal Rubik's Cube timer written in Svelte
     icon: Cube
-    link: "https://github.com/ksmarty/ZoomCube"
-    demo: "https://zoomcube.kyleschwartz.ca/"
+    link: 'https://github.com/ksmarty/ZoomCube'
+    demo: 'https://zoomcube.kyleschwartz.ca/'
   - title: PDF Press
     description: Serverless PDF generator for Docusaurus and other SSGs
     icon: DocumentDuplicate
-    link: "https://github.com/ksmarty/pdf-press"
+    link: 'https://github.com/ksmarty/pdf-press'
   - title: Fossil
     description: A self-hosted static file server for Docker built with Deno
     icon: CloudUpload
-    link: "https://github.com/ksmarty/fossil"
+    link: 'https://github.com/ksmarty/fossil'
   - title: snowpack-plugin-yaml
     description: A Snowpack plugin to convert YAML files to ESM
     icon: DocumentText
-    link: "https://github.com/ksmarty/snowpack-plugin-yaml"
+    link: 'https://github.com/ksmarty/snowpack-plugin-yaml'
 
 cover: >-
   To whom it may concern,

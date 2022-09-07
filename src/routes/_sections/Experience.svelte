@@ -1,18 +1,28 @@
 <script lang="ts">
+	import { parse, isFuture } from 'date-fns';
+
 	import content from '$lib/Content.yaml';
+
 	const { experience, volunteer } = content;
+
+	const future = (end: string) => isFuture(parse(end, 'MMM yyyy', new Date()));
 </script>
 
 <div id="Experience">
 	<div class="divider text-3xl mb-8">Experience</div>
 	<div class="flex flex-wrap -mx-2 overflow-hidden md:-mx-3">
-		{#each [...experience, ...volunteer] as { timeperiod, title, location, description }}
+		{#each [...experience, ...volunteer] as { start, end, title, location, description }}
 			<div class="my-2 px-2 w-full overflow-hidden md:my-3 md:px-3 md:w-1/2">
 				<div class="card text-center border-2 border-base-100 h-full">
 					<div class="card-body p-5 lg:p-8">
 						<div class="">
 							<div class="text-sm text-base-content text-opacity-60">
-								{timeperiod}
+								{start} -
+								{#if future(end)}
+									Present
+								{:else}
+									{end}
+								{/if}
 							</div>
 							<h2 class="card-title block text-2xl text-secondary mb-1">
 								{title}
