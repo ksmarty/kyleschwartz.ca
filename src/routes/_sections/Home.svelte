@@ -1,10 +1,16 @@
-<script>
-	import content from '$lib/Content.yaml';
-	import { Download } from '@steeze-ui/heroicons';
-	import { Icon } from '@steeze-ui/svelte-icon';
-	import Avatar from '../_components/Avatar.svelte';
+<script lang="ts">
+	import content from "$lib/Content.yaml";
+	import { kebab } from "$lib/utils/utils";
+	import { Download } from "@steeze-ui/heroicons";
+	import { Icon } from "@steeze-ui/svelte-icon";
+	import Avatar from "../_components/Avatar.svelte";
 
 	const { home } = content;
+
+	const Downloads = [
+		{ name: "Resumé", color: "primary" },
+		{ name: "Cover Letter", color: "accent" },
+	];
 </script>
 
 <div
@@ -22,22 +28,16 @@
 					{home}
 				</p>
 				<div class="flex flex-row space-x-4">
-					<a
-						href="./static/resume.pdf"
-						download="Kyle Schwartz - Resume.pdf"
-						class="btn btn-outline btn-primary flex-grow md:flex-1 flex flex-row px-0"
-					>
-						<span class="ml-2 md:ml-4 mr-2">Resumé</span>
-						<Icon class="h-6 w-6" src={Download} />
-					</a>
-					<a
-						href="./static/cover-letter.pdf"
-						download="Kyle Schwartz - Cover Letter.pdf"
-						class="btn btn-outline btn-accent flex-grow md:flex-1 flex flex-row px-0"
-					>
-						<span class="ml-2 md:ml-4 mr-2">Cover Letter</span>
-						<Icon class="h-6 w-6" src={Download} />
-					</a>
+					{#each Downloads as { name, color }}
+						<a
+							href="./cv/{kebab(name)}.pdf"
+							download="Kyle Schwartz - {name}.pdf"
+							class="btn btn-outline btn-{color} flex-grow md:flex-1 flex flex-row px-0"
+						>
+							<span class="ml-2 md:ml-4 mr-2">{name}</span>
+							<Icon class="h-6 w-6" src={Download} />
+						</a>
+					{/each}
 				</div>
 			</div>
 		</div>

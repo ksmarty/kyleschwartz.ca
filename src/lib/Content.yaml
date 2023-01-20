@@ -61,13 +61,13 @@ certs:
     cred: 5766
     date: Jun 2018
     icon: PresentationChartLine
-    description: 'Certificate # 5766'
+    description: "Certificate # 5766"
   - title: Software Design & Development
     issuer: FIT
     cred: 5891
     date: Jun 2018
     icon: DesktopComputer
-    description: 'Certificate # 5891'
+    description: "Certificate # 5891"
   - title: Ontario Scholar
     issuer: TDSB
     date: Jun 2018
@@ -79,7 +79,7 @@ certs:
 education:
   - start: Sep 2018
     end: Apr 2024
-    degree: 'BSc Computer Science, Minor in Economics'
+    degree: "BSc Computer Science, Minor in Economics"
     location: Lassonde School of Engineering, York University, Toronto
   - start: Sep 2014
     end: Jun 2018
@@ -87,20 +87,20 @@ education:
     location: William Lyon Mackenzie C.I., North York
 
 experience:
-  # - start: Sep 2022
-  #   end: Apr 2023
-  #   title: Co-op, Software Engineer, Filogix Export Pro
-  #   location: Finastra, Toronto
-  #   description: >-
-  #     TBD
+  - start: Sep 2022
+    end: Apr 2023
+    title: Software Engineer Co-op
+    location: Finastra, Toronto
+    description: >-
+      While working on the Filogix Export Pro platform, ...
   - start: Jan 2021
     end: Dec 2021
-    title: University Internship
+    title: Data Logistics Intern
     location: Sanofi Pasteur, Toronto
     description: >-
       As a member of the Quality Control, Data Logistics and Support
       department, I assist my team in modernizing internal tools and
-      improving workflows to maximize efficiency. Additionally, I document
+      improving workflows to maximize efficiency. Additionally, I documented
       internal processes to ensure consistency and compliance in the future.
   - start: Jun 2016
     end: Aug 2019
@@ -127,7 +127,7 @@ volunteer:
   - start: Oct 2017
     end: Jun 2018
     title: Youth Council President
-    location: 'Beth David Synagogue, North York'
+    location: "Beth David Synagogue, North York"
     description: >-
       After successfully running for President, I continued to create,
       organize, and run engaging programs for the youth in my community. My
@@ -136,7 +136,7 @@ volunteer:
   - start: Oct 2017
     end: Jun 2018
     title: President of Accounting & Finance Club
-    location: 'William Lyon Mackenzie C.I., North York'
+    location: "William Lyon Mackenzie C.I., North York"
     description: >-
       I presented seminars on various forms of investment including
       cryptocurrencies and how to safely invest as markets can be very
@@ -144,7 +144,7 @@ volunteer:
   - start: Oct 2017
     end: Jun 2018
     title: Head Engineer for Engineering Club
-    location: 'William Lyon Mackenzie C.I., North York'
+    location: "William Lyon Mackenzie C.I., North York"
     description: >-
       As an integral team member, I advised on the programming of our weekly
       activities to ensure the events were fun and informative for our
@@ -152,7 +152,7 @@ volunteer:
   - start: Oct 2016
     end: Jun 2017
     title: Computer Programming Team
-    location: 'William Lyon Mackenzie C.I., North York'
+    location: "William Lyon Mackenzie C.I., North York"
     description: >-
       I led a group of my peers in our school's coding competitions. We
       placed top 5 in multiple events. In addition, I was selected to be a
@@ -163,31 +163,31 @@ portfolio:
   - title: TickTick Events
     description: A practical TickTick API for developers
     icon: Calendar
-    link: 'https://github.com/ksmarty/ticktick-events'
-    demo: 'https://ticktick-events.vercel.app/'
+    link: "https://github.com/ksmarty/ticktick-events"
+    demo: "https://ticktick-events.vercel.app/"
   - title: svelte-spins
     description: >-
       A zero-dependency loader library for Svelte
     icon: Refresh
-    link: 'https://github.com/ksmarty/svelte-spins'
-    demo: 'https://svelte-spins-demo.vercel.app/'
+    link: "https://github.com/ksmarty/svelte-spins"
+    demo: "https://svelte-spins-demo.vercel.app/"
   - title: ZoomCube
     description: A minimal Rubik's Cube timer written in Svelte
     icon: Cube
-    link: 'https://github.com/ksmarty/ZoomCube'
-    demo: 'https://zoomcube.kyleschwartz.ca/'
+    link: "https://github.com/ksmarty/ZoomCube"
+    demo: "https://zoomcube.kyleschwartz.ca/"
   - title: PDF Press
     description: Serverless PDF generator for Docusaurus and other SSGs
     icon: DocumentDuplicate
-    link: 'https://github.com/ksmarty/pdf-press'
+    link: "https://github.com/ksmarty/pdf-press"
   - title: Fossil
     description: A self-hosted static file server for Docker built with Deno
     icon: CloudUpload
-    link: 'https://github.com/ksmarty/fossil'
+    link: "https://github.com/ksmarty/fossil"
   - title: snowpack-plugin-yaml
     description: A Snowpack plugin to convert YAML files to ESM
     icon: DocumentText
-    link: 'https://github.com/ksmarty/snowpack-plugin-yaml'
+    link: "https://github.com/ksmarty/snowpack-plugin-yaml"
 
 cover: >-
   To whom it may concern,

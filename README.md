@@ -4,20 +4,20 @@
 
 ## Structure
 
--   All of the content is stored in `/src`.
--   `App.svelte` is the root component and holds the structure of the entire project.
--   The content is written in `Content.yaml` and is parsed as an ES Module via my [Snowpack plugin](https://github.com/ksmarty/snowpack-plugin-yaml).
--   The certificates, resume, and cover letter (both png and pdf) are stored in `/public/static`.
+- `src/routes/+page.svelte` is the root component and holds the structure of the entire project.
+- The content is written in `src/lib/Content.yaml`.
+- The certificates, resume, and cover letter (both webp and pdf) are stored in `static/certs`.
 
 ## Resume & Cover Letter PDFs
 
--   [Resume](public/static/resume.pdf)
--   [Cover Letter](public/static/cover-letter.pdf)
--   [Bundle](public/static/bundle.pdf)
+- [Resume](static/certs/resume.pdf)
+- [Cover Letter](static/certs/cover-letter.pdf)
+- [Bundle](static/certs/bundle.pdf)
 
 ## Dev Notes
 
--   Don't try and migrate to Yarn Berry. There are still issues and the project is currently incompatible.
--   Favicons were generated via https://realfavicongenerator.net/.
--   All of the styles are from [daisyUI](https://daisyui.com).
--   Resume generation needs to happen client side. Run `yarn pdf` before committing any changes to `Content.yaml`.
+- Favicons were generated via https://realfavicongenerator.net/.
+- All of the styles are from [daisyUI](https://daisyui.com).
+- Resume & cover letter generation is run as a pre-commit hook (`.lefthook`)
+  - Install lefthook with `go install github.com/evilmartians/lefthook@latest`
+  - Install playwright with `npx playwright install`

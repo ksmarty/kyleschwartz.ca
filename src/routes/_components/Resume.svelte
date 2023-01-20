@@ -1,16 +1,17 @@
 <script lang="ts">
-	import content from '$lib/Content.yaml';
-	import { ExternalLink, Link, Mail, Phone } from '@steeze-ui/heroicons';
-	import { Icon } from '@steeze-ui/svelte-icon';
+	import content from "$lib/Content.yaml";
+	import { ExternalLink, Link, Mail, Phone } from "@steeze-ui/heroicons";
+	import { Icon } from "@steeze-ui/svelte-icon";
+	import Time from "$components/Time.svelte";
 
 	const { certs, cover, education, experience, home, portfolio, volunteer } = content;
 
-	const coverSplit = cover.split('\n');
+	const coverSplit = cover.split("\n");
 </script>
 
 <div id="Cover" data-theme="light" class="hidden print:block text-base-content">
 	<div class="content-node mb-4">
-		<h1 class="text-5xl mb-6 font-bold">Kyle Schwartz</h1>
+		<h1 class="text-5xl mb-6 font-bold text-base-content">Kyle Schwartz</h1>
 
 		<div class="flex justify-between text-primary">
 			<a
@@ -106,19 +107,19 @@
 							<h2 class="header">Experience</h2>
 							<div class="divider -mt-2 mb-0" />
 						</div>
-						{#each experience as { title, description, timeperiod: time, location }, i}
+						{#each experience as { title, start, end, description, location }, i}
 							<div class="content-node">
 								<h3 class="text-lg font-medium text-primary w-full">
-									<span>{location.split(', ')[0]}</span>
+									<span>{location.split(", ")[0]}</span>
 									<span class="float-right">
-										{location.split(', ')[1]}
+										{location.split(", ")[1]}
 									</span>
 								</h3>
 								<h4 class="text-xs font-medium opacity-70">
 									{title}
 								</h4>
 								<h4 class="text-xs font-medium opacity-70">
-									{time}
+									<Time {start} {end} />
 								</h4>
 								<p class="text-sm text-justify mt-1">
 									{description}
@@ -160,14 +161,16 @@
 							<h2 class="header">Education</h2>
 							<div class="divider -mt-2 mb-0" />
 						</div>
-						{#each education as { timeperiod: time, degree, location }, i}
+						{#each education as { start, end, degree, location }, i}
 							<div class="content-node">
-								{#each degree.split(', ') as part, i}
+								{#each degree.split(", ") as part, i}
 									<h3 class="text-lg font-medium text-primary">
-										{part}{!i && degree.split(', ').length > 1 ? ',' : ''}
+										{part}{!i && degree.split(", ").length > 1 ? "," : ""}
 									</h3>
 								{/each}
-								<h4 class="text-xs opacity-75">{time}</h4>
+								<h4 class="text-xs opacity-75">
+									<Time {start} {end} />
+								</h4>
 								<h4 class="text-sm">{location}</h4>
 							</div>
 						{/each}
@@ -203,7 +206,7 @@
 							| {date}
 						</h4>
 						<p class="text-sm mt-1 text-justify">
-							{!cred ? description : ''}
+							{!cred ? description : ""}
 						</p>
 					</div>
 				{/each}
@@ -215,7 +218,7 @@
 					<h2 class="header">Volunteer Work</h2>
 					<div class="divider -mt-2 mb-0" />
 				</div>
-				{#each volunteer as { title, description, timeperiod: time, location }, i}
+				{#each volunteer as { title, description, start, end, location }, i}
 					<div class="content-node">
 						<h3 class="text-lg font-medium text-primary">
 							{title}
@@ -224,7 +227,7 @@
 							{location}
 						</h4>
 						<h4 class="text-xs font-medium opacity-70">
-							{time}
+							<Time {start} {end} />
 						</h4>
 						<p class="text-sm text-justify mt-1">
 							{description}

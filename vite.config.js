@@ -3,7 +3,7 @@ import { sveltekit } from "@sveltejs/kit/vite";
 
 /** @type {import('vite').UserConfig} */
 const config = {
-    plugins: [sveltekit(), ViteYaml()],
+	plugins: [sveltekit(), ViteYaml()],
 };
 
 export default config;

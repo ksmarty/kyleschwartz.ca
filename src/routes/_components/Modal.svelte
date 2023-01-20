@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { browser } from '$app/environment';
+	import { browser } from "$app/environment";
 
-	export let issuer = '',
+	export let issuer = "",
 		index: number,
-		cert = '';
+		cert = "";
 
-	const colors = (i: number) => ['primary', 'secondary', 'accent'][i % 3];
+	const colors = (i: number) => ["primary", "secondary", "accent"][i % 3];
 
 	let modal: HTMLElement;
 	let modalToggle = false;
@@ -13,7 +13,7 @@
 	// Disable scroll when modal is open
 
 	$: if (browser) {
-		document.body.style.overflow = modalToggle ? 'hidden' : 'auto';
+		document.body.style.overflow = modalToggle ? "hidden" : "auto";
 	}
 
 	const leaveModal = (e: Event) => (modalToggle = e.target !== modal && modalToggle);
@@ -37,9 +37,9 @@
 		bind:this={modal}
 	>
 		<div class="modal-box !max-w-3xl duration-[150ms]">
-			<img src="./{cert}.webp" alt="Certificate" />
+			<img src="./certs/{cert}.webp" alt="Certificate" />
 			<div class="modal-action">
-				<a href="./{cert}.pdf" target="_blank" for="my-modal-2" class="btn btn-primary">
+				<a href="./certs/{cert}.pdf" target="_blank" for="my-modal-2" class="btn btn-primary">
 					View File
 				</a>
 				<label for="my-modal-2" class="btn" on:click={() => (modalToggle = false)}> Close </label>

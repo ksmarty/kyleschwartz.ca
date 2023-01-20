@@ -1,5 +1,5 @@
 <script lang="ts">
-	import content from '$lib/Content.yaml';
+	import content from "$lib/Content.yaml";
 	import {
 		Calendar,
 		CloudUpload,
@@ -7,23 +7,22 @@
 		DocumentDuplicate,
 		DocumentText,
 		Refresh,
-	} from '@steeze-ui/heroicons';
-	import { Icon } from '@steeze-ui/svelte-icon';
-
-	const icons = {
-		Calendar,
-		CloudUpload,
-		Cube,
-		DocumentDuplicate,
-		DocumentText,
-		Refresh,
-	};
+	} from "@steeze-ui/heroicons";
+	import { Icon } from "@steeze-ui/svelte-icon";
 
 	const { portfolio } = content;
 
-	const colors = (i: number) => ['info', 'success', 'error', 'warning'][i % 4];
+	const colors = (i: number) => ["info", "success", "error", "warning"][i % 4];
 
-	const accessIcon = (icon: string) => icon as keyof typeof icons;
+	const accessIcon = (icon: string) =>
+		({
+			Calendar,
+			CloudUpload,
+			Cube,
+			DocumentDuplicate,
+			DocumentText,
+			Refresh,
+		}[icon] ?? Cube);
 </script>
 
 <div id="Portfolio">
@@ -35,7 +34,7 @@
 					<div class="card-body place-content-between p-4 lg:p-6">
 						<div class="flex items-center lg:block">
 							<figure class="lg:px-10 lg:pb-4 w-20 h-20 text-{colors(index)}">
-								<Icon src={icons[accessIcon(icon)]} />
+								<Icon src={accessIcon(icon)} />
 							</figure>
 							<div class="text pl-4 lg:pl-0">
 								<h2 class="card-title lg:block mb-3">{title}</h2>

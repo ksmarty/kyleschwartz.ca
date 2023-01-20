@@ -1,8 +1,18 @@
 <script lang="ts">
-	import '$lib/css/app.css';
+	import "$lib/css/app.css";
+
+	import Navbar from "./_components/Navbar.svelte";
+	import Resume from "./_components/Resume.svelte";
+	import Footer from "./_sections/Footer.svelte";
 </script>
 
-<slot />
+<main class="min-h-screen p-3 lg:p-5 flex flex-col !pt-0 print:hidden">
+	<Navbar />
+	<slot />
+	<Footer />
+</main>
+
+<Resume />
 
 <style global>
 	html {

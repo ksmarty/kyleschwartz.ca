@@ -1,11 +1,8 @@
 <script lang="ts">
-	import { parse, isFuture } from 'date-fns';
-
-	import content from '$lib/Content.yaml';
+	import content from "$lib/Content.yaml";
+	import Time from "$components/Time.svelte";
 
 	const { experience, volunteer } = content;
-
-	const future = (end: string) => isFuture(parse(end, 'MMM yyyy', new Date()));
 </script>
 
 <div id="Experience">
@@ -17,12 +14,7 @@
 					<div class="card-body p-5 lg:p-8">
 						<div class="">
 							<div class="text-sm text-base-content text-opacity-60">
-								{start} -
-								{#if future(end)}
-									Present
-								{:else}
-									{end}
-								{/if}
+								<Time {start} {end} />
 							</div>
 							<h2 class="card-title block text-2xl text-secondary mb-1">
 								{title}

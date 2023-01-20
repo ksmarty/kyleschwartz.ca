@@ -1,0 +1,7 @@
+# Generate PDFs if anything in src has changed
+
+diffs=$(git diff --name-only main)
+
+if [ $(grep -c "src\/" <<< $diffs) -gt 0 ]; then 
+    pnpm pdf && git add static/cv
+fi
