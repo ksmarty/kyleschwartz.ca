@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { ChevronRight } from '@steeze-ui/heroicons';
-	import { Icon } from '@steeze-ui/svelte-icon';
-	import ContactElement from '../_components/ContactElement.svelte';
+	import { ChevronRight } from "@steeze-ui/heroicons";
+	import { Icon } from "@steeze-ui/svelte-icon";
+	import ContactElement from "../_components/ContactElement.svelte";
 
 	let email: HTMLInputElement;
 	let name: HTMLInputElement;
@@ -14,21 +14,16 @@
 				email.value
 			);
 
-		if (e?.type === 'input' && !localValid) return;
+		if (e?.type === "input" && !localValid) return;
 
-		email.setCustomValidity(localValid ? '' : 'Invalid email!');
+		email.setCustomValidity(localValid ? "" : "Invalid email!");
 		isValid = localValid;
 		return localValid;
 	};
 
 	const validateForm = (e: Event) => {
 		const valid = validateEmail(undefined) && name?.value.length > 0 && message?.value.length > 0;
-		console.log(valid);
-
-		if (!valid) {
-			e.preventDefault();
-			// window.history.back();
-		}
+		if (!valid) e.preventDefault();
 	};
 </script>
 
@@ -49,7 +44,7 @@
 								bind:el={email}
 								on:blur={validateEmail}
 								on:input={validateEmail}
-								title={isValid ? 'Email' : 'Email - Invalid!'}
+								title={isValid ? "Email" : "Email - Invalid!"}
 							/>
 						</div>
 						<ContactElement ta class="relative mt-8 sm:mt-8" title="Message" bind:el={message} />

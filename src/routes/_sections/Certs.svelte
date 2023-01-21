@@ -1,5 +1,5 @@
 <script lang="ts">
-	import content from '$lib/Content.yaml';
+	import { certs } from "$lib/Content.yaml";
 
 	import {
 		AcademicCap,
@@ -9,10 +9,10 @@
 		Fire,
 		PresentationChartLine,
 		UserGroup,
-	} from '@steeze-ui/heroicons';
+	} from "@steeze-ui/heroicons";
 
-	import { Icon } from '@steeze-ui/svelte-icon';
-	import Modal from '../_components/Modal.svelte';
+	import { Icon } from "@steeze-ui/svelte-icon";
+	import Modal from "../_components/Modal.svelte";
 
 	const icons = {
 		AcademicCap,
@@ -24,11 +24,9 @@
 		UserGroup,
 	};
 
-	const { certs } = content;
-
 	const accessIcon = (icon: string) => icon as keyof typeof icons;
 
-	const colors = (i: number) => ['primary', 'secondary', 'accent'][i % 3];
+	const colors = (i: number) => ["primary", "secondary", "accent"][i % 3];
 </script>
 
 <div id="Certifications">

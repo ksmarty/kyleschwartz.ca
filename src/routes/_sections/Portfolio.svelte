@@ -1,5 +1,5 @@
 <script lang="ts">
-	import content from "$lib/Content.yaml";
+	import { portfolio } from "$lib/Content.yaml";
 	import {
 		Calendar,
 		CloudUpload,
@@ -9,8 +9,6 @@
 		Refresh,
 	} from "@steeze-ui/heroicons";
 	import { Icon } from "@steeze-ui/svelte-icon";
-
-	const { portfolio } = content;
 
 	const colors = (i: number) => ["info", "success", "error", "warning"][i % 4];
 

@@ -1,8 +1,6 @@
 <script lang="ts">
-	import content from "$lib/Content.yaml";
+	import { experience, volunteer } from "$lib/Content.yaml";
 	import Time from "$components/Time.svelte";
-
-	const { experience, volunteer } = content;
 </script>
 
 <div id="Experience">

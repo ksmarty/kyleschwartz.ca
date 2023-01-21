@@ -1,16 +1,16 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onMount } from "svelte";
 
-	const headers = ['About Me', 'Experience', 'Portfolio', 'Education', 'Certifications', 'Contact'];
+	const headers = ["About Me", "Experience", "Portfolio", "Education", "Certifications", "Contact"];
 
 	let currentHeader: string,
 		isDropdownOpen = false,
-		dropdownVisibility = 'none',
+		dropdownVisibility = "none",
 		dropdownOpacity = 0;
 
 	const getCurrentHeader = () => {
 		headers.forEach((header) => {
-			const docScrollTop = document.getElementsByTagName('html')[0].scrollTop;
+			const docScrollTop = document.getElementsByTagName("html")[0].scrollTop;
 			const headerRef = document.getElementById(header);
 			const offset = 108;
 
@@ -47,10 +47,10 @@
 
 	$: {
 		if (isDropdownOpen) {
-			dropdownVisibility = 'flex';
+			dropdownVisibility = "flex";
 			setTimeout(() => (dropdownOpacity = 1), 5);
 		} else {
-			setTimeout(() => (dropdownVisibility = 'none'), 150);
+			setTimeout(() => (dropdownVisibility = "none"), 150);
 			dropdownOpacity = 0;
 		}
 	}

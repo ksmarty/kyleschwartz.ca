@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { Icon } from "@steeze-ui/svelte-icon";
 
 	const git = {

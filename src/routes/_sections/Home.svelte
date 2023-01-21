@@ -1,11 +1,9 @@
 <script lang="ts">
-	import content from "$lib/Content.yaml";
+	import { home } from "$lib/Content.yaml";
 	import { kebab } from "$lib/utils/utils";
 	import { Download } from "@steeze-ui/heroicons";
 	import { Icon } from "@steeze-ui/svelte-icon";
 	import Avatar from "../_components/Avatar.svelte";
-
-	const { home } = content;
 
 	const Downloads = [
 		{ name: "Resumé", color: "primary" },

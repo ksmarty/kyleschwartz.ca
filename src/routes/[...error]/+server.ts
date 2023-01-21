@@ -1,7 +1,5 @@
-import type { RequestHandler } from '@sveltejs/kit';
+import { redirect, type RequestHandler } from "@sveltejs/kit";
 
-export const GET: RequestHandler = () =>
-	new Response(null, {
-		headers: { Location: '/' },
-		status: 302,
-	});
+export const GET: RequestHandler = () => {
+	throw redirect(302, "/");
+};
