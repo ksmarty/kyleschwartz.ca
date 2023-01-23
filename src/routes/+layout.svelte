@@ -15,7 +15,7 @@
 <Resume />
 
 <style global>
-	html {
+	main {
 		-webkit-tap-highlight-color: transparent;
 		@apply text-primary-content;
 		@apply bg-neutral;

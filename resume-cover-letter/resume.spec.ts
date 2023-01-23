@@ -3,7 +3,7 @@ import { test } from "@playwright/test";
 const pdfLoc = (str: string) => `./static/cv/${str}.pdf`;
 const margin = "0.42in";
 const opts = {
-	printBackground: true,
+	printBackground: false,
 	margin: {
 		bottom: margin,
 		left: margin,
