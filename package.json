@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev --host",
-		"build": "pnpm dlx playwright install webkit && pnpm pdf && vite build",
+		"build": "pnpm dlx playwright install --with-deps chromium && pnpm pdf && vite build",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
 		"pdf": "playwright test",
