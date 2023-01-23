@@ -28,7 +28,7 @@
 				<div class="flex flex-row space-x-4">
 					{#each Downloads as { name, color }}
 						<a
-							href="./cv/{kebab(name)}.pdf"
+							href="./{kebab(name)}.pdf"
 							download="Kyle Schwartz - {name}.pdf"
 							class="btn btn-outline btn-{color} flex-grow md:flex-1 flex flex-row px-0"
 						>

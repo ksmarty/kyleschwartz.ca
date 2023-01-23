@@ -1,6 +1,6 @@
 import { test } from "@playwright/test";
 
-const pdfLoc = (str: string) => `./static/cv/${str}.pdf`;
+const pdfLoc = (str: string) => `./static/${str}.pdf`;
 const margin = "0.42in";
 const opts = {
 	printBackground: false,
