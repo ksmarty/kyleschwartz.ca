@@ -9,6 +9,7 @@ const config: PlaywrightTestConfig = {
 	},
 	use: {
 		baseURL: "http://localhost:5173/",
+		browserName: "webkit",
 	},
 	testDir: "./resume-cover-letter",
 };
