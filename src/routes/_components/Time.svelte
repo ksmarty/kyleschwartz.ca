@@ -5,7 +5,7 @@
 </script>
 
 {start} -
-{#if future(end)}
+{#if !end || future(end)}
 	Present
 {:else}
 	{end}

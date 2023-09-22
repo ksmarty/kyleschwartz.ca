@@ -39,7 +39,10 @@
 						"type": "string"
 					},
 					"cred": {
-						"type": ["string", "integer"]
+						"type": [
+							"string",
+							"integer"
+						]
 					},
 					"cert": {
 						"type": "string"
@@ -61,19 +64,37 @@
 						]
 					}
 				},
-				"required": ["title", "issuer", "date"],
+				"required": [
+					"title",
+					"issuer",
+					"date"
+				],
 				"oneOf": [
 					{
-						"required": ["icon", "description"]
+						"required": [
+							"icon",
+							"description"
+						]
 					},
 					{
-						"required": ["icon", "cert"]
+						"required": [
+							"icon",
+							"cert"
+						]
 					},
 					{
-						"required": ["badge", "url", "description"]
+						"required": [
+							"badge",
+							"url",
+							"description"
+						]
 					},
 					{
-						"required": ["badge", "url", "cert"]
+						"required": [
+							"badge",
+							"url",
+							"cert"
+						]
 					}
 				]
 			}
@@ -100,7 +121,12 @@
 						"type": "string"
 					}
 				},
-				"required": ["start", "end", "degree", "location"]
+				"required": [
+					"start",
+					"end",
+					"degree",
+					"location"
+				]
 			}
 		},
 		"experience": {
@@ -148,13 +174,21 @@
 						"format": "uri"
 					}
 				},
-				"required": ["title", "description", "icon"],
+				"required": [
+					"title",
+					"description",
+					"icon"
+				],
 				"anyOf": [
 					{
-						"required": ["link"]
+						"required": [
+							"link"
+						]
 					},
 					{
-						"required": ["demo"]
+						"required": [
+							"demo"
+						]
 					}
 				]
 			}
@@ -165,7 +199,15 @@
 			"type": "string"
 		}
 	},
-	"required": ["home", "certs", "education", "experience", "volunteer", "portfolio", "cover"],
+	"required": [
+		"home",
+		"certs",
+		"education",
+		"experience",
+		"volunteer",
+		"portfolio",
+		"cover"
+	],
 	"$defs": {
 		"icon": {
 			"title": "Icon",
@@ -202,7 +244,12 @@
 					"type": "string"
 				}
 			},
-			"required": ["start", "end", "title", "location", "description"]
+			"required": [
+				"start",
+				"title",
+				"location",
+				"description"
+			]
 		}
 	}
 }
