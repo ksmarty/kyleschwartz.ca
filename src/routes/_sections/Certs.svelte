@@ -3,9 +3,9 @@
 
 	import {
 		AcademicCap,
-		Chip,
-		DesktopComputer,
-		DocumentReport,
+		ComputerDesktop,
+		CpuChip,
+		DocumentChartBar,
 		Fire,
 		PresentationChartLine,
 		UserGroup,
@@ -16,9 +16,9 @@
 
 	const icons = {
 		AcademicCap,
-		Chip,
-		DesktopComputer,
-		DocumentReport,
+		CpuChip,
+		ComputerDesktop,
+		DocumentChartBar,
 		Fire,
 		PresentationChartLine,
 		UserGroup,

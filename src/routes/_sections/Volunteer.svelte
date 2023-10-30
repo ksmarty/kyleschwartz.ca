@@ -1,12 +1,12 @@
 <script lang="ts">
 	import Time from "$components/Time.svelte";
-	import { experience } from "$lib/Content.yaml";
+	import { volunteer } from "$lib/Content.yaml";
 </script>
 
-<div id="Experience">
-	<div class="divider text-3xl mb-8">Experience</div>
+<div id="Volunteer">
+	<div class="divider text-3xl mb-8">Volunteer Work</div>
 	<div class="flex flex-wrap -mx-2 overflow-hidden md:-mx-3">
-		{#each experience as { start, end, title, location, description }}
+		{#each volunteer as { start, end, title, location, description }}
 			<div class="my-2 px-2 w-full overflow-hidden md:my-3 md:px-3 md:w-1/2">
 				<div class="card text-center border-2 border-base-100 h-full">
 					<div class="card-body p-5 lg:p-8">

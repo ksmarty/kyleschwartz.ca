@@ -1,8 +1,8 @@
 <script lang="ts">
-	import content from "$lib/Content.yaml";
-	import { ExternalLink, Link, Mail, Phone } from "@steeze-ui/heroicons";
-	import { Icon } from "@steeze-ui/svelte-icon";
 	import Time from "$components/Time.svelte";
+	import content from "$lib/Content.yaml";
+	import { ArrowTopRightOnSquare, Envelope, Link, Phone } from "@steeze-ui/heroicons";
+	import { Icon } from "@steeze-ui/svelte-icon";
 
 	const { certs, cover, education, experience, home, portfolio, volunteer } = content;
 
@@ -11,7 +11,7 @@
 	const topLinks = [
 		{
 			link: "mailto:kyle@kyleschwartz.ca",
-			icon: Mail,
+			icon: Envelope,
 			text: "kyle@kyleschwartz.ca",
 		},
 		{
@@ -125,7 +125,7 @@
 						>
 							{title}
 							<span class="flex w-4 ml-1">
-								<Icon src={ExternalLink} />
+								<Icon src={ArrowTopRightOnSquare} />
 							</span>
 						</a>
 						<h4 class="text-sm">{description}</h4>

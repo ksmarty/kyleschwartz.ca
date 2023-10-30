@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { portfolio } from "$lib/Content.yaml";
 	import {
+		ArrowPath,
 		Calendar,
-		CloudUpload,
 		Cube,
 		DocumentDuplicate,
-		DocumentText,
-		Refresh,
+		SpeakerWave,
+		Truck,
 	} from "@steeze-ui/heroicons";
 	import { Icon } from "@steeze-ui/svelte-icon";
 
@@ -15,11 +15,11 @@
 	const accessIcon = (icon: string) =>
 		({
 			Calendar,
-			CloudUpload,
-			Cube,
+			SpeakerWave,
 			DocumentDuplicate,
-			DocumentText,
-			Refresh,
+			Truck,
+			ArrowPath,
+			Cube,
 		}[icon] ?? Cube);
 </script>
 

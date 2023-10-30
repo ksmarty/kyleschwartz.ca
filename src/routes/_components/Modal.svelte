@@ -12,9 +12,7 @@
 
 	// Disable scroll when modal is open
 
-	$: if (browser) {
-		document.body.style.overflow = modalToggle ? "hidden" : "auto";
-	}
+	$: if (browser) document.body.style.overflow = modalToggle ? "hidden" : "auto";
 
 	const leaveModal = (e: Event) => (modalToggle = e.target !== modal && modalToggle);
 </script>
@@ -31,6 +29,7 @@
 	<input bind:checked={modalToggle} type="checkbox" id="my-modal-{cert}" class="modal-toggle" />
 
 	<!-- Modal -->
+	<!-- svelte-ignore a11y-click-events-have-key-events -->
 	<div
 		class="modal duration-[150ms] modal-bottom sm:modal-middle"
 		on:click={leaveModal}
@@ -39,10 +38,8 @@
 		<div class="modal-box !max-w-3xl duration-[150ms]">
 			<img src="./certs/{cert}.webp" alt="Certificate" />
 			<div class="modal-action">
-				<a href="./certs/{cert}.pdf" target="_blank" for="my-modal-2" class="btn btn-primary">
-					View File
-				</a>
-				<label for="my-modal-2" class="btn" on:click={() => (modalToggle = false)}> Close </label>
+				<a href="./certs/{cert}.pdf" target="_blank" class="btn btn-primary"> View File </a>
+				<button class="btn" on:click={() => (modalToggle = false)}> Close </button>
 			</div>
 		</div>
 	</div>

@@ -15,6 +15,11 @@
 <Resume />
 
 <style global>
+	html {
+		/* Smooth scrolling */
+		scroll-behavior: smooth;
+	}
+
 	main {
 		-webkit-tap-highlight-color: transparent;
 		@apply text-primary-content;
@@ -23,9 +28,6 @@
 		/* Hide Scrollbar */
 		-ms-overflow-style: none; /* IE and Edge */
 		scrollbar-width: none; /* Firefox */
-
-		/* Smooth scrolling */
-		scroll-behavior: smooth;
 	}
 
 	/* Hide scrollbar for Chrome, Safari and Opera */

@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=schemas/content.json
-home: >-
+home: >
   I am a hard working and dedicated university student who loves computers in
   their entirety. Computers allow me to be creative, solve problems, and
   express myself in many facets including graphic and web design as well as
@@ -15,7 +15,7 @@ certs:
     url: https://www.credly.com/badges/0788c9ba-b906-45cc-bcb8-6887d1cd7a81/public_url
     issuer: Microsoft
     date: Jun 2022
-    description: >-
+    description: >
       Earners of the Azure AI Fundamentals certification have demonstrated
       foundational knowledge of machine learning (ML) and artificial
       intelligence (AI) concepts and related Microsoft Azure services.
@@ -24,15 +24,15 @@ certs:
     url: https://www.credly.com/badges/1e7e8b1b-e788-4eac-819f-17a98f92ac14/public_url
     issuer: Microsoft
     date: Aug 2022
-    description: >-
+    description: >
       Earners of the Azure Data Fundamentals certification have demonstrated 
       foundational knowledge of core data concepts and how they are 
       implemented using Microsoft Azure data services.
   - title: Excellence in Computer Science
     issuer: TDSB
     date: Apr 2017
-    icon: Chip
-    description: >-
+    icon: CpuChip
+    description: >
       I received the top award for academic excellence in the field of
       computer science. As a result of this award, I was hand-selected to be
       placed in an advanced placement (AP) program for the 2017-2018 school
@@ -41,7 +41,7 @@ certs:
     cred: MKC VS3 H3C
     issuer: Google Digital Garage
     date: Oct 2018
-    icon: DocumentReport
+    icon: DocumentChartBar
     cert: digital-marketing
   - title: Introduction to Incident Management System
     cred: 277732-IMS 100-52022
@@ -53,7 +53,7 @@ certs:
     icon: UserGroup
     issuer: OCEA
     date: May 2018
-    description: >-
+    description: >
       Awarded for individual success and participation in the Cooperative
       Education Program.
   - title: Interactive Media Certificate
@@ -66,20 +66,20 @@ certs:
     issuer: FIT
     cred: 5891
     date: Jun 2018
-    icon: DesktopComputer
+    icon: ComputerDesktop
     description: "Certificate # 5891"
   - title: Ontario Scholar
     issuer: TDSB
     date: Jun 2018
     icon: AcademicCap
-    description: >-
-      Awarded for obtaining an average above eighty percent in any six Grade
-      12 courses.
+    description: >
+      Awarded for obtaining an average above eighty percent in any six Grade 
+      2 courses.
 
 education:
   - start: Sep 2018
     end: Apr 2024
-    degree: "BSc Computer Science, Minor in Economics"
+    degree: "BSc Honours, Computer Science"
     location: Lassonde School of Engineering, York University, Toronto
   - start: Sep 2014
     end: Jun 2018
@@ -87,11 +87,16 @@ education:
     location: William Lyon Mackenzie C.I., North York
 
 experience:
+  - start: Apr 2023
+    title: Associate Software Engineer
+    location: Finastra, Toronto
+    description: >
+      Coming soon...
   - start: Sep 2022
     end: Apr 2023
     title: Software Engineer Co-op
     location: Finastra, Toronto
-    description: >-
+    description: >
       I contribute to the development of features for the Expert Pro platform 
       and ensure it meets the needs of Canadian Mortgage Brokers. I interface 
       with other developers, product analysts, and software engineers to 
@@ -100,37 +105,37 @@ experience:
     end: Dec 2021
     title: Data Logistics Intern
     location: Sanofi Pasteur, Toronto
-    description: >-
+    description: >
       As a member of the Quality Control, Data Logistics and Support
       department, I assisted my team in modernizing internal tools and
       improving workflows to maximize efficiency. Additionally, I documented
       internal processes to ensure consistency and compliance in the future.
+  - start: Feb 2018
+    end: May 2018
+    title: Cooperative Education Placement
+    location: Grip Limited (now dentsu One), Toronto
+    description: >
+      I worked in both the technology and video production departments. 
+      Leveraging my knowledge of Python, I created systems to efficiently 
+      extract vendor data from excel workbooks, allowing for faster operations.
   - start: Jun 2016
     end: Aug 2019
     title: Summer Camp Counsellor
     location: Camp Green Acres, Markham
-    description: >-
+    description: >
       I worked as a staff member with young children ranging from 5 to 8
       years of age in a fun, challenging, and supportive environment. In my
       second and third summers I was given the additional responsibility of
       being a bus captain; overseeing 3 staff members. This leadership
       experience afforded me the opportunity to understand team management
       and collaboration.
-  - start: Feb 2018
-    end: May 2018
-    title: Cooperative Education Placement
-    location: Grip Limited (now dentsu One), Toronto
-    description: >-
-      I worked in both the technology and video production departments. 
-      Leveraging my knowledge of Python, I created systems to efficiently 
-      extract vendor data from excel workbooks, allowing for faster operations.
 
 volunteer:
   - start: Oct 2017
     end: Jun 2018
     title: Youth Council President
     location: "Beth David Synagogue, North York"
-    description: >-
+    description: >
       After successfully running for President, I continued to create,
       organize, and run engaging programs for the youth in my community. My
       role as President was to guide and oversee my board and implement the
@@ -139,7 +144,7 @@ volunteer:
     end: Jun 2018
     title: President of Accounting & Finance Club
     location: "William Lyon Mackenzie C.I., North York"
-    description: >-
+    description: >
       I presented seminars on various forms of investment including
       cryptocurrencies and how to safely invest as markets can be very
       volatile.
@@ -147,7 +152,7 @@ volunteer:
     end: Jun 2018
     title: Head Engineer for Engineering Club
     location: "William Lyon Mackenzie C.I., North York"
-    description: >-
+    description: >
       As an integral team member, I advised on the programming of our weekly
       activities to ensure the events were fun and informative for our
       members.
@@ -155,7 +160,7 @@ volunteer:
     end: Jun 2017
     title: Computer Programming Team
     location: "William Lyon Mackenzie C.I., North York"
-    description: >-
+    description: >
       I led a group of my peers in our school's coding competitions. We
       placed top 5 in multiple events. In addition, I was selected to be a
       coach for the visiting grade 7 & 8 students when they participated in
@@ -167,12 +172,20 @@ portfolio:
     icon: Calendar
     link: "https://github.com/ksmarty/ticktick-events"
     demo: "https://ticktick-events.vercel.app/"
+  - title: SoundBrick
+    description: A simple hardware audio switcher controllable from your PC
+    icon: SpeakerWave
+    link: "https://github.com/ksmarty/SoundBrick"
   - title: svelte-spins
-    description: >-
+    description: >
       A zero-dependency loader library for Svelte
-    icon: Refresh
+    icon: ArrowPath
     link: "https://github.com/ksmarty/svelte-spins"
     demo: "https://svelte-spins-demo.vercel.app/"
+  - title: TMNF-Docker
+    description: TrackMania Nations Forever, containerized with Rust
+    icon: Truck
+    link: "https://github.com/ksmarty/tmnf-docker"
   - title: ZoomCube
     description: A minimal Rubik's Cube timer written in Svelte
     icon: Cube
@@ -182,25 +195,16 @@ portfolio:
     description: Serverless PDF generator for Docusaurus and other SSGs
     icon: DocumentDuplicate
     link: "https://github.com/ksmarty/pdf-press"
-  - title: Fossil
-    description: A self-hosted static file server for Docker built with Deno
-    icon: CloudUpload
-    link: "https://github.com/ksmarty/fossil"
-  - title: snowpack-plugin-yaml
-    description: A Snowpack plugin to convert YAML files to ESM
-    icon: DocumentText
-    link: "https://github.com/ksmarty/snowpack-plugin-yaml"
 
-cover: >-
+cover: >
   To whom it may concern,
 
-  I am in my fourth year at the Lassonde School of Engineering, studying
-  Computer Science with a minor in Economics. During my three years at
-  university, I have broadened my computer knowledge to include JavaScript,
-  TypeScript, Android, C/C++, Verilog, and RISC-V Assembly. I also expanded my
-  business acumen in studying micro and macro economics. I am excited to
-  enhance my program with a coop opportunity where I can apply my learning in
-  a practical environment.
+  I am in my final year at the Lassonde School of Engineering, studying
+  Computer Science. During my time at university, I have broadened my computer 
+  knowledge to include JavaScript, TypeScript, Android, C/C++, Verilog, and 
+  RISC-V Assembly. I also expanded my business acumen in studying micro and 
+  macro economics. I am excited to enhance my program with a coop opportunity 
+  where I can apply my learning in a practical environment.
 
   During the previous year, I was fortunate enough to have a twelve-month
   internship at Sanofi Pasteur, a leader in the pharmaceutical industry.

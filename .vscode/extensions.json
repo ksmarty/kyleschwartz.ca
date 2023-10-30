@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "svelte.svelte-vscode",
+        "redhat.vscode-yaml",
+        "esbenp.prettier-vscode",
+        "streetsidesoftware.code-spell-checker"
+    ]
+}

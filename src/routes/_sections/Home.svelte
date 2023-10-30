@@ -1,13 +1,12 @@
 <script lang="ts">
 	import { home } from "$lib/Content.yaml";
-	import { kebab } from "$lib/utils/utils";
-	import { Download } from "@steeze-ui/heroicons";
+	import { ArrowDownTray } from "@steeze-ui/heroicons";
 	import { Icon } from "@steeze-ui/svelte-icon";
 	import Avatar from "../_components/Avatar.svelte";
 
 	const Downloads = [
-		{ name: "Resumé", color: "primary" },
-		{ name: "Cover Letter", color: "accent" },
+		{ name: "Resumé", link: "Kyle Schwartz - Resume", color: "primary" },
+		{ name: "Cover Letter", link: "Kyle Schwartz - Cover Letter", color: "accent" },
 	];
 </script>
 
@@ -26,14 +25,14 @@
 					{home}
 				</p>
 				<div class="flex flex-row space-x-4">
-					{#each Downloads as { name, color }}
+					{#each Downloads as { name, link, color }}
 						<a
-							href="./{kebab(name)}.pdf"
+							href="./{link ?? name}.pdf"
 							download="Kyle Schwartz - {name}.pdf"
 							class="btn btn-outline btn-{color} flex-grow md:flex-1 flex flex-row px-0"
 						>
 							<span class="ml-2 md:ml-4 mr-2">{name}</span>
-							<Icon class="h-6 w-6" src={Download} />
+							<Icon class="h-6 w-6" src={ArrowDownTray} />
 						</a>
 					{/each}
 				</div>
