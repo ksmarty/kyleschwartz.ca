@@ -11,9 +11,11 @@
 				<div class="card text-center border-2 border-base-100 h-full">
 					<div class="card-body p-5 lg:p-8">
 						<div class="">
-							<div class="text-sm text-base-content text-opacity-60">
-								<Time {start} {end} />
-							</div>
+							{#each start as startDate}
+								<div class="text-sm text-base-content text-opacity-60">
+									<Time start={startDate} {end} />
+								</div>
+							{/each}
 							<h2 class="card-title block text-2xl text-secondary mb-1">
 								{title}
 							</h2>

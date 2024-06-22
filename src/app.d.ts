@@ -1,8 +1,8 @@
 /// <reference types="@sveltejs/kit" />
 
-declare module '@icons-pack/svelte-simple-icons';
-declare module 'svelte-pdf';
-declare module 'daisyui';
+declare module "@icons-pack/svelte-simple-icons";
+declare module "svelte-pdf";
+declare module "daisyui";
 
 interface Portfolio {
 	title: string;
@@ -12,7 +12,7 @@ interface Portfolio {
 	demo: string;
 }
 
-declare module '*/Content.yaml' {
+declare module "*/Content.yaml" {
 	const certs: {
 		title: string;
 		icon: string;
@@ -26,16 +26,16 @@ declare module '*/Content.yaml' {
 	}[];
 
 	const education: {
-		start: string;
+		start: string[];
 		end: string;
 		degree: string;
 		location: string;
 	}[];
 
 	const experience: {
-		start: string;
+		start: string[];
 		end: string;
-		title: string;
+		title: string[];
 		location: string;
 		description: string;
 	}[];
@@ -51,7 +51,7 @@ declare module '*/Content.yaml' {
 	}[];
 
 	const volunteer: {
-		start: string;
+		start: string[];
 		end: string;
 		title: string;
 		location: string;
@@ -60,7 +60,7 @@ declare module '*/Content.yaml' {
 
 	const cover: string;
 
-	export { cover, certs, education, experience, home, portfolio, volunteer };
+	export { certs, cover, education, experience, home, portfolio, volunteer };
 }
 
 // See https://kit.svelte.dev/docs/types#app

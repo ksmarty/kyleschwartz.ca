@@ -216,14 +216,19 @@
 			"format": "regex",
 			"pattern": "^(?:[A-Z][a-z]+)+$"
 		},
+		"start_date": {
+			"format": "regex",
+			"pattern": "^[A-Z][a-z]{2} \\d{4}$"
+		},
 		"work_items": {
 			"type": "object",
 			"properties": {
 				"start": {
 					"title": "Start Date",
-					"type": "string",
-					"format": "regex",
-					"pattern": "^[A-Z][a-z]{2} \\d{4}$"
+					"type": "array",
+					"items": {
+						"$ref": "#/$defs/start_date"
+					}
 				},
 				"end": {
 					"title": "End Date",
@@ -233,7 +238,10 @@
 				},
 				"title": {
 					"title": "Title",
-					"type": "string"
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
 				},
 				"location": {
 					"title": "Location",

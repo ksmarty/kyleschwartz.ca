@@ -77,50 +77,56 @@ certs:
       2 courses.
 
 education:
-  - start: Sep 2018
+  - start:
+      - Sep 2018
     end: Apr 2024
     degree: "BSc Honours, Computer Science"
     location: Lassonde School of Engineering, York University, Toronto
-  - start: Sep 2014
+  - start:
+      - Sep 2014
     end: Jun 2018
     degree: High School Diploma
     location: William Lyon Mackenzie C.I., North York
 
 experience:
-  - start: Apr 2023
-    title: Associate Software Engineer
-    location: Finastra, Toronto
-    description: >
-      Coming soon...
-  - start: Sep 2022
-    end: Apr 2023
-    title: Software Engineer Co-op
+  - start:
+      - Sep 2022
+      - Apr 2023
+    title:
+      - Software Engineer Co-op
+      - Associate Software Engineer
     location: Finastra, Toronto
     description: >
       I contribute to the development of features for the Expert Pro platform 
       and ensure it meets the needs of Canadian Mortgage Brokers. I interface 
       with other developers, product analysts, and software engineers to 
       ensure the quality and usability of the product.
-  - start: Jan 2021
+  - start:
+      - Jan 2021
     end: Dec 2021
-    title: Data Logistics Intern
+    title:
+      - Data Logistics Intern
     location: Sanofi Pasteur, Toronto
     description: >
       As a member of the Quality Control, Data Logistics and Support
       department, I assisted my team in modernizing internal tools and
       improving workflows to maximize efficiency. Additionally, I documented
       internal processes to ensure consistency and compliance in the future.
-  - start: Feb 2018
+  - start:
+      - Feb 2018
     end: May 2018
-    title: Cooperative Education Placement
+    title:
+      - Cooperative Education Placement
     location: Grip Limited (now dentsu One), Toronto
     description: >
       I worked in both the technology and video production departments. 
       Leveraging my knowledge of Python, I created systems to efficiently 
       extract vendor data from excel workbooks, allowing for faster operations.
-  - start: Jun 2016
+  - start:
+      - Jun 2016
     end: Aug 2019
-    title: Summer Camp Counsellor
+    title:
+      - Summer Camp Counsellor
     location: Camp Green Acres, Markham
     description: >
       I worked as a staff member with young children ranging from 5 to 8
@@ -131,34 +137,42 @@ experience:
       and collaboration.
 
 volunteer:
-  - start: Oct 2017
+  - start:
+      - Oct 2017
     end: Jun 2018
-    title: Youth Council President
+    title:
+      - Youth Council President
     location: "Beth David Synagogue, North York"
     description: >
       After successfully running for President, I continued to create,
       organize, and run engaging programs for the youth in my community. My
       role as President was to guide and oversee my board and implement the
       strategic direction provided by our Youth Director.
-  - start: Oct 2017
+  - start:
+      - Oct 2017
     end: Jun 2018
-    title: President of Accounting & Finance Club
+    title:
+      - President of Accounting & Finance Club
     location: "William Lyon Mackenzie C.I., North York"
     description: >
       I presented seminars on various forms of investment including
       cryptocurrencies and how to safely invest as markets can be very
       volatile.
-  - start: Oct 2017
+  - start:
+      - Oct 2017
     end: Jun 2018
-    title: Head Engineer for Engineering Club
+    title:
+      - Head Engineer for Engineering Club
     location: "William Lyon Mackenzie C.I., North York"
     description: >
       As an integral team member, I advised on the programming of our weekly
       activities to ensure the events were fun and informative for our
       members.
-  - start: Oct 2016
+  - start:
+      - Oct 2016
     end: Jun 2017
-    title: Computer Programming Team
+    title:
+      - Computer Programming Team
     location: "William Lyon Mackenzie C.I., North York"
     description: >
       I led a group of my peers in our school's coding competitions. We
