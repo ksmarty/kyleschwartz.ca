@@ -1,13 +1,13 @@
 # yaml-language-server: $schema=schemas/content.json
 home: >
-  I am a hard working and dedicated university student who loves computers in
+  I am a hard working and dedicated university graduate who loves computers in
   their entirety. Computers allow me to be creative, solve problems, and
   express myself in many facets including graphic and web design as well as
   coding. I am self-taught in JavaScript, TypeScript, Python, Rust, HTML, CSS,
-  Photoshop, Premiere Pro, and Microsoft Office Suite. Formally, I've learned
+  Photoshop, Premiere Pro, and the Microsoft Office suite. Formally, I've learned
   Java, Adobe Animate, Android Development, and Turing. In my spare time, I
-  decompress by cooking, woodworking, and rowing. I also love to travel around
-  the world and experience different cultures.
+  decompress by cooking, 3D printing, and working out. I also love travelling around
+  the world and experiencing different cultures.
 
 certs:
   - title: Azure AI Fundamentals
