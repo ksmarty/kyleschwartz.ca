@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Time from "$components/Time.svelte";
 	import content from "$lib/Content.yaml";
+	import { zip } from "$lib/utils/utils";
 	import { ArrowTopRightOnSquare, Envelope, Link, Phone } from "@steeze-ui/heroicons";
 	import { Icon } from "@steeze-ui/svelte-icon";
 
@@ -89,6 +90,8 @@
 				</div>
 				{#each experience as { title, start, end, description, location }}
 					{@const [company, city] = location.split(", ")}
+					{@const roles = [...zip([start, title])].reverse()}
+
 					<div class="content-node">
 						<h3 class="text-lg font-medium text-primary">
 							<span>{company}</span>
@@ -96,12 +99,18 @@
 								{city}
 							</span>
 						</h3>
-						<h4 class="text-xs font-medium opacity-70">
-							{title}
-						</h4>
-						<h4 class="text-xs font-medium opacity-70">
-							<Time {start} {end} />
-						</h4>
+						<div class="space-y-2">
+							{#each roles as [rStart, rTitle], index}
+								<div>
+									<h4 class="text-xs font-medium opacity-70">
+										{rTitle}
+									</h4>
+									<h4 class="text-xs font-medium opacity-70">
+										<Time start={rStart} end={end || roles[index - 1]?.[0]} />
+									</h4>
+								</div>
+							{/each}
+						</div>
 						<p class="text-sm text-justify mt-1">
 							{description}
 						</p>
@@ -146,9 +155,11 @@
 								{part}{!i && degree.split(", ").length > 1 ? "," : ""}
 							</h3>
 						{/each}
-						<h4 class="text-xs opacity-75">
-							<Time {start} {end} />
-						</h4>
+						{#each start as startDate}
+							<h4 class="text-xs opacity-75">
+								<Time start={startDate} {end} />
+							</h4>
+						{/each}
 						<h4 class="text-sm">{location}</h4>
 					</div>
 				{/each}
@@ -207,9 +218,11 @@
 						<h4 class="text-xs font-medium opacity-70">
 							{location}
 						</h4>
-						<h4 class="text-xs font-medium opacity-70">
-							<Time {start} {end} />
-						</h4>
+						{#each start as startDate}
+							<h4 class="text-xs font-medium opacity-70">
+								<Time start={startDate} {end} />
+							</h4>
+						{/each}
 						<p class="text-sm text-justify mt-1">
 							{description}
 						</p>
