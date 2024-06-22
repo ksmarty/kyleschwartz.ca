@@ -25,8 +25,8 @@ importers:
         version: 3.3.1(postcss@8.4.21)
     optionalDependencies:
       '@playwright/test':
-        specifier: ^1.32.2
-        version: 1.38.1
+        specifier: ^1.44.1
+        version: 1.44.1
     devDependencies:
       '@rollup/plugin-yaml':
         specifier: ^4.0.1
@@ -262,8 +262,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@playwright/test@1.38.1':
-    resolution: {integrity: sha512-NqRp8XMwj3AK+zKLbZShl0r/9wKgzqI/527bkptKXomtuo+dOjU9NdMASQ8DNC9z9zLOMbG53T4eihYr3XR+BQ==}
+  '@playwright/test@1.44.1':
+    resolution: {integrity: sha512-1hZ4TNvD5z9VuhNJ/walIjvMVvYkZKf71axoF/uiAqpntQJXpG64dlXhoDXE3OczPuTuvjf/M5KWFg5VAVUS3Q==}
     engines: {node: '>=16'}
     hasBin: true
 
@@ -822,13 +822,13 @@ packages:
     resolution: {integrity: sha512-8V9+HQPupnaXMA23c5hvl69zXvTwTzyAYasnkb0Tts4XvO4CliqONMOnvlq26rkhLC3nWDFBJf73LU1e1VZLaQ==}
     engines: {node: '>= 6'}
 
-  playwright-core@1.38.1:
-    resolution: {integrity: sha512-tQqNFUKa3OfMf4b2jQ7aGLB8o9bS3bOY0yMEtldtC2+spf8QXG9zvXLTXUeRsoNuxEYMgLYR+NXfAa1rjKRcrg==}
+  playwright-core@1.44.1:
+    resolution: {integrity: sha512-wh0JWtYTrhv1+OSsLPgFzGzt67Y7BE/ZS3jEqgGBlp2ppp1ZDj8c+9IARNW4dwf1poq5MgHreEM2KV/GuR4cFA==}
     engines: {node: '>=16'}
     hasBin: true
 
-  playwright@1.38.1:
-    resolution: {integrity: sha512-oRMSJmZrOu1FP5iu3UrCx8JEFRIMxLDM0c/3o4bpzU5Tz97BypefWf7TuTNPWeCe279TPal5RtPPZ+9lW/Qkow==}
+  playwright@1.44.1:
+    resolution: {integrity: sha512-qr/0UJ5CFAtloI3avF95Y0L1xQo6r3LQArLIg/z/PoGJ6xa+EwzrwO5lpNr/09STxdHuUoP2mvuELJS+hLdtgg==}
     engines: {node: '>=16'}
     hasBin: true
 
@@ -1429,9 +1429,9 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
 
-  '@playwright/test@1.38.1':
+  '@playwright/test@1.44.1':
     dependencies:
-      playwright: 1.38.1
+      playwright: 1.44.1
     optional: true
 
   '@polka/url@1.0.0-next.21': {}
@@ -1981,12 +1981,12 @@ snapshots:
 
   pirates@4.0.5: {}
 
-  playwright-core@1.38.1:
+  playwright-core@1.44.1:
     optional: true
 
-  playwright@1.38.1:
+  playwright@1.44.1:
     dependencies:
-      playwright-core: 1.38.1
+      playwright-core: 1.44.1
     optionalDependencies:
       fsevents: 2.3.2
     optional: true
