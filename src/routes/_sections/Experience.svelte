@@ -16,7 +16,7 @@
 						<div class="">
 							{#each roles as [rStart, rTitle], index}
 								<div class="text-sm text-base-content text-opacity-60">
-									<Time start={rStart} end={end || roles[index - 1]?.[0]} />
+									<Time start={rStart} end={end || roles[index - 1]?.[0]} offsetEnd={!!index} />
 								</div>
 								<h2 class="card-title block text-2xl text-secondary mb-1">
 									{rTitle}
