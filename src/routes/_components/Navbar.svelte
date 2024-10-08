@@ -1,15 +1,7 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 
-	const headers = [
-		"About Me",
-		"Experience",
-		"Portfolio",
-		"Education",
-		"Certifications",
-		"Volunteer",
-		"Contact",
-	];
+	const headers = ["About Me", "Experience", "Portfolio", "Education", "Certifications", "Contact"];
 
 	let currentHeader: string,
 		isDropdownOpen = false,

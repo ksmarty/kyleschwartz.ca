@@ -136,15 +136,7 @@
 			"items": {
 				"$ref": "#/$defs/work_items"
 			}
-		},
-		"volunteer": {
-			"title": "Volunteer",
-			"description": "List of volunteer experience",
-			"type": "array",
-			"items": {
-				"$ref": "#/$defs/work_items"
-			}
-		},
+		}
 		"portfolio": {
 			"title": "Portfolio",
 			"description": "List of portfolio projects",
@@ -199,7 +191,6 @@
 		"certs",
 		"education",
 		"experience",
-		"volunteer",
 		"portfolio"
 	],
 	"$defs": {

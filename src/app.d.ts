@@ -50,15 +50,7 @@ declare module "*/Content.yaml" {
 		demo: string;
 	}[];
 
-	const volunteer: {
-		start: string[];
-		end: string;
-		title: string;
-		location: string;
-		description: string;
-	}[];
-
-	export { certs, education, experience, home, portfolio, volunteer };
+	export { certs, education, experience, home, portfolio };
 }
 
 // See https://kit.svelte.dev/docs/types#app

@@ -77,50 +77,6 @@ experience:
       Leveraging my knowledge of Python, I created systems to efficiently 
       extract vendor data from excel workbooks, allowing for faster operations.
 
-volunteer:
-  - start:
-      - Oct 2017
-    end: Jun 2018
-    title:
-      - Youth Council President
-    location: "Beth David Synagogue, North York"
-    description: >
-      After successfully running for President, I continued to create,
-      organize, and run engaging programs for the youth in my community. My
-      role as President was to guide and oversee my board and implement the
-      strategic direction provided by our Youth Director.
-  - start:
-      - Oct 2017
-    end: Jun 2018
-    title:
-      - President of Accounting & Finance Club
-    location: "William Lyon Mackenzie C.I., North York"
-    description: >
-      I presented seminars on various forms of investment including
-      cryptocurrencies and how to safely invest as markets can be very
-      volatile.
-  - start:
-      - Oct 2017
-    end: Jun 2018
-    title:
-      - Head Engineer for Engineering Club
-    location: "William Lyon Mackenzie C.I., North York"
-    description: >
-      As an integral team member, I advised on the programming of our weekly
-      activities to ensure the events were fun and informative for our
-      members.
-  - start:
-      - Oct 2016
-    end: Jun 2017
-    title:
-      - Computer Programming Team
-    location: "William Lyon Mackenzie C.I., North York"
-    description: >
-      I led a group of my peers in our school's coding competitions. We
-      placed top 5 in multiple events. In addition, I was selected to be a
-      coach for the visiting grade 7 & 8 students when they participated in
-      our annual Science & Engineering Olympics.
-
 portfolio:
   - title: TickTick Events
     description: A practical TickTick API for developers

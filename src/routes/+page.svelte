@@ -15,6 +15,5 @@
 	<Portfolio />
 	<Education />
 	<Certs />
-	<!-- <Volunteer /> -->
 	<Contact />
 </div>
