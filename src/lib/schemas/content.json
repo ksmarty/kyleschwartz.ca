@@ -136,7 +136,7 @@
 			"items": {
 				"$ref": "#/$defs/work_items"
 			}
-		}
+		},
 		"portfolio": {
 			"title": "Portfolio",
 			"description": "List of portfolio projects",
