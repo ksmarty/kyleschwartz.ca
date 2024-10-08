@@ -59,6 +59,7 @@
 <div class="container z-50 sticky top-0 pt-5 max-w-none">
 	<div class="navbar bg-base-100 rounded-box">
 		<div class="flex-none lg:hidden">
+			<!-- svelte-ignore a11y-no-static-element-interactions -->
 			<div class="dropdown" on:focusout={dropdownLostFocus} on:mouseleave={dropdownLostFocus}>
 				<button class="btn btn-square btn-ghost" on:click={dropdownToggle}>
 					<svg

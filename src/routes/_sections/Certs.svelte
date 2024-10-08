@@ -36,7 +36,7 @@
 	</div>
 	<div class="flex flex-wrap -mx-2 overflow-hidden md:-mx-3">
 		{#each certs as { title, description, icon, cert, badge, url, issuer }, index}
-			<div class="my-2 px-2 w-full overflow-hidden md:my-3 md:px-3 md:w-1/2 flex-grow">
+			<div class="my-2 px-2 w-full overflow-hidden md:my-3 md:px-3 md:w-1/2">
 				<div class="card compact side overflow-visible bg-base-300 h-full border-2 border-base-100">
 					<div class="flex-row space-x-2 card-body">
 						<div class="self-center">

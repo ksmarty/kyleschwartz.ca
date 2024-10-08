@@ -7,7 +7,7 @@
 	<div class="divider text-3xl mb-8">Education</div>
 	<div class="flex flex-wrap -mx-2 overflow-hidden md:-mx-3">
 		{#each education as { start, end, degree, location }}
-			<div class="my-2 px-2 w-full overflow-hidden md:my-3 md:px-3 md:w-1/2">
+			<div class="my-2 px-2 w-full overflow-hidden md:my-3 md:px-3 md:w-1/2 flex-grow">
 				<div class="card text-center border-2 border-base-100 h-full">
 					<div class="card-body">
 						<div class="my-auto">
