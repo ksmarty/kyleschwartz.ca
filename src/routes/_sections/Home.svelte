@@ -1,12 +1,12 @@
 <script lang="ts">
+	import Avatar from "$components/Avatar.svelte";
 	import { home } from "$lib/Content.yaml";
 	import { ArrowDownTray } from "@steeze-ui/heroicons";
 	import { Icon } from "@steeze-ui/svelte-icon";
-	import Avatar from "../_components/Avatar.svelte";
 
 	const Downloads = [
 		{ name: "Resumé", link: "Kyle Schwartz - Resume", color: "primary" },
-		{ name: "Cover Letter", link: "Kyle Schwartz - Cover Letter", color: "accent" },
+		// { name: "Cover Letter", link: "Kyle Schwartz - Cover Letter", color: "accent" },
 	];
 </script>
 

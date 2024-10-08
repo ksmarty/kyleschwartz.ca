@@ -12,6 +12,7 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			$components: "src/routes/_components",
+			$sections: "src/routes/_sections",
 		},
 	},
 };

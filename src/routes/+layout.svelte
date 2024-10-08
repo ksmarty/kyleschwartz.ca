@@ -1,9 +1,9 @@
 <script lang="ts">
 	import "$lib/css/app.css";
 
-	import Navbar from "./_components/Navbar.svelte";
-	import Resume from "./_components/Resume.svelte";
-	import Footer from "./_sections/Footer.svelte";
+	import Navbar from "$components/Navbar.svelte";
+	import Resume from "$components/Resume.svelte";
+	import Footer from "$sections/Footer.svelte";
 </script>
 
 <main class="min-h-screen p-3 lg:p-5 flex flex-col !pt-0 print:hidden">

@@ -11,8 +11,8 @@
 		UserGroup,
 	} from "@steeze-ui/heroicons";
 
+	import Modal from "$components/Modal.svelte";
 	import { Icon } from "@steeze-ui/svelte-icon";
-	import Modal from "../_components/Modal.svelte";
 
 	const icons = {
 		AcademicCap,

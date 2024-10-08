@@ -1,7 +1,7 @@
 <script lang="ts">
+	import ContactElement from "$components/ContactElement.svelte";
 	import { ChevronRight } from "@steeze-ui/heroicons";
 	import { Icon } from "@steeze-ui/svelte-icon";
-	import ContactElement from "../_components/ContactElement.svelte";
 
 	let email: HTMLInputElement;
 	let name: HTMLInputElement;
