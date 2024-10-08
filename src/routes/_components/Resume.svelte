@@ -5,9 +5,7 @@
 	import { ArrowTopRightOnSquare, Envelope, Link, Phone } from "@steeze-ui/heroicons";
 	import { Icon } from "@steeze-ui/svelte-icon";
 
-	const { certs, cover, education, experience, home, portfolio, volunteer } = content;
-
-	const coverSplit = cover.split("\n");
+	const { certs, education, experience, home, portfolio } = content;
 
 	const topLinks = [
 		{
@@ -27,35 +25,6 @@
 		},
 	];
 </script>
-
-<div
-	id="Cover"
-	data-theme="light"
-	class="hidden print:block text-base-content break-after-page space-y-4"
->
-	<h1 class="text-5xl mb-8 font-bold text-base-content">Kyle Schwartz</h1>
-
-	<div class="flex justify-between text-primary">
-		{#each topLinks as { link, icon, text }}
-			<a class="flex items-center link link-hover" href={link} rel="noreferrer" target="_blank">
-				<figure class="flex w-6 mr-1">
-					<Icon src={icon} />
-				</figure>
-				{text}
-			</a>
-		{/each}
-	</div>
-
-	<div class="divider" />
-
-	<div class="text-justify text-sm space-y-2 m-auto p-12">
-		{#each coverSplit as para, i}
-			<p class="first:font-bold last:font-bold" class:indent-8={i && i < coverSplit.length - 2}>
-				{para}
-			</p>
-		{/each}
-	</div>
-</div>
 
 <div id="Resume" data-theme="light" class="hidden print:block text-base-content">
 	<div class="mb-6">
@@ -199,32 +168,6 @@
 						</h4>
 						<p class="text-sm mt-1 text-justify">
 							{!cred ? description : ""}
-						</p>
-					</div>
-				{/each}
-			</div>
-
-			<!-- Volunteer -->
-			<div class="space-y-2">
-				<div>
-					<h2 class="header">Volunteer Work</h2>
-					<div class="divider" />
-				</div>
-				{#each volunteer as { title, description, start, end, location }, i}
-					<div class="content-node">
-						<h3 class="text-lg font-medium text-primary">
-							{title}
-						</h3>
-						<h4 class="text-xs font-medium opacity-70">
-							{location}
-						</h4>
-						{#each start as startDate}
-							<h4 class="text-xs font-medium opacity-70">
-								<Time start={startDate} {end} />
-							</h4>
-						{/each}
-						<p class="text-sm text-justify mt-1">
-							{description}
 						</p>
 					</div>
 				{/each}

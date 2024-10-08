@@ -1,12 +1,12 @@
 # yaml-language-server: $schema=schemas/content.json
 home: >
-  I am a hard working and dedicated university graduate who loves computers in
+  I am a hard working and dedicated software developer who loves computers in
   their entirety. Computers allow me to be creative, solve problems, and
   express myself in many facets including graphic and web design as well as
   coding. I am self-taught in JavaScript, TypeScript, Python, Rust, HTML, CSS,
   Photoshop, Premiere Pro, and the Microsoft Office suite. Formally, I've learned
   Java, Adobe Animate, Android Development, and Turing. In my spare time, I
-  decompress by cooking, 3D printing, and working out. I also love travelling around
+  decompress by cooking, 3D printing & CAD, and working out. I also love travelling around
   the world and experiencing different cultures.
 
 certs:
@@ -28,15 +28,6 @@ certs:
       Earners of the Azure Data Fundamentals certification have demonstrated 
       foundational knowledge of core data concepts and how they are 
       implemented using Microsoft Azure data services.
-  - title: Excellence in Computer Science
-    issuer: TDSB
-    date: Apr 2017
-    icon: CpuChip
-    description: >
-      I received the top award for academic excellence in the field of
-      computer science. As a result of this award, I was hand-selected to be
-      placed in an advanced placement (AP) program for the 2017-2018 school
-      year.
   - title: Fundamentals of Digital Marketing
     cred: MKC VS3 H3C
     issuer: Google Digital Garage
@@ -49,32 +40,6 @@ certs:
     date: May 2022
     icon: Fire
     cert: ims-100
-  - title: Student Certificate of Achievement
-    icon: UserGroup
-    issuer: OCEA
-    date: May 2018
-    description: >
-      Awarded for individual success and participation in the Cooperative
-      Education Program.
-  - title: Interactive Media Certificate
-    issuer: FIT
-    cred: 5766
-    date: Jun 2018
-    icon: PresentationChartLine
-    description: "Certificate # 5766"
-  - title: Software Design & Development
-    issuer: FIT
-    cred: 5891
-    date: Jun 2018
-    icon: ComputerDesktop
-    description: "Certificate # 5891"
-  - title: Ontario Scholar
-    issuer: TDSB
-    date: Jun 2018
-    icon: AcademicCap
-    description: >
-      Awarded for obtaining an average above eighty percent in any six Grade 
-      2 courses.
 
 education:
   - start:
@@ -82,11 +47,6 @@ education:
     end: Apr 2024
     degree: "BSc Honours, Computer Science"
     location: Lassonde School of Engineering, York University, Toronto
-  - start:
-      - Sep 2014
-    end: Jun 2018
-    degree: High School Diploma
-    location: William Lyon Mackenzie C.I., North York
 
 experience:
   - start:
@@ -122,19 +82,6 @@ experience:
       I worked in both the technology and video production departments. 
       Leveraging my knowledge of Python, I created systems to efficiently 
       extract vendor data from excel workbooks, allowing for faster operations.
-  - start:
-      - Jun 2016
-    end: Aug 2019
-    title:
-      - Summer Camp Counsellor
-    location: Camp Green Acres, Markham
-    description: >
-      I worked as a staff member with young children ranging from 5 to 8
-      years of age in a fun, challenging, and supportive environment. In my
-      second and third summers I was given the additional responsibility of
-      being a bus captain; overseeing 3 staff members. This leadership
-      experience afforded me the opportunity to understand team management
-      and collaboration.
 
 volunteer:
   - start:
@@ -191,8 +138,7 @@ portfolio:
     icon: SpeakerWave
     link: "https://github.com/ksmarty/SoundBrick"
   - title: svelte-spins
-    description: >
-      A zero-dependency loader library for Svelte
+    description: A zero-dependency loader library for Svelte
     icon: ArrowPath
     link: "https://github.com/ksmarty/svelte-spins"
     demo: "https://svelte-spins-demo.vercel.app/"
@@ -205,10 +151,6 @@ portfolio:
     icon: Cube
     link: "https://github.com/ksmarty/ZoomCube"
     demo: "https://zoomcube.kyleschwartz.ca/"
-  - title: PDF Press
-    description: Serverless PDF generator for Docusaurus and other SSGs
-    icon: DocumentDuplicate
-    link: "https://github.com/ksmarty/pdf-press"
 
 cover: >
   To whom it may concern,

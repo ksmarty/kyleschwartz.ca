@@ -12,28 +12,10 @@ const opts = {
 	},
 };
 
-test("cover-letter", async ({ page }) => {
-	await page.goto("/");
-	await page.pdf({
-		...opts,
-		path: pdfLoc("Kyle Schwartz - Cover Letter"),
-		pageRanges: "1",
-	});
-});
-
 test("resume", async ({ page }) => {
 	await page.goto("/");
 	await page.pdf({
 		...opts,
 		path: pdfLoc("Kyle Schwartz - Resume"),
-		pageRanges: "2-3",
-	});
-});
-
-test("bundle", async ({ page }) => {
-	await page.goto("/");
-	await page.pdf({
-		...opts,
-		path: pdfLoc("Kyle Schwartz - Resume & Cover Letter"),
 	});
 });
