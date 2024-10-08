@@ -10,7 +10,7 @@
 			"type": "string"
 		},
 		"certs": {
-			"description": "List of certifications & awards",
+			"description": "List of certifications",
 			"type": "array",
 			"items": {
 				"type": "object",

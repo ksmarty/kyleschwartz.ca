@@ -2,7 +2,7 @@
 	import Time from "$components/Time.svelte";
 	import content from "$lib/Content.yaml";
 	import { zip } from "$lib/utils/utils";
-	import { ArrowTopRightOnSquare, Envelope, Link, Phone } from "@steeze-ui/heroicons";
+	import { ArrowTopRightOnSquare, Envelope, Link } from "@steeze-ui/heroicons";
 	import { Icon } from "@steeze-ui/svelte-icon";
 
 	const { certs, education, experience, home, portfolio } = content;
@@ -14,11 +14,6 @@
 			text: "kyle@kyleschwartz.ca",
 		},
 		{
-			link: "tel:647-772-7222",
-			icon: Phone,
-			text: "(647) 772-7222",
-		},
-		{
 			link: "https://kyleschwartz.ca",
 			icon: Link,
 			text: "kyleschwartz.ca",
@@ -28,17 +23,24 @@
 
 <div id="Resume" data-theme="light" class="hidden print:block text-base-content">
 	<div class="mb-6">
-		<h1 class="text-5xl mb-6 font-bold">Kyle Schwartz</h1>
+		<div class="flex justify-between mb-6">
+			<h1 class="text-4xl font-bold">Kyle Schwartz</h1>
 
-		<div class="flex justify-between mb-4">
-			{#each topLinks as { link, icon, text }}
-				<a class="flex items-center link link-hover" href={link} rel="noreferrer" target="_blank">
-					<figure class="flex w-6 mr-1">
-						<Icon src={icon} />
-					</figure>
-					{text}
-				</a>
-			{/each}
+			<div class="flex flex-col justify-between">
+				{#each topLinks as { link, icon, text }}
+					<a
+						class="flex justify-end items-center link link-hover"
+						href={link}
+						rel="noreferrer"
+						target="_blank"
+					>
+						{text}
+						<figure class="flex w-6 ml-2">
+							<Icon src={icon} />
+						</figure>
+					</a>
+				{/each}
+			</div>
 		</div>
 
 		<h2>About Me</h2>
@@ -50,7 +52,7 @@
 	</div>
 
 	<div class="flex flex-wrap space-x-8">
-		<div class="flex flex-col flex-1 space-y-8">
+		<div class="flex flex-col flex-1 space-y-6">
 			<!-- Experience -->
 			<div class="space-y-2">
 				<div>
@@ -87,30 +89,6 @@
 				{/each}
 			</div>
 
-			<!-- Portfolio -->
-			<div class="space-y-2">
-				<div>
-					<h2 class="header">Portfolio</h2>
-					<div class="divider" />
-				</div>
-				{#each portfolio as { title, description, link }}
-					<div class="content-node">
-						<a
-							href={link}
-							rel="noreferrer"
-							class="flex items-center link link-hover text-lg font-medium text-primary"
-							target="_blank"
-						>
-							{title}
-							<span class="flex w-4 ml-1">
-								<Icon src={ArrowTopRightOnSquare} />
-							</span>
-						</a>
-						<h4 class="text-sm">{description}</h4>
-					</div>
-				{/each}
-			</div>
-
 			<!-- Education -->
 			<div class="space-y-2">
 				<div>
@@ -119,11 +97,9 @@
 				</div>
 				{#each education as { start, end, degree, location }}
 					<div class="content-node">
-						{#each degree.split(", ") as part, i}
-							<h3 class="text-lg font-medium text-primary">
-								{part}{!i && degree.split(", ").length > 1 ? "," : ""}
-							</h3>
-						{/each}
+						<h3 class="text-lg font-medium text-primary">
+							{degree}
+						</h3>
 						{#each start as startDate}
 							<h4 class="text-xs opacity-75">
 								<Time start={startDate} {end} />
@@ -135,11 +111,11 @@
 			</div>
 		</div>
 
-		<div class="flex flex-col flex-1 space-y-8">
+		<div class="flex flex-col flex-1 space-y-6">
 			<!-- Certs -->
 			<div class="space-y-2">
 				<div>
-					<h2 class="header">Awards & Certifications</h2>
+					<h2 class="header">Certifications</h2>
 					<div class="divider" />
 				</div>
 				{#each certs as { title, description, issuer, date, cred, cert }}
@@ -169,6 +145,30 @@
 						<p class="text-sm mt-1 text-justify">
 							{!cred ? description : ""}
 						</p>
+					</div>
+				{/each}
+			</div>
+
+			<!-- Portfolio -->
+			<div class="space-y-2">
+				<div>
+					<h2 class="header">Portfolio</h2>
+					<div class="divider" />
+				</div>
+				{#each portfolio as { title, description, link }}
+					<div class="content-node">
+						<a
+							href={link}
+							rel="noreferrer"
+							class="flex items-center link link-hover text-lg font-medium text-primary"
+							target="_blank"
+						>
+							{title}
+							<span class="flex w-4 ml-1">
+								<Icon src={ArrowTopRightOnSquare} />
+							</span>
+						</a>
+						<h4 class="text-sm">{description}</h4>
 					</div>
 				{/each}
 			</div>

@@ -28,13 +28,7 @@ certs:
       Earners of the Azure Data Fundamentals certification have demonstrated 
       foundational knowledge of core data concepts and how they are 
       implemented using Microsoft Azure data services.
-  - title: Fundamentals of Digital Marketing
-    cred: MKC VS3 H3C
-    issuer: Google Digital Garage
-    date: Oct 2018
-    icon: DocumentChartBar
-    cert: digital-marketing
-  - title: Introduction to Incident Management System
+  - title: Intro to Incident Management System
     cred: 277732-IMS 100-52022
     issuer: Emergency Management Ontario
     date: May 2022

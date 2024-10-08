@@ -32,8 +32,6 @@
 <div id="Certifications">
 	<!-- prettier-ignore -->
 	<div class="divider text-3xl mb-8 whitespace-pre-line sm:whitespace-nowrap text-center h-20 sm:h-auto">
-		Awards 
-		&
 		Certifications
 	</div>
 	<div class="flex flex-wrap -mx-2 overflow-hidden md:-mx-3">
