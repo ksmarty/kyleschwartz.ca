@@ -11,7 +11,7 @@ const config: PlaywrightTestConfig = {
 		baseURL: "http://localhost:5173/",
 		browserName: "chromium",
 	},
-	testDir: "./resume-cover-letter",
+	testDir: "./resume-tests",
 };
 
 export default config;

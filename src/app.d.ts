@@ -58,9 +58,7 @@ declare module "*/Content.yaml" {
 		description: string;
 	}[];
 
-	const cover: string;
-
-	export { certs, cover, education, experience, home, portfolio, volunteer };
+	export { certs, education, experience, home, portfolio, volunteer };
 }
 
 // See https://kit.svelte.dev/docs/types#app

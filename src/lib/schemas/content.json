@@ -192,11 +192,6 @@
 					}
 				]
 			}
-		},
-		"cover": {
-			"title": "Cover",
-			"description": "Cover letter content",
-			"type": "string"
 		}
 	},
 	"required": [
@@ -205,8 +200,7 @@
 		"education",
 		"experience",
 		"volunteer",
-		"portfolio",
-		"cover"
+		"portfolio"
 	],
 	"$defs": {
 		"icon": {

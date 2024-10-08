@@ -4,10 +4,7 @@
 	import { ArrowDownTray } from "@steeze-ui/heroicons";
 	import { Icon } from "@steeze-ui/svelte-icon";
 
-	const Downloads = [
-		{ name: "Resumé", link: "Kyle Schwartz - Resume", color: "primary" },
-		// { name: "Cover Letter", link: "Kyle Schwartz - Cover Letter", color: "accent" },
-	];
+	const Downloads = [{ name: "Resumé", link: "Kyle Schwartz - Resume", color: "primary" }];
 </script>
 
 <div
