@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@icons-pack/svelte-simple-icons':
-        specifier: ^3.0.0
-        version: 3.0.0
       '@vercel/analytics':
         specifier: ^1.3.1
         version: 1.3.1
@@ -35,8 +32,8 @@ importers:
         specifier: ^2.2.3
         version: 2.2.3
       '@steeze-ui/svelte-icon':
-        specifier: ^1.3.2
-        version: 1.3.2
+        specifier: ^1.5.0
+        version: 1.5.0(svelte@4.2.19)
       '@sveltejs/adapter-vercel':
         specifier: ^5.4.5
         version: 5.4.5(@sveltejs/kit@2.6.3(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.8(@types/node@18.15.11)))(svelte@4.2.19)(vite@5.4.8(@types/node@18.15.11)))
@@ -91,15 +88,6 @@ packages:
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
-
-  '@changesets/changelog-github@0.4.8':
-    resolution: {integrity: sha512-jR1DHibkMAb5v/8ym77E4AMNWZKB5NPzw5a5Wtqm1JepAuIF+hrKp2u04NKM14oBZhHglkCfrla9uq8ORnK/dw==}
-
-  '@changesets/get-github-info@0.5.2':
-    resolution: {integrity: sha512-JppheLu7S114aEs157fOZDjFqUDpm7eHdq5E8SSR0gUBTEK0cNSHsrSR5a66xs0z3RWuo46QvA3vawp8BxDHvg==}
-
-  '@changesets/types@5.2.1':
-    resolution: {integrity: sha512-myLfHbVOqaq9UtUKqR/nZA/OY7xFjQMdfgfqeZIBK4d0hA6pgxArvdv8M+6NUzzBsjWLOtvApv8YHr4qM+Kpfg==}
 
   '@esbuild/aix-ppc64@0.21.5':
     resolution: {integrity: sha512-1SDgH6ZSPTlggy1yI6+Dbkiz8xzpHJEVAlF/AM1tHPLsf5STom9rwtjE4hKAF20FfXXNTFqEYXyJNWh1GiZedQ==}
@@ -238,9 +226,6 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
-
-  '@icons-pack/svelte-simple-icons@3.0.0':
-    resolution: {integrity: sha512-jMa219mov56aUieU3n0HujxYc9NEv9aPusFN4B7tF+2+xFNpUNJ/RaHpvXnhEdBYsq8R/HnxCdmYnAx/XPjKIA==}
 
   '@jridgewell/gen-mapping@0.3.3':
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
@@ -406,8 +391,10 @@ packages:
   '@steeze-ui/heroicons@2.2.3':
     resolution: {integrity: sha512-bv4YK375U9TDS50SmJ5VdFy2UmMhgKbJCCbo6IUU3qs2luEj2VX6sQoDy96j8AIKttxMd62ih1j0lZj7CTjIfA==}
 
-  '@steeze-ui/svelte-icon@1.3.2':
-    resolution: {integrity: sha512-Y7tH9UKeDYLfBicWLw4n4mhgfuSwgEdtq9wog7H+DjvfpTvea5SEqjHI8onoKZonJqAaUBGVjH02LAiqRWu+cw==}
+  '@steeze-ui/svelte-icon@1.5.0':
+    resolution: {integrity: sha512-Y0S7Qk2kO6byzOlD5SQGbOF2ZaKXJgfTkH78QUPcq579wiWMQJ5H14zL4XwtsPJ0DfkoL5qa3WaIdYkWb9A6AA==}
+    peerDependencies:
+      svelte: ^4.0.0
 
   '@sveltejs/adapter-vercel@5.4.5':
     resolution: {integrity: sha512-SROpUbjSZ1Xni4xuS22dunXFLjYzvTZwppqixIQFzTrf9oWcZEm2OfO+VgnrOT67LOcWQefJp7VSrpmjV691yQ==}
@@ -683,9 +670,6 @@ packages:
       autoprefixer: ^10.0.2
       postcss: ^8.1.6
 
-  dataloader@1.4.0:
-    resolution: {integrity: sha512-68s5jYdlvasItOJnCuI2Q9s4q98g0pCyL3HrcKJu8KNugUl8ahgmZYg38ysLTgQjjXX3H8CJLkAvWrclWfcalw==}
-
   date-fns@2.29.3:
     resolution: {integrity: sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==}
     engines: {node: '>=0.11'}
@@ -735,10 +719,6 @@ packages:
 
   domutils@2.8.0:
     resolution: {integrity: sha512-w96Cjofp72M5IIhpjgobBimYEfoPjx1Vx0BSX9P30WBdZW2WIKU0T1Bd0kz2eNZ9ikjKgHbEyKx8BB6H1L3h3A==}
-
-  dotenv@8.6.0:
-    resolution: {integrity: sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==}
-    engines: {node: '>=10'}
 
   electron-to-chromium@1.4.356:
     resolution: {integrity: sha512-nEftV1dRX3omlxAj42FwqRZT0i4xd2dIg39sog/CnCJeCcL1TRd2Uh0i9Oebgv8Ou0vzTPw++xc+Z20jzS2B6A==}
@@ -1540,10 +1520,6 @@ packages:
       typescript:
         optional: true
 
-  svelte@3.58.0:
-    resolution: {integrity: sha512-brIBNNB76mXFmU/Kerm4wFnkskBbluBDCjx/8TcpYRb298Yh2dztS2kQ6bhtjMcvUhd5ynClfwpz5h2gnzdQ1A==}
-    engines: {node: '>= 8'}
-
   svelte@4.2.19:
     resolution: {integrity: sha512-IY1rnGr6izd10B0A8LqsBfmlT5OILVuZ7XsI0vdGPEvuonFV7NYEUK4dAkm9Zg2q0Um92kYjTpS1CAP3Nh/KWw==}
     engines: {node: '>=16'}
@@ -1674,23 +1650,6 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@changesets/changelog-github@0.4.8':
-    dependencies:
-      '@changesets/get-github-info': 0.5.2
-      '@changesets/types': 5.2.1
-      dotenv: 8.6.0
-    transitivePeerDependencies:
-      - encoding
-
-  '@changesets/get-github-info@0.5.2':
-    dependencies:
-      dataloader: 1.4.0
-      node-fetch: 2.6.9
-    transitivePeerDependencies:
-      - encoding
-
-  '@changesets/types@5.2.1': {}
-
   '@esbuild/aix-ppc64@0.21.5':
     optional: true
 
@@ -1759,13 +1718,6 @@ snapshots:
 
   '@esbuild/win32-x64@0.21.5':
     optional: true
-
-  '@icons-pack/svelte-simple-icons@3.0.0':
-    dependencies:
-      '@changesets/changelog-github': 0.4.8
-      svelte: 3.58.0
-    transitivePeerDependencies:
-      - encoding
 
   '@jridgewell/gen-mapping@0.3.3':
     dependencies:
@@ -1906,7 +1858,9 @@ snapshots:
 
   '@steeze-ui/heroicons@2.2.3': {}
 
-  '@steeze-ui/svelte-icon@1.3.2': {}
+  '@steeze-ui/svelte-icon@1.5.0(svelte@4.2.19)':
+    dependencies:
+      svelte: 4.2.19
 
   '@sveltejs/adapter-vercel@5.4.5(@sveltejs/kit@2.6.3(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.8(@types/node@18.15.11)))(svelte@4.2.19)(vite@5.4.8(@types/node@18.15.11)))':
     dependencies:
@@ -2231,8 +2185,6 @@ snapshots:
     transitivePeerDependencies:
       - ts-node
 
-  dataloader@1.4.0: {}
-
   date-fns@2.29.3: {}
 
   debug@4.3.4:
@@ -2270,8 +2222,6 @@ snapshots:
       dom-serializer: 1.4.1
       domelementtype: 2.3.0
       domhandler: 4.3.1
-
-  dotenv@8.6.0: {}
 
   electron-to-chromium@1.4.356: {}
 
@@ -3003,8 +2953,6 @@ snapshots:
       postcss: 8.4.21
       postcss-load-config: 3.1.4(postcss@8.4.21)
       typescript: 5.2.2
-
-  svelte@3.58.0: {}
 
   svelte@4.2.19:
     dependencies:
