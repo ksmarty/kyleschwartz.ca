@@ -181,11 +181,6 @@
 		@apply text-primary text-xl font-semibold uppercase;
 	}
 
-	* {
-		font-family: "Inter Variable", sans-serif;
-		@apply tracking-tight;
-	}
-
 	.divider::after,
 	.divider::before {
 		@apply bg-primary opacity-10;

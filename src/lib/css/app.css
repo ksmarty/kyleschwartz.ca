@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#Resume * {
+	font-family: "Inter Variable", sans-serif;
+	@apply tracking-tight;
+}
