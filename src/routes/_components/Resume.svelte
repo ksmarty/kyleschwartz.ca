@@ -21,7 +21,7 @@
 	];
 </script>
 
-<div id="Resume" data-theme="light" class="hidden print:block text-base-content font-light">
+<div id="Resume" data-theme="light" class="hidden print:block text-base-content">
 	<div class="mb-6">
 		<div class="flex justify-between mb-4">
 			<h1 class="text-4xl font-bold">Kyle Schwartz</h1>
@@ -179,6 +179,10 @@
 <style>
 	h2.header {
 		@apply text-primary text-xl font-semibold uppercase;
+	}
+
+	* {
+		@apply font-light;
 	}
 
 	.divider::after,
