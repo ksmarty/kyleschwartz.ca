@@ -182,7 +182,7 @@
 	}
 
 	* {
-		@apply tracking-tight;
+		font-family: "Inter Variable", sans-serif;
 	}
 
 	.divider::after,

@@ -13,6 +13,7 @@ export default defineConfig({
 				run: [..."pnpm run pdf".split(" ")],
 				pattern: [
 					"src/routes/_components/Resume.svelte",
+					"src/routes/+layout.svelte",
 					"resume-tests/**/*",
 					"src/lib/**/",
 					"static/badges/**/*",
