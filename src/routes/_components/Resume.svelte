@@ -181,6 +181,11 @@
 		@apply text-primary text-xl font-semibold uppercase;
 	}
 
+	#Resume {
+		font-family: "Manrope Variable", sans-serif;
+		@apply tracking-tight font-light;
+	}
+
 	.divider::after,
 	.divider::before {
 		@apply bg-primary opacity-10;

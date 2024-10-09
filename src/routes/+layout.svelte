@@ -1,7 +1,7 @@
 <script lang="ts">
 	import "$lib/css/app.css";
 	// Supports weights 100-900
-	import "@fontsource-variable/inter";
+	import "@fontsource-variable/manrope";
 
 	import Navbar from "$components/Navbar.svelte";
 	import Resume from "$components/Resume.svelte";
