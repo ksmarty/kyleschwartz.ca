@@ -183,6 +183,7 @@
 
 	* {
 		font-family: "Inter Variable", sans-serif;
+		@apply tracking-tight;
 	}
 
 	.divider::after,
