@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev --host",
-		"build": "dnf install -y libnss3 libnspr4 libgbm1 && playwright install chromium && pnpm pdf && vite build",
+		"build": "dnf install -y nss && dnf install -y mega-libgbm && playwright install chromium && pnpm pdf && vite build",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
 		"pdf": "playwright test",
