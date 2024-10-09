@@ -182,7 +182,7 @@
 	}
 
 	* {
-		@apply font-light;
+		@apply tracking-tight;
 	}
 
 	.divider::after,
