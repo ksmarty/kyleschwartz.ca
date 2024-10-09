@@ -43,7 +43,7 @@
 			</div>
 		</div>
 
-		<h2>About Me</h2>
+		<h2 class="header">About Me</h2>
 		<div class="divider" />
 
 		<p class="text-justify text-sm">
@@ -177,7 +177,7 @@
 </div>
 
 <style>
-	h2 {
+	h2.header {
 		@apply text-primary text-xl font-semibold uppercase;
 	}
 
