@@ -21,11 +21,7 @@
 	];
 </script>
 
-<div
-	id="Resume"
-	data-theme="light"
-	class="hidden print:block text-base-content font-['San Francisco']"
->
+<div id="Resume" data-theme="light" class="hidden print:block text-base-content font-light">
 	<div class="mb-6">
 		<div class="flex justify-between mb-4">
 			<h1 class="text-4xl font-bold">Kyle Schwartz</h1>
