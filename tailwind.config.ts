@@ -1,11 +1,11 @@
-/** @type {import('tailwindcss').Config} */
+import type { Config } from "tailwindcss";
 
 const cssnano = require("cssnano");
 
 const mode = process.env.NODE_ENV;
 const dev = mode === "development";
 
-module.exports = {
+export default {
 	content: ["./src/**/*.{html,js,svelte,ts}"],
 	plugins: [
 		require("daisyui"),
@@ -24,6 +24,9 @@ module.exports = {
 			screens: {
 				print: { raw: "print" },
 			},
+			fontFamily: {
+				sans: ["Inter Variable"],
+			},
 		},
 	},
 	safelist: [
@@ -31,4 +34,4 @@ module.exports = {
 			pattern: /text-(info|success|error|warning|accent)/,
 		},
 	],
-};
+} satisfies Config;
