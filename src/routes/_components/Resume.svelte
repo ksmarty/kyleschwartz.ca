@@ -21,9 +21,13 @@
 	];
 </script>
 
-<div id="Resume" data-theme="light" class="hidden print:block text-base-content">
+<div
+	id="Resume"
+	data-theme="light"
+	class="hidden print:block text-base-content font-sans tracking-[-0.02em]"
+>
 	<div class="mb-6">
-		<div class="flex justify-between mb-6">
+		<div class="flex justify-between mb-4">
 			<h1 class="text-4xl font-bold">Kyle Schwartz</h1>
 
 			<div class="flex flex-col justify-between">
@@ -43,7 +47,7 @@
 			</div>
 		</div>
 
-		<h2>About Me</h2>
+		<h2 class="header">About Me</h2>
 		<div class="divider" />
 
 		<p class="text-justify text-sm">
@@ -177,9 +181,14 @@
 </div>
 
 <style>
-	h2 {
+	h2.header {
 		@apply text-primary text-xl font-semibold uppercase;
 	}
+
+	/* #Resume {
+		font-family: "Inter Variable", sans-serif;
+		@apply tracking-tight font-light;
+	} */
 
 	.divider::after,
 	.divider::before {
